@@ -1,10 +1,25 @@
 #include <stdlib.h>
 #include <stdio.h>
+
+#ifdef __linux__
 #include <sys/random.h>
+#endif
 
 #include "project.h"
 
 const int MAX_TUPLES = 32000000;
+
+#ifndef __linux__
+ssize_t getrandom(unsigned char *buffer, size_t length, unsigned int flags) {
+    if (length <= 0 || length > MAX_TUPLES * 16) {
+        return -1;
+    }
+    for (int i = 0; i < length; i++) {
+        buffer[i] = rand();
+    }
+    return length;
+}
+#endif
 
 struct tuple *generate_tuples(int count) {
     if (count <= 0 || count > MAX_TUPLES) {
