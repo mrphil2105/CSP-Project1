@@ -21,7 +21,8 @@ void *write_to_partitions(void *void_args) {
         return NULL;
     }
     thread_args_t *args = (thread_args_t *)void_args;
-    if (args->tuples == NULL || args->partitions == NULL) {
+    if (args->tuples == NULL || args->partitions == NULL || args->partition_indexes == NULL ||
+        args->partition_mutexes == NULL) {
         return NULL;
     }
     for (int i = args->tuples_index; i < args->tuples_length; i++) {
