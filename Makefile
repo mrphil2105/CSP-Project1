@@ -1,7 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -O2 -g
-OBJ = project.o
-DEPS = project.h
+LDFLAGS = -L/usr/lib -lssl -lcrypto
+INCLUDES = -I/usr/include
+OBJ = project.o utils.o concurrent.o
+DEPS = project.h utils.h concurrent.h
 TARGET = project
 
 # Default rule
@@ -9,11 +11,11 @@ all: $(TARGET)
 
 # Compile the main project binary
 $(TARGET): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Compile C files into object files
 %.o: %.c $(DEPS)
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) $(INCLUDES) -c -o $@ $<
 
 # Clean up compiled files
 clean:
