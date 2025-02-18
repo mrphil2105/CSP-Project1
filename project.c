@@ -6,6 +6,7 @@
 #endif
 
 #include "project.h"
+#include "concurrent.h"
 
 const int MAX_TUPLES = 32000000;
 
@@ -21,7 +22,7 @@ ssize_t getrandom(unsigned char *buffer, size_t length, unsigned int flags) {
 }
 #endif
 
-struct tuple *generate_tuples(int count) {
+tuple_t *generate_tuples(int count) {
     if (count <= 0 || count > MAX_TUPLES) {
         return NULL;
     }
@@ -30,13 +31,13 @@ struct tuple *generate_tuples(int count) {
         return NULL;
     }
     getrandom(buffer, count * 16, 0);
-    return (struct tuple *)buffer;
+    return (tuple_t *)buffer;
 }
 
 int main(int argc, char *argv[]) {
     printf("generating tuples...\n");
-    int count = 10;
-    struct tuple *tuples = generate_tuples(count);
+    int count = 20;
+    tuple_t *tuples = generate_tuples(count);
     for (int i = 0; i < count; i++) {
         printf("key: ");
         for (int j = 0; j < 8; j++) {
@@ -48,4 +49,6 @@ int main(int argc, char *argv[]) {
         }
         printf("\n");
     }
+    run_concurrent(tuples, count, 4, 8);
+    return 0;
 }
