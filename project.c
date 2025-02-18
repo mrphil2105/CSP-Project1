@@ -29,19 +29,8 @@ struct tuple *generate_tuples(int count) {
     if (buffer == NULL) {
         return NULL;
     }
-    struct tuple *tuples = malloc(count * sizeof(struct tuple));
-    if (tuples == NULL) {
-        free(buffer);
-        return NULL;
-    }
     getrandom(buffer, count * 16, 0);
-    for (int i = 0; i < count; i++) {
-        for (int j = 0; j < 8; j++) {
-            tuples[i].key[j] = buffer[i * 16 + j];
-            tuples[i].value[j] = buffer[i * 16 + 8 + j];
-        }
-    }
-    return tuples;
+    return (struct tuple *)buffer;
 }
 
 int main(int argc, char *argv[]) {
