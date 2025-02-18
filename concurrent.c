@@ -26,10 +26,11 @@ void *write_to_partitions(void *void_args) {
     }
     for (int i = args->tuples_index; i < args->tuples_length; i++) {
         int partition = hash_to_partition(args->tuples[i].key, args->partition_count);
-        pthread_mutex_lock(&args->partition_mutexes[partition]);
-        args->partitions[partition][args->partition_indexes[partition]] = args->tuples[i];
-        args->partition_indexes[partition]++;
-        pthread_mutex_unlock(&args->partition_mutexes[partition]);
+        pthread_mutex_t partition_mutex = args->partition_mutexes[partition];
+        pthread_mutex_lock(&partition_mutex);
+        int partition_index = args->partition_indexes[partition]++;
+        pthread_mutex_unlock(&partition_mutex);
+        args->partitions[partition][partition_index] = args->tuples[i];
     }
     printf("thread %d finished\n", args->thread_id);
     return NULL;
