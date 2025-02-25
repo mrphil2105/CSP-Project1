@@ -7,6 +7,7 @@
 
 #include "project.h"
 #include "concurrent.h"
+#include "independent.h"
 
 const int MAX_TUPLES = 32000000;
 
@@ -50,5 +51,6 @@ int main(int argc, char *argv[]) {
         printf("\n");
     }
     run_concurrent(tuples, count, 4, 8);
+    run_independent(tuples, count, 4);
     return 0;
 }
