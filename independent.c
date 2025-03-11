@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
@@ -25,6 +26,10 @@ void *write_independent_output(void *void_args) {
   thread_args_t *args = (thread_args_t *)void_args;
   if (args->tuples == NULL || args->partition_buffers == NULL) return NULL;
   
+  cpu_set_t cpuset;
+  CPU_ZERO(&cpuset);
+  CPU_SET(args->thread_id - 1, &cpuset);
+
   tuple_t *all_tuples = args->tuples;
   int start_idx       = args->tuples_index;
   int end_idx         = args->tuples_length;

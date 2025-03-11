@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
@@ -21,6 +22,9 @@ void *write_to_partitions(void *void_args) {
         return NULL;
     }
     thread_args_t *args = (thread_args_t *)void_args;
+    cpu_set_t cpuset;
+    CPU_ZERO(&cpuset);
+    CPU_SET(args->thread_id - 1, &cpuset);
     if (args->tuples == NULL || args->partitions == NULL ||
         args->partition_indexes == NULL || args->partition_mutexes == NULL) {
         return NULL;
