@@ -37,7 +37,7 @@ void *write_to_partitions(void *void_args) {
 }
 
 tuple_t **allocate_partitions(int partition_count, int tuple_count) {
-    int estimated_per_partition = (tuple_count / partition_count) + 16;
+    int estimated_per_partition = (tuple_count / partition_count) * 2;
     size_t buffer_size = partition_count * sizeof(tuple_t *) +
                          partition_count * estimated_per_partition * sizeof(tuple_t);
     unsigned char *buffer = malloc(buffer_size);
