@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
-
 #include "project.h"
 #include "utils.h"
 
@@ -17,14 +16,14 @@ typedef struct {
     pthread_mutex_t *partition_mutexes;
 } thread_args_t;
 
+// This function writes tuples into partitions.
+// It uses the preallocated contiguous memory provided by allocate_partitions,
+// so no reallocation is necessary.
 void *write_to_partitions(void *void_args) {
     if (void_args == NULL) {
         return NULL;
     }
     thread_args_t *args = (thread_args_t *)void_args;
-    cpu_set_t cpuset;
-    CPU_ZERO(&cpuset);
-    CPU_SET(args->thread_id - 1, &cpuset);
     if (args->tuples == NULL || args->partitions == NULL ||
         args->partition_indexes == NULL || args->partition_mutexes == NULL) {
         return NULL;
@@ -40,6 +39,8 @@ void *write_to_partitions(void *void_args) {
     return NULL;
 }
 
+// Allocate a contiguous block for all partitions.
+// The allocation is done once, and each partition is assigned a slice of the block.
 tuple_t **allocate_partitions(int partition_count, int tuple_count) {
     int estimated_per_partition = (tuple_count / partition_count) * 2;
     size_t buffer_size = partition_count * sizeof(tuple_t *) +
@@ -62,36 +63,49 @@ int run_concurrent(tuple_t *tuples, int tuple_count, int thread_count, int parti
         return -1;
     }
     
-    // Allocate partitions with worst-case capacity per partition.
+    // Preallocate partitions in one contiguous block.
     tuple_t **partitions = allocate_partitions(partition_count, tuple_count);
     if (!partitions) {
         return -1;
     }
     
-    // Local array for partition indexes; each starts at 0.
-    int partition_indexes[partition_count];
+    // Initialize partition indexes.
+    int *partition_indexes = malloc(sizeof(int) * partition_count);
+    if (partition_indexes == NULL) {
+        fprintf(stderr, "Failed to allocate memory for partition_indexes\n");
+        free(partitions);
+        return -1;
+    }
     for (int i = 0; i < partition_count; i++) {
         partition_indexes[i] = 0;
     }
-    
-    // Local array for mutexes (one per partition).
-    pthread_mutex_t partition_mutexes[partition_count];
+
+    // Create an array of mutexes for each partition.
+    pthread_mutex_t *partition_mutexes = malloc(sizeof(pthread_mutex_t) * partition_count);
+    if (partition_mutexes == NULL) {
+        fprintf(stderr, "Failed to allocate memory for partition_mutexes\n");
+        free(partition_indexes);
+        free(partitions);
+        return -1;
+    }
     for (int i = 0; i < partition_count; i++) {
         if (pthread_mutex_init(&partition_mutexes[i], NULL) != 0) {
             fprintf(stderr, "Mutex init failed for partition %d\n", i);
             for (int j = 0; j < i; j++) {
                 pthread_mutex_destroy(&partition_mutexes[j]);
             }
+            free(partition_mutexes);
+            free(partition_indexes);
             free(partitions);
             return -1;
-        }
+        }   
     }
     
     pthread_t threads[thread_count];
     thread_args_t args[thread_count];
     int segment_size = tuple_count / thread_count;
     
-    // Launch threads over disjoint segments of the tuple array.
+    // Launch threads to work on disjoint segments of the tuples.
     for (int i = 0; i < thread_count; i++) {
         args[i].thread_id = i + 1;
         args[i].tuples = tuples;
@@ -109,6 +123,8 @@ int run_concurrent(tuple_t *tuples, int tuple_count, int thread_count, int parti
                 pthread_join(threads[j], NULL);
             }
             free(partitions);
+            free(partition_indexes);
+            free(partition_mutexes);
             return -1;
         }
     }
@@ -123,8 +139,10 @@ int run_concurrent(tuple_t *tuples, int tuple_count, int thread_count, int parti
         pthread_mutex_destroy(&partition_mutexes[i]);
     }
     
-    // In a complete implementation you might further process or return partitions.
+    // Free allocated resources.
     free(partitions);
+    free(partition_indexes);
+    free(partition_mutexes);
     
     return 0;
 }

@@ -38,7 +38,7 @@ tuple_t *generate_tuples(int count) {
 
 int main(int argc, char* argv[]) {
     const int tuple_count = 1 << 24;
-    const int num_runs = 5;  // Number of times to run the experiments
+    const int num_runs = 1;  // Number of times to run the experiments
 
     tuple_t *tuples = generate_tuples(tuple_count);
     if (!tuples) {
@@ -46,10 +46,10 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    int thread_options[] = {1, 2, 4, 8, 16};
+    int thread_options[] = {1, 2, 4, 8, 16, 32};
     int num_thread_options = sizeof(thread_options) / sizeof(thread_options[0]);
-    int min_hash_bits = 3;
-    int max_hash_bits = 8;
+    int min_hash_bits = 1;
+    int max_hash_bits = 18;
 
     // Dynamically allocate memory for the result arrays
     double **indep_results = malloc(num_thread_options * sizeof(double *));
@@ -77,7 +77,7 @@ int main(int argc, char* argv[]) {
 
     for (int run = 0; run < num_runs; run++) {
         // Run independent experiments.
-        for (int i = 0; i < num_thread_options; i++) {
+         for (int i = 0; i < num_thread_options; i++) {
             int thread_count = thread_options[i];
             for (int hb = min_hash_bits; hb <= max_hash_bits; hb++) {
                 double start_time = get_time_in_seconds();
@@ -91,23 +91,30 @@ int main(int argc, char* argv[]) {
                 double throughput = (double)tuple_count / elapsed / 1e6;  // Throughput in million tuples per second
                 indep_results[i][hb - min_hash_bits] += throughput;  // Accumulate throughput
             }
-        }
+         }
 
         // Run concurrent experiments.
         for (int i = 0; i < num_thread_options; i++) {
             int thread_count = thread_options[i];
             for (int hb = min_hash_bits; hb <= max_hash_bits; hb++) {
                 int partition_count = 1 << hb;
-                double start_time = get_time_in_seconds();
-                int rc = run_concurrent(tuples, tuple_count, thread_count, partition_count);
-                double end_time = get_time_in_seconds();
-                if (rc != 0) {
-                    fprintf(stderr, "Error in run_concurrent with %d threads and partition_count=%d\n", thread_count, partition_count);
-                    continue;
+                double total_throughput = 0.0; // Reset for each experiment
+
+                for (int r = 0; r < num_runs; r++) {
+                    double start_time = get_time_in_seconds();
+                    int rc = run_concurrent(tuples, tuple_count, thread_count, partition_count);
+                    double end_time = get_time_in_seconds();
+                    if (rc != 0) {
+                        fprintf(stderr, "Error in run_concurrent with %d threads and partition_count=%d\n", thread_count, partition_count);
+                        continue;
+                    }
+                    double elapsed = end_time - start_time;
+                    double throughput = (double)tuple_count / elapsed / 1e6;  // Throughput in million tuples per second
+                    total_throughput += throughput;
                 }
-                double elapsed = end_time - start_time;
-                double throughput = (double)tuple_count / elapsed / 1e6;  // Throughput in million tuples per second
-                conc_results[i][hb - min_hash_bits] += throughput;  // Accumulate throughput
+
+                // Average throughput across runs
+                conc_results[i][hb - min_hash_bits] = total_throughput / num_runs;
             }
         }
     }
@@ -130,19 +137,20 @@ int main(int argc, char* argv[]) {
     }
     fprintf(conc_file, "Method,Threads,HashBits,Throughput(MT/s)\n");
 
-    // Write averaged results to CSV files.
+    // Write results for independent method
     for (int i = 0; i < num_thread_options; i++) {
         int thread_count = thread_options[i];
         for (int hb = min_hash_bits; hb <= max_hash_bits; hb++) {
-            double avg_throughput = indep_results[i][hb - min_hash_bits] / num_runs;  // Average throughput
+            double avg_throughput = indep_results[i][hb - min_hash_bits];  // Get independent throughput
             fprintf(indep_file, "independent,%d,%d,%.2f\n", thread_count, hb, avg_throughput);
         }
     }
 
+    // Write results for concurrent method
     for (int i = 0; i < num_thread_options; i++) {
         int thread_count = thread_options[i];
         for (int hb = min_hash_bits; hb <= max_hash_bits; hb++) {
-            double avg_throughput = conc_results[i][hb - min_hash_bits] / num_runs;  // Average throughput
+            double avg_throughput = conc_results[i][hb - min_hash_bits];  // Get concurrent throughput
             fprintf(conc_file, "concurrent,%d,%d,%.2f\n", thread_count, hb, avg_throughput);
         }
     }
