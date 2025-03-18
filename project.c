@@ -76,12 +76,9 @@ int main(int argc, char *argv[]) {
         return -1;
     }
     for (int i = 0; i < num_thread_options; i++) {
-        indep_results[i] = malloc((max_hash_bits - min_hash_bits + 1) * sizeof(double));
-        conc_results[i] = malloc((max_hash_bits - min_hash_bits + 1) * sizeof(double));
-        for (int j = 0; j < max_hash_bits - min_hash_bits + 1; j++) {
-            indep_results[i][j] = 0;
-            conc_results[i][j] = 0;
-        }
+        indep_results[i] = calloc(max_hash_bits - min_hash_bits + 1, sizeof(double));
+        conc_results[i] = calloc(max_hash_bits - min_hash_bits + 1, sizeof(double));
+
     }
 
     for (int run = 0; run < num_runs; run++) {
