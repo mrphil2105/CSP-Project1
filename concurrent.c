@@ -34,6 +34,7 @@ void *write_to_partitions(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
+    printf("Thread %d finished\n", args->thread_id);
     return NULL;
 }
 
@@ -102,6 +103,7 @@ int run_concurrent_timed(tuple_t *tuples, int tuple_count, int thread_count, int
         args[i].partitions = partitions;
         args[i].partition_indexes = partition_indexes;
         args[i].partition_mutexes = partition_mutexes;
+        printf("Starting thread %d\n", args[i].thread_id);
 
         if (pthread_create(&threads[i], NULL, write_to_partitions, &args[i]) != 0) {
             fprintf(stderr, "Thread creation failed for thread %d\n", args[i].thread_id);

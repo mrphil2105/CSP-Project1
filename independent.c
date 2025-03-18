@@ -44,6 +44,7 @@ void *write_independent_output(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
+    printf("Thread %d finished\n", args->thread_id);
     return NULL;
 }
 
@@ -111,6 +112,7 @@ int run_independent_timed(tuple_t *tuples, int tuple_count, int thread_count, in
         // Each thread gets its slice of the global arrays.
         args[i].partition_buffers = global_partition_buffers + (i * partition_count);
         args[i].partition_sizes = global_partition_sizes + (i * partition_count);
+        printf("Starting thread %d\n", args[i].thread_id);
 
         if (pthread_create(&threads[i], NULL, write_independent_output, &args[i]) != 0) {
             fprintf(stderr, "Thread creation failed for thread %d\n", i + 1);
