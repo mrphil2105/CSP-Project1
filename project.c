@@ -10,6 +10,10 @@
 #include "independent.h"
 #include "utils.h"
 
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+
 const int MAX_TUPLES = 32000000;
 
 #ifndef __linux__
@@ -28,11 +32,32 @@ tuple_t *generate_tuples(int count) {
     if (count <= 0 || count > MAX_TUPLES) {
         return NULL;
     }
-    unsigned char *buffer = malloc(count * 16);
+    size_t total_bytes = count * 16;
+    unsigned char *buffer = malloc(total_bytes);
     if (buffer == NULL) {
         return NULL;
     }
-    getrandom(buffer, count * 16, 0);
+
+    int fd = open("/dev/urandom", O_RDONLY);
+    if (fd < 0) {
+        perror("open /dev/urandom");
+        free(buffer);
+        return NULL;
+    }
+
+    size_t offset = 0;
+    while (offset < total_bytes) {
+        ssize_t bytes_read = read(fd, buffer + offset, total_bytes - offset);
+        if (bytes_read < 0) {
+            if (errno == EINTR) continue; // Interrupted, try again
+            perror("read /dev/urandom");
+            close(fd);
+            free(buffer);
+            return NULL;
+        }
+        offset += bytes_read;
+    }
+    close(fd);
     return (tuple_t *)buffer;
 }
 
