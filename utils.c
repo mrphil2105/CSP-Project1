@@ -1,6 +1,6 @@
+#include <math.h>
 #include <openssl/sha.h>
 #include <time.h>
-#include <math.h>
 
 uint64_t bytes_to_long(const unsigned char *bytes) {
     uint64_t result = 0;

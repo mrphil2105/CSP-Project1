@@ -1,15 +1,15 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #ifdef __linux__
 #include <sys/random.h>
 #endif
-#include "project.h"
 #include "concurrent.h"
 #include "independent.h"
+#include "project.h"
 #include "utils.h"
+#include <errno.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <errno.h>
 
 const int MAX_TUPLES = 32000000;
 
@@ -40,7 +40,8 @@ tuple_t *generate_tuples(int count) {
     while (offset < total_bytes) {
         ssize_t bytes_read = read(fd, buffer + offset, total_bytes - offset);
         if (bytes_read < 0) {
-            if (errno == EINTR) continue;
+            if (errno == EINTR)
+                continue;
             perror("read /dev/urandom");
             close(fd);
             free(buffer);
@@ -52,20 +53,20 @@ tuple_t *generate_tuples(int count) {
     return (tuple_t *)buffer;
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
     const int tuple_count = 1 << 24;
-    const int num_runs = 5;  // Multiple runs for averaging
+    const int num_runs = 5; // Multiple runs for averaging
     tuple_t *tuples = generate_tuples(tuple_count);
     if (!tuples) {
         fprintf(stderr, "Error generating tuples.\n");
         return -1;
     }
-    
+
     int thread_options[] = {1, 2, 4, 8, 16};
     int num_thread_options = sizeof(thread_options) / sizeof(thread_options[0]);
     int min_hash_bits = 1;
     int max_hash_bits = 18;
-    
+
     // Allocate result arrays.
     double **indep_results = malloc(num_thread_options * sizeof(double *));
     double **conc_results = malloc(num_thread_options * sizeof(double *));
@@ -82,7 +83,7 @@ int main(int argc, char* argv[]) {
             conc_results[i][j] = 0;
         }
     }
-    
+
     for (int run = 0; run < num_runs; run++) {
         // Independent experiments.
         for (int i = 0; i < num_thread_options; i++) {
@@ -96,7 +97,7 @@ int main(int argc, char* argv[]) {
                 indep_results[i][hb - min_hash_bits] += throughput;
             }
         }
-        
+
         // Concurrent experiments.
         for (int i = 0; i < num_thread_options; i++) {
             int thread_count = thread_options[i];
@@ -104,14 +105,15 @@ int main(int argc, char* argv[]) {
                 int partition_count = 1 << hb;
                 double throughput = 0;
                 if (run_concurrent_timed(tuples, tuple_count, thread_count, partition_count, &throughput) != 0) {
-                    fprintf(stderr, "Error in concurrent run with %d threads and partition_count=%d\n", thread_count, partition_count);
+                    fprintf(stderr, "Error in concurrent run with %d threads and partition_count=%d\n", thread_count,
+                            partition_count);
                     continue;
                 }
                 conc_results[i][hb - min_hash_bits] += throughput;
             }
         }
     }
-    
+
     // Average results.
     for (int i = 0; i < num_thread_options; i++) {
         for (int j = 0; j < max_hash_bits - min_hash_bits + 1; j++) {
@@ -119,7 +121,7 @@ int main(int argc, char* argv[]) {
             conc_results[i][j] /= num_runs;
         }
     }
-    
+
     // Write results to CSV files.
     FILE *indep_file = fopen("independent_results.csv", "w");
     if (!indep_file) {
@@ -136,7 +138,7 @@ int main(int argc, char* argv[]) {
         return -1;
     }
     fprintf(conc_file, "Method,Threads,HashBits,Throughput(MT/s)\n");
-    
+
     for (int i = 0; i < num_thread_options; i++) {
         int thread_count = thread_options[i];
         for (int hb = min_hash_bits; hb <= max_hash_bits; hb++) {
@@ -144,7 +146,7 @@ int main(int argc, char* argv[]) {
             fprintf(conc_file, "concurrent,%d,%d,%.2f\n", thread_count, hb, conc_results[i][hb - min_hash_bits]);
         }
     }
-    
+
     fclose(indep_file);
     fclose(conc_file);
     free(tuples);
@@ -154,6 +156,6 @@ int main(int argc, char* argv[]) {
     }
     free(indep_results);
     free(conc_results);
-    
+
     return 0;
 }
