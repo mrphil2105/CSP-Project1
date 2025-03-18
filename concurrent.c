@@ -35,7 +35,7 @@ void *write_to_partitions(void *void_args) {
         pthread_mutex_unlock(&args->partition_mutexes[partition]);
         args->partitions[partition][partition_index] = args->tuples[i];
     }
-    printf("thread %d finished\n", args->thread_id);
+    //printf("thread %d finished\n", args->thread_id);
     return NULL;
 }
 
@@ -116,7 +116,7 @@ int run_concurrent(tuple_t *tuples, int tuple_count, int thread_count, int parti
         args[i].partition_indexes = partition_indexes;
         args[i].partition_mutexes = partition_mutexes;
         
-        printf("starting thread %d\n", args[i].thread_id);
+        //printf("starting thread %d\n", args[i].thread_id);
         if (pthread_create(&threads[i], NULL, write_to_partitions, &args[i]) != 0) {
             fprintf(stderr, "Thread creation failed for thread %d\n", args[i].thread_id);
             for (int j = 0; j < i; j++) {

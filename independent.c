@@ -43,7 +43,7 @@ void *write_independent_output(void *void_args) {
         args->partition_sizes[partition_id]++;
     }
     
-    printf("thread %d finished\n", args->thread_id);
+    //printf("thread %d finished\n", args->thread_id);
     return NULL;
 }
 
@@ -111,7 +111,7 @@ int run_independent(tuple_t *tuples, int tuple_count, int thread_count, int hash
         args[i].partition_buffers = global_partition_buffers + (i * partition_count);
         args[i].partition_sizes = global_partition_sizes + (i * partition_count);
         
-        printf("starting thread %d\n", args[i].thread_id);
+        //printf("starting thread %d\n", args[i].thread_id);
         if (pthread_create(&threads[i], NULL, write_independent_output, &args[i]) != 0) {
             fprintf(stderr, "Thread creation failed for thread %d\n", i + 1);
             for (int j = 0; j < i; j++) {
