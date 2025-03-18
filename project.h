@@ -6,4 +6,4 @@ typedef struct {
     unsigned char value[8];
 } tuple_t;
 
-#endif
+#endif // PROJECT_HEADER
