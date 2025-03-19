@@ -21,8 +21,3 @@ double get_time_in_seconds() {
     return (double)ts.tv_sec + (double)ts.tv_nsec / 1e9;
 }
 
-// int hash_to_partition(const unsigned char *key, int partition_count) {
-//     unsigned char hash[SHA256_DIGEST_LENGTH];
-//     SHA256(key, 8, hash);
-//     return bytes_to_long(hash) % partition_count;
-// }
