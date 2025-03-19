@@ -6,6 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <numa.h>
+#include <numaif.h>
 #ifdef __linux__
 #include <pthread.h>
 #include <sched.h>
@@ -30,24 +32,63 @@ void *write_to_partitions(void *void_args) {
         return NULL;
     thread_args_t *args = (thread_args_t *)void_args;
 
-#ifdef __linux__
+    #ifdef __linux__
 
-    // Get the number of available cores.
+    // Get the number of NUMA nodes available
+    int num_nodes = numa_max_node() + 1;
+    printf("Detected %d NUMA nodes.\n", num_nodes);
+
+    // Get the number of available cores in the system.
     int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
     if (num_cores < 1) {
         num_cores = 1;  // Fallback in case of an error.
     }
+    printf("Detected %d cores.\n", num_cores);
 
-    printf("Thread %d: %d cores available\n", args->thread_id, num_cores);
+    // Dynamically assign the thread to a NUMA node and CPU.
+    int node = args->thread_id % num_nodes; // Dynamically assign based on num_nodes
+    int cpu_id = args->thread_id % num_cores; // Assign to one of the available cores
 
-    // Set CPU affinity for the thread.
-    int cpu_id = (args->thread_id - 1) % 32;
+    printf("Thread %d: Assigning to NUMA node %d, CPU %d\n", args->thread_id, node, cpu_id);
+
+    // Set NUMA affinity for the thread.
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);
-    CPU_SET(cpu_id, &cpuset);
+    
+    // Allocate CPU mask for NUMA node
+    struct bitmask *cpus = numa_allocate_cpumask();
+    numa_node_to_cpus(node, cpus);
+
+    // Assign the correct CPU based on the NUMA node.
+    if (numa_bitmask_isbitset(cpus, cpu_id)) {
+            CPU_SET(cpu_id, &cpuset);  // Set the CPU
+        } else {
+            fprintf(stderr, "CPU %d not available in NUMA node %d\n", cpu_id, node);
+        }
+
+    // Free the NUMA bitmask after use.
+    numa_free_cpumask(cpus);
+
+    // Set the CPU affinity for this thread.
     if (pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset) != 0) {
         perror("pthread_setaffinity_np");
     }
+
+    // Check if the thread is assigned to the correct CPU
+    cpu_set_t assigned_set;
+    CPU_ZERO(&assigned_set);
+    if (pthread_getaffinity_np(pthread_self(), sizeof(cpu_set_t), &assigned_set) == 0) {
+        printf("Thread %d assigned to CPUs: ", args->thread_id);
+        for (int i = 0; i < num_cores; i++) {  // Check only the available cores
+            if (CPU_ISSET(i, &assigned_set)) {
+                printf("%d ", i);
+            }
+        }
+        printf("\n");
+    } else {
+        perror("pthread_getaffinity_np");
+    }
+
 #endif
 
     if (!args->tuples || !args->partitions || !args->partition_indexes || !args->partition_mutexes)
