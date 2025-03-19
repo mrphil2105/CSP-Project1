@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2 -g
-LDFLAGS = -L/usr/lib -lssl -lcrypto -pthread
+CFLAGS = -Wall -Wextra -O3 -g
+LDFLAGS = -L/usr/lib -lssl -lcrypto -pthread -lm
 INCLUDES = -I/usr/include
 OBJ = project.o utils.o concurrent.o independent.o
 DEPS = project.h utils.h concurrent.h independent.h
