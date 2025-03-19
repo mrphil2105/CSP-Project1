@@ -5,6 +5,12 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#ifdef __linux__
+#include <pthread.h>
+#include <sched.h>
+
+#endif
 
 typedef struct {
     int thread_id;
@@ -23,6 +29,27 @@ void *write_to_partitions(void *void_args) {
     if (!void_args)
         return NULL;
     thread_args_t *args = (thread_args_t *)void_args;
+
+#ifdef __linux__
+
+    // Get the number of available cores.
+    int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
+    if (num_cores < 1) {
+        num_cores = 1;  // Fallback in case of an error.
+    }
+
+    printf("Thread %d: %d cores available\n", args->thread_id, num_cores);
+
+    // Set CPU affinity for the thread.
+    int cpu_id = (args->thread_id - 1) % 32;
+    cpu_set_t cpuset;
+    CPU_ZERO(&cpuset);
+    CPU_SET(cpu_id, &cpuset);
+    if (pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset) != 0) {
+        perror("pthread_setaffinity_np");
+    }
+#endif
+
     if (!args->tuples || !args->partitions || !args->partition_indexes || !args->partition_mutexes)
         return NULL;
     double start = get_time_in_seconds();
