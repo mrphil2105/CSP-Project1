@@ -1,10 +1,10 @@
 #define _GNU_SOURCE
-#include <stdlib.h>
-#include <stdio.h>
-#include <pthread.h>
-
 #include "project.h"
 #include "utils.h"
+#include "concurrent.h"
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct {
     int thread_id;
@@ -12,119 +12,109 @@ typedef struct {
     int tuples_index;
     int tuples_length;
     int partition_count;
+    // In concurrent mode, all threads share the same global partitions.
     tuple_t **partitions;
     int *partition_indexes;
     pthread_mutex_t *partition_mutexes;
+    double thread_time;
 } thread_args_t;
 
 void *write_to_partitions(void *void_args) {
-    if (void_args == NULL) {
+    if (!void_args)
         return NULL;
-    }
     thread_args_t *args = (thread_args_t *)void_args;
-    cpu_set_t cpuset;
-    CPU_ZERO(&cpuset);
-    CPU_SET(args->thread_id - 1, &cpuset);
-    if (args->tuples == NULL || args->partitions == NULL ||
-        args->partition_indexes == NULL || args->partition_mutexes == NULL) {
+    if (!args->tuples || !args->partitions || !args->partition_indexes || !args->partition_mutexes)
         return NULL;
-    }
+    double start = get_time_in_seconds();
     for (int i = args->tuples_index; i < args->tuples_length; i++) {
         int partition = hash_to_partition(args->tuples[i].key, args->partition_count);
         pthread_mutex_lock(&args->partition_mutexes[partition]);
-        int partition_index = args->partition_indexes[partition]++;
+        int idx = args->partition_indexes[partition]++;
         pthread_mutex_unlock(&args->partition_mutexes[partition]);
-        args->partitions[partition][partition_index] = args->tuples[i];
+        args->partitions[partition][idx] = args->tuples[i];
     }
-    printf("thread %d finished\n", args->thread_id);
+    double end = get_time_in_seconds();
+    args->thread_time = end - start;
+    printf("Concurrent thread %d finished\n", args->thread_id);
     return NULL;
 }
 
-tuple_t **allocate_partitions(int partition_count, int tuple_count) {
-    int estimated_per_partition = (tuple_count / partition_count) * 2;
-    size_t buffer_size = partition_count * sizeof(tuple_t *) +
-                         partition_count * estimated_per_partition * sizeof(tuple_t);
-    unsigned char *buffer = malloc(buffer_size);
-    if (buffer == NULL) {
-        return NULL;
-    }
-    tuple_t **partitions = (tuple_t **)buffer;
-    buffer += partition_count * sizeof(tuple_t *);
-    for (int i = 0; i < partition_count; i++) {
-        partitions[i] = (tuple_t *)buffer;
-        buffer += estimated_per_partition * sizeof(tuple_t);
-    }
-    return partitions;
-}
-
-int run_concurrent(tuple_t *tuples, int tuple_count, int thread_count, int partition_count) {
-    if (!tuples) {
+int run_concurrent_timed(tuple_t *tuples, int tuple_count, int thread_count, int partition_count,
+                         tuple_t **global_partition_buffers, int *global_partition_indexes,
+                         int global_capacity, double *throughput) {
+    if (!tuples)
         return -1;
-    }
     
-    // Allocate partitions with worst-case capacity per partition.
-    tuple_t **partitions = allocate_partitions(partition_count, tuple_count);
-    if (!partitions) {
-        return -1;
-    }
-    
-    // Local array for partition indexes; each starts at 0.
-    int partition_indexes[partition_count];
-    for (int i = 0; i < partition_count; i++) {
-        partition_indexes[i] = 0;
-    }
-    
-    // Local array for mutexes (one per partition).
-    pthread_mutex_t partition_mutexes[partition_count];
-    for (int i = 0; i < partition_count; i++) {
-        if (pthread_mutex_init(&partition_mutexes[i], NULL) != 0) {
-            fprintf(stderr, "Mutex init failed for partition %d\n", i);
-            for (int j = 0; j < i; j++) {
-                pthread_mutex_destroy(&partition_mutexes[j]);
-            }
-            free(partitions);
-            return -1;
-        }
-    }
+    // Compute effective capacity for this run.
+    int effective_capacity = (tuple_count / partition_count) * PARTITION_MULTIPLIER;
+    if (effective_capacity > global_capacity)
+        effective_capacity = global_capacity;
     
     pthread_t threads[thread_count];
     thread_args_t args[thread_count];
-    int segment_size = tuple_count / thread_count;
+    int base_segment_size = tuple_count / thread_count;
+    double overall_throughput = 0.0;
     
-    // Launch threads over disjoint segments of the tuple array.
-    for (int i = 0; i < thread_count; i++) {
-        args[i].thread_id = i + 1;
-        args[i].tuples = tuples;
-        args[i].tuples_index = segment_size * i;
-        args[i].tuples_length = (i == thread_count - 1) ? tuple_count : segment_size * (i + 1);
-        args[i].partition_count = partition_count;
-        args[i].partitions = partitions;
-        args[i].partition_indexes = partition_indexes;
-        args[i].partition_mutexes = partition_mutexes;
-        
-        printf("starting thread %d\n", args[i].thread_id);
-        if (pthread_create(&threads[i], NULL, write_to_partitions, &args[i]) != 0) {
-            fprintf(stderr, "Thread creation failed for thread %d\n", args[i].thread_id);
+    // Reset the indexes for the partitions used (only current partition_count).
+    for (int i = 0; i < partition_count; i++) {
+        global_partition_indexes[i] = 0;
+    }
+    
+    // Allocate and initialize mutexes for each partition.
+    pthread_mutex_t *mutexes = malloc(partition_count * sizeof(pthread_mutex_t));
+    if (!mutexes) {
+        fprintf(stderr, "Failed to allocate mutexes.\n");
+        return -1;
+    }
+    for (int i = 0; i < partition_count; i++) {
+        if (pthread_mutex_init(&mutexes[i], NULL) != 0) {
+            fprintf(stderr, "Mutex initialization failed for partition %d\n", i);
             for (int j = 0; j < i; j++) {
-                pthread_join(threads[j], NULL);
+                pthread_mutex_destroy(&mutexes[j]);
             }
-            free(partitions);
+            free(mutexes);
             return -1;
         }
     }
     
-    // Wait for all threads to finish.
+    // Create threads, passing the shared mutexes array.
+    for (int i = 0; i < thread_count; i++) {
+        int start_index = base_segment_size * i;
+        int end_index = (i == thread_count - 1) ? tuple_count : (start_index + base_segment_size);
+        args[i].thread_id = i + 1;
+        args[i].tuples = tuples;
+        args[i].tuples_index = start_index;
+        args[i].tuples_length = end_index;
+        args[i].partition_count = partition_count;
+        args[i].partitions = global_partition_buffers; // Shared by all threads.
+        args[i].partition_indexes = global_partition_indexes; // Shared.
+        args[i].partition_mutexes = mutexes; // Shared mutexes.
+        
+        if (pthread_create(&threads[i], NULL, write_to_partitions, &args[i]) != 0) {
+            fprintf(stderr, "Concurrent thread creation failed for thread %d\n", args[i].thread_id);
+            // Cleanup mutexes before returning.
+            for (int j = 0; j < partition_count; j++) {
+                pthread_mutex_destroy(&mutexes[j]);
+            }
+            free(mutexes);
+            return -1;
+        }
+    }
+    
+    // Wait for threads to finish and accumulate throughput.
     for (int i = 0; i < thread_count; i++) {
         pthread_join(threads[i], NULL);
+        int seg = args[i].tuples_length - args[i].tuples_index;
+        double thread_tp = ((double)seg / args[i].thread_time) / 1e6;
+        overall_throughput += thread_tp;
     }
+    *throughput = overall_throughput;
     
-    // Clean up mutexes.
+    // Destroy mutexes and free the mutex array.
     for (int i = 0; i < partition_count; i++) {
-        pthread_mutex_destroy(&partition_mutexes[i]);
+        pthread_mutex_destroy(&mutexes[i]);
     }
-    
-    // In a complete implementation you might further process or return partitions.
-    free(partitions);
+    free(mutexes);
     
     return 0;
 }
