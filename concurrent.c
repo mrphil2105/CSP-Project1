@@ -36,20 +36,20 @@ void *write_to_partitions(void *void_args) {
 
     // Get the number of NUMA nodes available
     int num_nodes = numa_max_node() + 1;
-    printf("Detected %d NUMA nodes.\n", num_nodes);
+    //printf("Detected %d NUMA nodes.\n", num_nodes);
 
     // Get the number of available cores in the system.
     int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
     if (num_cores < 1) {
         num_cores = 1;  // Fallback in case of an error.
     }
-    printf("Detected %d cores.\n", num_cores);
+    //printf("Detected %d cores.\n", num_cores);
 
     // Dynamically assign the thread to a NUMA node and CPU.
     int node = args->thread_id % num_nodes; // Dynamically assign based on num_nodes
     int cpu_id = args->thread_id % num_cores; // Assign to one of the available cores
 
-    printf("Thread %d: Assigning to NUMA node %d, CPU %d\n", args->thread_id, node, cpu_id);
+    //printf("Thread %d: Assigning to NUMA node %d, CPU %d\n", args->thread_id, node, cpu_id);
 
     // Set NUMA affinity for the thread.
     cpu_set_t cpuset;
@@ -78,13 +78,13 @@ void *write_to_partitions(void *void_args) {
     cpu_set_t assigned_set;
     CPU_ZERO(&assigned_set);
     if (pthread_getaffinity_np(pthread_self(), sizeof(cpu_set_t), &assigned_set) == 0) {
-        printf("Thread %d assigned to CPUs: ", args->thread_id);
+        //printf("Thread %d assigned to CPUs: ", args->thread_id);
         for (int i = 0; i < num_cores; i++) {  // Check only the available cores
             if (CPU_ISSET(i, &assigned_set)) {
                 printf("%d ", i);
             }
         }
-        printf("\n");
+        //printf("\n");
     } else {
         perror("pthread_getaffinity_np");
     }
@@ -103,7 +103,7 @@ void *write_to_partitions(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
-    printf("Concurrent thread %d finished\n", args->thread_id);
+    //printf("Concurrent thread %d finished\n", args->thread_id);
     return NULL;
 }
 
