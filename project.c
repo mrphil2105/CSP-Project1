@@ -221,13 +221,13 @@ int main(int argc, char *argv[]) {
     }
     
     // Write results to CSV files.
-    FILE *indep_file = fopen("independent_results.csv", "w");
+    FILE *indep_file = fopen("indep_no_affinity.csv", "w");
     if (!indep_file) {
         perror("Error opening independent_results.csv");
         return -1;
     }
     fprintf(indep_file, "Method,Threads,HashBits,Throughput(MT/s)\n");
-    FILE *conc_file = fopen("concurrent_results.csv", "w");
+    FILE *conc_file = fopen("conc_no_affinity.csv", "w");
     if (!conc_file) {
         perror("Error opening concurrent_results.csv");
         fclose(indep_file);
