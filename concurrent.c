@@ -38,7 +38,7 @@ void *write_to_partitions(void *void_args) {
         num_cores = 1;  // Fallback in case of an error.
     }
 
-    printf("Thread %d: %d cores available\n", args->thread_id, num_cores);
+    //printf("Thread %d: %d cores available\n", args->thread_id, num_cores);
 
     // Set CPU affinity for the thread.
     int cpu_id = (args->thread_id - 1) % 32;
@@ -62,7 +62,7 @@ void *write_to_partitions(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
-    printf("Concurrent thread %d finished\n", args->thread_id);
+    //printf("Concurrent thread %d finished\n", args->thread_id);
     return NULL;
 }
 

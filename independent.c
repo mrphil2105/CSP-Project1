@@ -36,7 +36,7 @@ void *write_independent_output(void *void_args) {
     if (num_cores < 1) {
         num_cores = 1;  // Fallback in case of an error.
     }
-    printf("Thread %d: %d cores available\n", args->thread_id, num_cores);
+    //printf("Thread %d: %d cores available\n", args->thread_id, num_cores);
 
     // Set CPU affinity for the thread.
     int cpu_id = (args->thread_id - 1) % 32;
@@ -54,7 +54,7 @@ void *write_independent_output(void *void_args) {
     for (int i = args->tuples_index; i < args->tuples_length; i++) {
         int partition_id = hash_to_partition((unsigned char *)&args->tuples[i].key, args->partition_count);
         int idx = args->partition_sizes[partition_id];
-        if (idx > args->estimated_per_partition) {
+        if (idx >= args->estimated_per_partition) {
             fprintf(stderr, "Thread %d: Partition %d overflow (idx=%d, cap=%d)\n",
                     args->thread_id, partition_id, idx, args->estimated_per_partition);
             continue;
@@ -64,7 +64,7 @@ void *write_independent_output(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
-    printf("Independent thread %d finished\n", args->thread_id);
+    //printf("Independent thread %d finished\n", args->thread_id);
     return NULL;
 }
 
