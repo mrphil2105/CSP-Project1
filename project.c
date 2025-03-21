@@ -60,7 +60,7 @@ tuple_t *generate_tuples(int count) {
 int main(int argc, char *argv[]) {
     // Experiment parameters.
     const int tuple_count = 1 << 24;  // ~16 million tuples
-    const int num_runs = 1;           // Number of runs for averaging
+    const int num_runs = 5;           // Number of runs for averaging
     
     int thread_options[] = {1, 2, 4, 8, 16, 32};
     int num_thread_options = sizeof(thread_options) / sizeof(thread_options[0]);

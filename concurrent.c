@@ -35,7 +35,7 @@ void *write_to_partitions(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
-    printf("Concurrent thread %d finished\n", args->thread_id);
+    //printf("Concurrent thread %d finished\n", args->thread_id);
     return NULL;
 }
 

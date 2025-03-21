@@ -40,7 +40,7 @@ void *write_independent_output(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
-    printf("Independent thread %d finished\n", args->thread_id);
+    //printf("Independent thread %d finished\n", args->thread_id);
     return NULL;
 }
 
