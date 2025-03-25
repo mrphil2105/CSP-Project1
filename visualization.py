@@ -34,7 +34,7 @@ ax1.set_title('(a) Independent')
 ax1.set_xlabel('Hash Bits')
 ax1.set_ylabel('Throughput (MT/s)')
 ax1.grid(True, linestyle='--', alpha=0.7)
-ax1.set_xticks(range(3, 19))
+ax1.set_xticks(range(1, 19))
 
 # Plot Concurrent results
 for thread in concurrent_df['Threads'].unique():
@@ -48,7 +48,7 @@ for thread in concurrent_df['Threads'].unique():
 ax2.set_title('(b) Concurrent')
 ax2.set_xlabel('Hash Bits')
 ax2.grid(True, linestyle='--', alpha=0.7)
-ax2.set_xticks(range(3, 19))
+ax2.set_xticks(range(1, 19))
 
 # Common legend
 handles, labels = ax1.get_legend_handles_labels()
