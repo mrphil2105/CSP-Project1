@@ -1,7 +1,15 @@
 #include <math.h>
 #include <stdint.h>
 #include <string.h>
+#include <pthread.h>
 #include <time.h>
+
+typedef struct {
+    pthread_mutex_t mutex;
+    pthread_cond_t cond;
+    int count;
+    int crossing;
+} pthread_barrier_t;
 
 // Helper: Convert 8 bytes to a uint64_t (not used in hashing below)
 uint64_t bytes_to_long(const unsigned char *bytes) {
@@ -69,6 +77,42 @@ uint32_t murmurhash3_32(const void *key, int len, uint32_t seed) {
 
 
 int hash_to_partition(const unsigned char *key, int partition_count) {
-    uint32_t hash = murmurhash3_32(key, 8, 42); // seed 42 (can be any constant)
-    return (int)(hash % partition_count);
+    // Interpret the first 8 bytes of key as an unsigned long long.
+    unsigned long long k = 0;
+    // Copy the 8 bytes into k (assumes tuple_t key is at least 8 bytes).
+    memcpy(&k, key, sizeof(k));
+    return (int)(k % partition_count);
+}
+
+
+int pthread_barrier_init(pthread_barrier_t *barrier, void *attr, int count) {
+    (void)attr;  // Unused parameter
+    if (count <= 0) return -1;
+    barrier->count = count;
+    barrier->crossing = 0;
+    pthread_mutex_init(&barrier->mutex, NULL);
+    pthread_cond_init(&barrier->cond, NULL);
+    return 0;
+}
+
+int pthread_barrier_wait(pthread_barrier_t *barrier) {
+    pthread_mutex_lock(&barrier->mutex);
+    barrier->crossing++;
+
+    if (barrier->crossing >= barrier->count) {
+        barrier->crossing = 0;
+        pthread_cond_broadcast(&barrier->cond);
+        pthread_mutex_unlock(&barrier->mutex);
+        return 1;  // Special return value to indicate last thread
+    } else {
+        while (pthread_cond_wait(&barrier->cond, &barrier->mutex) != 0);
+        pthread_mutex_unlock(&barrier->mutex);
+        return 0;
+    }
+}
+
+int pthread_barrier_destroy(pthread_barrier_t *barrier) {
+    pthread_mutex_destroy(&barrier->mutex);
+    pthread_cond_destroy(&barrier->cond);
+    return 0;
 }

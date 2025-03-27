@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -O3 -g
-LDFLAGS = -L/usr/lib -lssl -lcrypto -pthread -lm -lnuma
+LDFLAGS = -L/usr/lib -lssl -lcrypto -pthread -lm 
 INCLUDES = -I/usr/include
-OBJ = project.o utils.o concurrent.o independent.o
-DEPS = project.h utils.h concurrent.h independent.h
+OBJ = project.o utils.o concurrent.o independent.o thpool.o
+DEPS = project.h utils.h concurrent.h independent.h thpool.h
 TARGET = project
 
 # Default rule

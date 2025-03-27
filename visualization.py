@@ -7,8 +7,8 @@ import numpy as np
 mpl.style.use('seaborn-v0_8')
 
 # Load CSV files
-independent_df = pd.read_csv("independent_results.csv")
-concurrent_df = pd.read_csv("concurrent_results.csv")
+independent_df = pd.read_csv("indep_no_affinity.csv")
+concurrent_df = pd.read_csv("conc_no_affinity.csv")
 
 # Create subplots
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6), sharey=True)

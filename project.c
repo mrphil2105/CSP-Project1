@@ -60,9 +60,9 @@ tuple_t *generate_tuples(int count) {
 int main(int argc, char *argv[]) {
     // Experiment parameters.
     const int tuple_count = 1 << 24;  // ~16 million tuples
-    const int num_runs = 5;           // Number of runs for averaging
+    const int num_runs = 2;           // Number of runs for averaging
     
-    int thread_options[] = {1, 2, 4, 8, 16, 32};
+    int thread_options[] = {1, 2, 4, 8, 16};
     int num_thread_options = sizeof(thread_options) / sizeof(thread_options[0]);
     int min_hash_bits = 1;  
     int max_hash_bits = 18; 
@@ -188,29 +188,29 @@ int main(int argc, char *argv[]) {
         }
     }
     
-    // Run Concurrent Experiments
-    for (int run = 0; run < num_runs; run++) {
-        for (int t_idx = 0; t_idx < num_thread_options; t_idx++) {
-            int thread_count = thread_options[t_idx];
-            for (int hb = min_hash_bits; hb <= max_hash_bits; hb++) {
-                int total_partitions = 1 << hb;
-                int effective_capacity = (tuple_count / total_partitions) * PARTITION_MULTIPLIER;
-                for (int i = 0; i < total_partitions; i++) {
-                    global_conc_buffers[i] = conc_big_block + i * effective_capacity;
-                    global_conc_indexes[i] = 0;
-                }
+    // // Run Concurrent Experiments
+    // for (int run = 0; run < num_runs; run++) {
+    //     for (int t_idx = 0; t_idx < num_thread_options; t_idx++) {
+    //         int thread_count = thread_options[t_idx];
+    //         for (int hb = min_hash_bits; hb <= max_hash_bits; hb++) {
+    //             int total_partitions = 1 << hb;
+    //             int effective_capacity = (tuple_count / total_partitions) * PARTITION_MULTIPLIER;
+    //             for (int i = 0; i < total_partitions; i++) {
+    //                 global_conc_buffers[i] = conc_big_block + i * effective_capacity;
+    //                 global_conc_indexes[i] = 0;
+    //             }
                 
-                double throughput = 0;
-                if (run_concurrent_timed(tuples, tuple_count, thread_count, total_partitions,
-                                         global_conc_buffers, global_conc_indexes,
-                                         effective_capacity, &throughput) != 0) {
-                    fprintf(stderr, "Error in concurrent run with %d threads and partitions=%d\n", thread_count, total_partitions);
-                    continue;
-                }
-                conc_results[t_idx][hb - min_hash_bits] += throughput;
-            }
-        }
-    }
+    //             double throughput = 0;
+    //             if (run_concurrent_timed(tuples, tuple_count, thread_count, total_partitions,
+    //                                      global_conc_buffers, global_conc_indexes,
+    //                                      effective_capacity, &throughput) != 0) {
+    //                 fprintf(stderr, "Error in concurrent run with %d threads and partitions=%d\n", thread_count, total_partitions);
+    //                 continue;
+    //             }
+    //             conc_results[t_idx][hb - min_hash_bits] += throughput;
+    //         }
+    //     }
+    // }
     
     // Average the results over runs.
     for (int i = 0; i < num_thread_options; i++) {
@@ -221,13 +221,13 @@ int main(int argc, char *argv[]) {
     }
     
     // Write results to CSV files.
-    FILE *indep_file = fopen("indep_numa_affinity.csv", "w");
+    FILE *indep_file = fopen("indep_no_affinity.csv", "w");
     if (!indep_file) {
         perror("Error opening independent_results.csv");
         return -1;
     }
     fprintf(indep_file, "Method,Threads,HashBits,Throughput(MT/s)\n");
-    FILE *conc_file = fopen("conc_numa_affinity.csv", "w");
+    FILE *conc_file = fopen("conc_no_affinity.csv", "w");
     if (!conc_file) {
         perror("Error opening concurrent_results.csv");
         fclose(indep_file);
