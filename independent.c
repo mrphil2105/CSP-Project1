@@ -1,6 +1,9 @@
 #define _GNU_SOURCE
 #include "project.h"
 #include "utils.h"
+#include "affinity.h"
+#include "independent.h"
+#include "tuples.h"  // For tuple_t definition
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,11 +15,11 @@ typedef struct {
     int tuples_index;
     int tuples_length;
     int partition_count;
-    // This thread's slice of the global independent partition buffers.
+    // Each thread’s slice of the global independent partition buffers.
     tuple_t **partition_buffers;
-    // This thread's slice of the global independent indexes.
+    // Each thread’s slice of the global independent indexes.
     int *partition_sizes;
-    int estimated_per_partition; // Effective capacity for this run.
+    int estimated_per_partition;
     double thread_time;
 } thread_args_t;
 
@@ -24,13 +27,17 @@ void *write_independent_output(void *void_args) {
     if (!void_args)
         return NULL;
     thread_args_t *args = (thread_args_t *)void_args;
+    
+    // Set affinity if enabled.
+    set_affinity(args->thread_id);
+    
     if (!args->tuples || !args->partition_buffers)
         return NULL;
     double start = get_time_in_seconds();
     for (int i = args->tuples_index; i < args->tuples_length; i++) {
-        int partition_id = hash_to_partition((unsigned char *)&args->tuples[i].key, args->partition_count);
+        int partition_id = hash_to_partition(args->tuples[i].key, args->partition_count);
         int idx = args->partition_sizes[partition_id];
-        if (idx > args->estimated_per_partition) {
+        if (idx >= args->estimated_per_partition) {
             fprintf(stderr, "Thread %d: Partition %d overflow (idx=%d, cap=%d)\n",
                     args->thread_id, partition_id, idx, args->estimated_per_partition);
             continue;
@@ -40,7 +47,6 @@ void *write_independent_output(void *void_args) {
     }
     double end = get_time_in_seconds();
     args->thread_time = end - start;
-    //printf("Independent thread %d finished\n", args->thread_id);
     return NULL;
 }
 
@@ -50,7 +56,6 @@ int run_independent_timed(tuple_t *tuples, int tuple_count, int thread_count, in
     if (!tuples)
         return -1;
     int partition_count = 1 << hash_bits;
-    // Compute effective capacity for this run based on current hb.
     int effective_capacity = (tuple_count / (1 << hash_bits)) * PARTITION_MULTIPLIER;
     if (effective_capacity > global_capacity)
         effective_capacity = global_capacity;
@@ -58,6 +63,7 @@ int run_independent_timed(tuple_t *tuples, int tuple_count, int thread_count, in
     thread_args_t args[thread_count];
     int base_segment_size = tuple_count / thread_count;
     double overall_throughput = 0.0;
+    
     int used_partitions = thread_count * partition_count;
     for (int i = 0; i < used_partitions; i++) {
         global_partition_sizes[i] = 0;
@@ -71,7 +77,6 @@ int run_independent_timed(tuple_t *tuples, int tuple_count, int thread_count, in
         args[i].tuples_length = end_index;
         args[i].partition_count = partition_count;
         args[i].estimated_per_partition = effective_capacity;
-        // Each thread gets its slice of the global independent arrays.
         args[i].partition_buffers = global_partition_buffers + (i * partition_count);
         args[i].partition_sizes = global_partition_sizes + (i * partition_count);
         if (pthread_create(&threads[i], NULL, write_independent_output, &args[i]) != 0) {
