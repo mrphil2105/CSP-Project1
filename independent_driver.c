@@ -12,6 +12,13 @@ int min_hash_bits = 1;
 int max_hash_bits = 18;
 
 int main(int argc, char *argv[]) {
+     // Check for the PREFIX environment variable.
+     const char *prefix = getenv("PREFIX");
+     if (prefix == NULL) {
+         fprintf(stderr, "PREFIX environment variable not set\n");
+         return -1;
+     }
+
     int num_thread_options = sizeof(thread_options) / sizeof(thread_options[0]);
 
     // Generate tuples.

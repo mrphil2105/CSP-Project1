@@ -6,13 +6,22 @@
 #include "tuples.h"  // Use the generate_tuples from tuples.h
 
 #define TUPLE_COUNT (1 << 24)  // ~16 million tuples
-#define NUM_RUNS 5
+
+
 
 int thread_options[] = {1, 2, 4, 8, 16, 32};
 int min_hash_bits = 1;
 int max_hash_bits = 18;
 
 int main(int argc, char *argv[]) {
+    // Check for the PREFIX environment variable.
+    const char *prefix = getenv("PREFIX");
+    if (prefix == NULL) {
+        fprintf(stderr, "PREFIX environment variable not set\n");
+        return -1;
+    }
+
+
     int num_thread_options = sizeof(thread_options) / sizeof(thread_options[0]);
 
     // Generate tuples.
@@ -61,13 +70,6 @@ int main(int argc, char *argv[]) {
                 continue;
             }
             conc_results[t_idx][hb - min_hash_bits] += throughput;
-        }
-    }
-
-    // Average the results over runs.
-    for (int i = 0; i < num_thread_options; i++) {
-        for (int j = 0; j < max_hash_bits - min_hash_bits + 1; j++) {
-            conc_results[i][j] /= NUM_RUNS;
         }
     }
 
