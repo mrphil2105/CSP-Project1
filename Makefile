@@ -60,33 +60,27 @@ all: $(BUILD_DIR) independent_no_affinity independent_cpu_aff independent_numa c
 
 run_indep_default: $(RESULTS_DIR)
 	@echo "Running independent_no_affinity"
-	PREFIX = "indep_default_$(date +"%d_%m_%H%M%S")"
-	perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/independent_no_affinity | tee $(RESULTS_DIR)/independent_no_affinity_$(shell date +"%d_%m_%H%M%S").txt
+	env PREFIX="indep_default_$(shell date +"%d_%m_%H%M%S")" perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/independent_no_affinity | tee $(RESULTS_DIR)/independent_no_affinity_$(shell date +"%d_%m_%H%M%S").txt
 
 run_indep_cpu: $(RESULTS_DIR)
 	@echo "Running independent_cpu_aff"
-	PREFIX = "indep_cpu_$(date +"%d_%m_%H%M%S")"
-	perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/independent_cpu_aff | tee $(RESULTS_DIR)/independent_cpu_aff_$(shell date +"%d_%m_%H%M%S").txt
+	env PREFIX="indep_cpu_$(shell date +"%d_%m_%H%M%S")" perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/independent_cpu_aff | tee $(RESULTS_DIR)/independent_cpu_aff_$(shell date +"%d_%m_%H%M%S").txt
 
 run_indep_numa: $(RESULTS_DIR)
 	@echo "Running independent_numa"
-	PREFIX = "indep_numa_$(date +"%d_%m_%H%M%S")"
-	perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/independent_numa | tee $(RESULTS_DIR)/independent_numa_$(shell date +"%d_%m_%H%M%S").txt
+	env PREFIX="indep_numa_$(shell date +"%d_%m_%H%M%S")" perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/independent_numa | tee $(RESULTS_DIR)/independent_numa_$(shell date +"%d_%m_%H%M%S").txt
 
 run_conc_default: $(RESULTS_DIR)
 	@echo "Running concurrent_no_affinity"
-	PREFIX = "conc_default_$(date +"%d_%m_%H%M%S")"
-	perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/concurrent_no_affinity | tee $(RESULTS_DIR)/concurrent_no_affinity_$(shell date +"%d_%m_%H%M%S").txt
+	env PREFIX="conc_default_$(shell date +"%d_%m_%H%M%S")" perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/concurrent_no_affinity | tee $(RESULTS_DIR)/concurrent_no_affinity_$(shell date +"%d_%m_%H%M%S").txt
 
 run_conc_cpu: $(RESULTS_DIR)
 	@echo "Running concurrent_cpu_aff"
-	PREFIX = "conc_cpu_$(date +"%d_%m_%H%M%S")"
-	perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/concurrent_cpu_aff | tee $(RESULTS_DIR)/concurrent_cpu_aff_$(shell date +"%d_%m_%H%M%S").txt
+	env PREFIX="conc_cpu_$(shell date +"%d_%m_%H%M%S")" perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/concurrent_cpu_aff | tee $(RESULTS_DIR)/concurrent_cpu_aff_$(shell date +"%d_%m_%H%M%S").txt
 
 run_conc_numa: $(RESULTS_DIR)
 	@echo "Running concurrent_numa"
-	PREFIX = "conc_numa_$(date +"%d_%m_%H%M%S")"
-	perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/concurrent_numa | tee $(RESULTS_DIR)/concurrent_numa_$(shell date +"%d_%m_%H%M%S").txt
+	env PREFIX="conc_numa_$(shell date +"%d_%m_%H%M%S")" perf stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/concurrent_numa | tee $(RESULTS_DIR)/concurrent_numa_$(shell date +"%d_%m_%H%M%S").txt
 
 clean:
 	rm -rf $(BUILD_DIR) $(RESULTS_DIR)
