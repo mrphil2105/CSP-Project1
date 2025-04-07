@@ -7,4 +7,4 @@ int run_independent_timed(tuple_t *tuples, int tuple_count, int thread_count, in
                           tuple_t **global_partition_buffers, int *global_partition_sizes,
                           int global_capacity, double *throughput);
 
-#endif // INDEPENDENT_H
+#endif
