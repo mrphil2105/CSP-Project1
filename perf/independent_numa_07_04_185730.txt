@@ -1,0 +1,12 @@
+
+ Performance counter stats for './build/independent_numa' (5 runs):
+
+   362,096,232,295      cpu-cycles                                                              ( +-  0.28% )
+     1,582,047,144      cache-misses                                                            ( +-  0.48% )
+         4,323,404      page-faults                                                             ( +-  0.00% )
+             2,128      cpu-migrations                                                          ( +-  0.93% )
+        59,006,069      dTLB-load-misses                                                        ( +-  0.43% )
+            13,182      context-switches                                                        ( +-  0.79% )
+
+           32.2994 +- 0.0837 seconds time elapsed  ( +-  0.26% )
+

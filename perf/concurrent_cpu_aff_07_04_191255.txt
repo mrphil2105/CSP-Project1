@@ -1,0 +1,12 @@
+
+ Performance counter stats for './build/concurrent_cpu_aff' (5 runs):
+
+ 2,868,245,811,669      cpu-cycles                                                              ( +-  0.43% )
+    10,270,687,224      cache-misses                                                            ( +-  0.63% )
+         4,314,329      page-faults                                                             ( +-  2.51% )
+             2,482      cpu-migrations                                                          ( +-  1.42% )
+       738,784,076      dTLB-load-misses                                                        ( +-  1.45% )
+        22,443,866      context-switches                                                        ( +-  1.08% )
+
+           172.705 +- 0.462 seconds time elapsed  ( +-  0.27% )
+
