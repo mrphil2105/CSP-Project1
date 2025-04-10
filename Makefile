@@ -30,7 +30,9 @@ REPEAT = 5
 EVENTS = cpu-cycles,cache-misses,page-faults,cpu-migrations,dTLB-load-misses,context-switches
 PERF ?= /usr/bin/perf
 
-# Build Targets for Independent.
+# -----------------------
+# Build Targets for Independent Variants.
+# -----------------------
 INDEP_SRCS = independent.c independent_driver.c $(SRCS)
 
 independent_no_affinity: $(BUILD_DIR) $(INDEP_SRCS) $(HEADERS) independent.h
@@ -42,7 +44,9 @@ independent_cpu_aff: $(BUILD_DIR) $(INDEP_SRCS) $(HEADERS) independent.h affinit
 independent_numa: $(BUILD_DIR) $(INDEP_SRCS) $(HEADERS) independent.h affinity.h
 	$(CC) $(CFLAGS) -DNUMA_BINDING -o $(BUILD_DIR)/independent_numa $(INDEP_SRCS) -lnuma $(LDFLAGS)
 
-# Build Targets for Concurrent.
+# -----------------------
+# Build Targets for Concurrent Variants.
+# -----------------------
 CONC_SRCS = concurrent.c concurrent_driver.c $(SRCS)
 
 concurrent_no_affinity: $(BUILD_DIR) $(CONC_SRCS) $(HEADERS) concurrent.h
@@ -57,8 +61,13 @@ concurrent_numa: $(BUILD_DIR) $(CONC_SRCS) $(HEADERS) concurrent.h affinity.h
 # Build All.
 all: $(BUILD_DIR) independent_no_affinity independent_cpu_aff independent_numa concurrent_no_affinity concurrent_cpu_aff concurrent_numa
 
+# -----------------------
 # Macro for Aggregated Run Targets (one parameter).
+# This macro now runs the target binary through perf so that perf's output is captured.
+# -----------------------
 define RUN_TARGET
+	@mkdir -p $(RESULTS_DIR)
+	@mkdir -p $(PERF_DIR)
 	@echo "Running $(1) experiments..."
 	@result_file="$(RESULTS_DIR)/$(1)_results.txt"; \
 	perf_file="$(PERF_DIR)/$(1)_perf.txt"; \
@@ -66,8 +75,8 @@ define RUN_TARGET
 	echo "===== $(1) experiments (run at $$(date)) =====" > $$perf_file; \
 	for t in $(THREADS); do \
 	  for hb in $(HASHBITS); do \
-	    echo ">>> Perf: $(1) $$t Threads and $$hb hashbits $$(date)" | tee -a $$perf_file; \
-	    ./$(BUILD_DIR)/$(1) $$t $$hb 1> tmp_out.txt 2> tmp_err.txt; \
+	    echo ">>> Running $(1) with $$t threads and $$hb hashbits at $$(date)" | tee -a $$perf_file; \
+	    $(PERF) stat -e $(EVENTS) --repeat=$(REPEAT) ./$(BUILD_DIR)/$(1) $$t $$hb 1> tmp_out.txt 2> tmp_err.txt; \
 	    cat tmp_out.txt >> $$result_file; \
 	    echo "----" >> $$perf_file; \
 	    cat tmp_err.txt >> $$perf_file; \
@@ -77,7 +86,9 @@ define RUN_TARGET
 	rm -f tmp_out.txt tmp_err.txt
 endef
 
-# Run Targets for Independent.
+# -----------------------
+# Aggregated Run Targets for Independent Variants.
+# -----------------------
 .PHONY: run_indep_default
 run_indep_default:
 	$(call RUN_TARGET,independent_no_affinity)
@@ -90,7 +101,9 @@ run_indep_cpu:
 run_indep_numa:
 	$(call RUN_TARGET,independent_numa)
 
-# Run Targets for Concurrent.
+# -----------------------
+# Aggregated Run Targets for Concurrent Variants.
+# -----------------------
 .PHONY: run_conc_default
 run_conc_default:
 	$(call RUN_TARGET,concurrent_no_affinity)
@@ -103,12 +116,16 @@ run_conc_cpu:
 run_conc_numa:
 	$(call RUN_TARGET,concurrent_numa)
 
+# -----------------------
 # Master Run Target.
+# -----------------------
 .PHONY: run_all
 run_all: run_indep_default run_indep_cpu run_indep_numa run_conc_default run_conc_cpu run_conc_numa
 	@echo "All experiments completed!"
 
+# -----------------------
 # Cleanup.
+# -----------------------
 .PHONY: clean
 clean:
 	rm -rf $(BUILD_DIR) $(RESULTS_DIR) $(PERF_DIR)
