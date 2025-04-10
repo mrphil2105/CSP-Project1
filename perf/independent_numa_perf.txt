@@ -1,0 +1,1621 @@
+===== independent_numa experiments (run at Wed  9 Apr 21:14:59 CEST 2025) =====
+>>> Running independent_numa with 1 threads and 1 hashbits at Wed  9 Apr 21:14:59 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 1' (5 runs):
+
+     3,830,008,799      cpu-cycles                                                              ( +-  0.19% )
+         5,852,556      cache-misses                                                            ( +-  0.51% )
+           131,155      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           188,837      dTLB-load-misses                                                        ( +-  1.91% )
+                 8      context-switches                                                        ( +-  2.50% )
+
+           1.93803 +- 0.00365 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_numa with 1 threads and 2 hashbits at Wed  9 Apr 21:15:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 2' (5 runs):
+
+     3,845,129,695      cpu-cycles                                                              ( +-  0.18% )
+         5,909,119      cache-misses                                                            ( +-  0.46% )
+           131,156      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           188,561      dTLB-load-misses                                                        ( +-  2.09% )
+                 7      context-switches                                                        ( +- 11.61% )
+
+           1.93929 +- 0.00345 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_numa with 1 threads and 3 hashbits at Wed  9 Apr 21:15:18 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 3' (5 runs):
+
+     3,832,619,203      cpu-cycles                                                              ( +-  0.06% )
+         5,845,653      cache-misses                                                            ( +-  0.29% )
+           131,159      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           178,675      dTLB-load-misses                                                        ( +-  4.12% )
+                 7      context-switches                                                        ( +-  5.71% )
+
+           1.93871 +- 0.00143 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running independent_numa with 1 threads and 4 hashbits at Wed  9 Apr 21:15:28 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 4' (5 runs):
+
+     3,836,136,207      cpu-cycles                                                              ( +-  0.05% )
+         5,837,881      cache-misses                                                            ( +-  0.26% )
+           131,163      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           202,944      dTLB-load-misses                                                        ( +-  1.94% )
+                 9      context-switches                                                        ( +- 15.32% )
+
+          1.941941 +- 0.000949 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_numa with 1 threads and 5 hashbits at Wed  9 Apr 21:15:38 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 5' (5 runs):
+
+     3,881,426,515      cpu-cycles                                                              ( +-  0.05% )
+         5,710,776      cache-misses                                                            ( +-  0.68% )
+           131,172      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           228,486      dTLB-load-misses                                                        ( +-  2.48% )
+                 8      context-switches                                                        ( +- 14.03% )
+
+          1.965079 +- 0.000860 seconds time elapsed  ( +-  0.04% )
+
+
+>>> Running independent_numa with 1 threads and 6 hashbits at Wed  9 Apr 21:15:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 6' (5 runs):
+
+     3,941,351,237      cpu-cycles                                                              ( +-  0.17% )
+         5,316,505      cache-misses                                                            ( +-  0.19% )
+           131,185      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 40.00% )
+           226,455      dTLB-load-misses                                                        ( +-  0.70% )
+                 8      context-switches                                                        ( +-  2.50% )
+
+           1.99545 +- 0.00316 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_numa with 1 threads and 7 hashbits at Wed  9 Apr 21:15:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 7' (5 runs):
+
+     3,904,184,000      cpu-cycles                                                              ( +-  0.34% )
+         5,352,205      cache-misses                                                            ( +-  0.59% )
+           131,221      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           212,327      dTLB-load-misses                                                        ( +-  1.90% )
+                 8      context-switches                                                        ( +-  7.91% )
+
+           1.97531 +- 0.00511 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running independent_numa with 1 threads and 8 hashbits at Wed  9 Apr 21:16:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 8' (5 runs):
+
+     3,912,676,726      cpu-cycles                                                              ( +-  0.34% )
+         5,493,222      cache-misses                                                            ( +-  0.80% )
+           131,282      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           230,978      dTLB-load-misses                                                        ( +-  1.51% )
+                 9      context-switches                                                        ( +- 14.49% )
+
+           1.97713 +- 0.00575 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_numa with 1 threads and 9 hashbits at Wed  9 Apr 21:16:18 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 9' (5 runs):
+
+     3,901,665,071      cpu-cycles                                                              ( +-  0.04% )
+         5,666,688      cache-misses                                                            ( +-  0.39% )
+           131,409      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           280,481      dTLB-load-misses                                                        ( +- 16.70% )
+                 7      context-switches                                                        ( +- 13.85% )
+
+           1.97111 +- 0.00164 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_numa with 1 threads and 10 hashbits at Wed  9 Apr 21:16:28 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 10' (5 runs):
+
+     3,928,085,182      cpu-cycles                                                              ( +-  0.28% )
+         6,188,660      cache-misses                                                            ( +-  0.44% )
+           131,671      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           276,223      dTLB-load-misses                                                        ( +-  1.64% )
+                 8      context-switches                                                        ( +- 13.11% )
+
+           1.98655 +- 0.00615 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_numa with 1 threads and 11 hashbits at Wed  9 Apr 21:16:38 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 11' (5 runs):
+
+     4,073,808,413      cpu-cycles                                                              ( +-  0.32% )
+         7,282,370      cache-misses                                                            ( +-  0.37% )
+           132,189      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           353,779      dTLB-load-misses                                                        ( +-  2.92% )
+                 7      context-switches                                                        ( +-  8.57% )
+
+           2.05835 +- 0.00673 seconds time elapsed  ( +-  0.33% )
+
+
+>>> Running independent_numa with 1 threads and 12 hashbits at Wed  9 Apr 21:16:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 12' (5 runs):
+
+     4,270,912,562      cpu-cycles                                                              ( +-  0.36% )
+         9,099,473      cache-misses                                                            ( +-  0.16% )
+           133,211      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 37.42% )
+           443,313      dTLB-load-misses                                                        ( +-  3.32% )
+                 7      context-switches                                                        ( +- 11.61% )
+
+           2.15989 +- 0.00763 seconds time elapsed  ( +-  0.35% )
+
+
+>>> Running independent_numa with 1 threads and 13 hashbits at Wed  9 Apr 21:16:59 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 13' (5 runs):
+
+     4,357,066,624      cpu-cycles                                                              ( +-  0.32% )
+        10,138,578      cache-misses                                                            ( +-  0.05% )
+           135,278      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           430,393      dTLB-load-misses                                                        ( +-  2.90% )
+                 9      context-switches                                                        ( +-  4.16% )
+
+           2.20128 +- 0.00713 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running independent_numa with 1 threads and 14 hashbits at Wed  9 Apr 21:17:10 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 14' (5 runs):
+
+     4,480,783,480      cpu-cycles                                                              ( +-  0.07% )
+        11,618,794      cache-misses                                                            ( +-  0.32% )
+           139,469      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           443,296      dTLB-load-misses                                                        ( +-  0.93% )
+                 7      context-switches                                                        ( +- 18.41% )
+
+           2.26501 +- 0.00131 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running independent_numa with 1 threads and 15 hashbits at Wed  9 Apr 21:17:21 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 15' (5 runs):
+
+     4,804,724,126      cpu-cycles                                                              ( +-  0.14% )
+        14,930,195      cache-misses                                                            ( +-  0.14% )
+           147,837      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           407,540      dTLB-load-misses                                                        ( +-  0.74% )
+                 7      context-switches                                                        ( +-  9.69% )
+
+           2.42754 +- 0.00337 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_numa with 1 threads and 16 hashbits at Wed  9 Apr 21:17:34 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 16' (5 runs):
+
+     5,259,617,707      cpu-cycles                                                              ( +-  0.12% )
+        18,966,638      cache-misses                                                            ( +-  0.15% )
+           195,647      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+           480,552      dTLB-load-misses                                                        ( +-  1.10% )
+                 8      context-switches                                                        ( +-  8.48% )
+
+           2.65163 +- 0.00147 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running independent_numa with 1 threads and 17 hashbits at Wed  9 Apr 21:17:47 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 17' (5 runs):
+
+     5,994,128,285      cpu-cycles                                                              ( +-  0.25% )
+        21,821,973      cache-misses                                                            ( +-  0.15% )
+           260,573      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+         1,242,121      dTLB-load-misses                                                        ( +-  0.67% )
+                 7      context-switches                                                        ( +- 13.85% )
+
+           3.02135 +- 0.00814 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running independent_numa with 1 threads and 18 hashbits at Wed  9 Apr 21:18:02 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 1 18' (5 runs):
+
+     6,728,087,794      cpu-cycles                                                              ( +-  0.28% )
+        22,778,887      cache-misses                                                            ( +-  0.20% )
+           260,958      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+         5,265,916      dTLB-load-misses                                                        ( +-  0.39% )
+                 8      context-switches                                                        ( +-  5.59% )
+
+           3.39120 +- 0.00983 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_numa with 2 threads and 1 hashbits at Wed  9 Apr 21:18:19 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 1' (5 runs):
+
+     4,603,847,107      cpu-cycles                                                              ( +-  0.25% )
+        10,197,429      cache-misses                                                            ( +-  0.53% )
+           131,162      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           205,518      dTLB-load-misses                                                        ( +-  0.77% )
+                12      context-switches                                                        ( +-  8.16% )
+
+           1.90463 +- 0.00363 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_numa with 2 threads and 2 hashbits at Wed  9 Apr 21:18:29 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 2' (5 runs):
+
+     4,681,111,368      cpu-cycles                                                              ( +-  0.22% )
+        12,487,631      cache-misses                                                            ( +-  8.66% )
+           131,164      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           204,434      dTLB-load-misses                                                        ( +-  2.12% )
+                14      context-switches                                                        ( +- 10.10% )
+
+           1.92286 +- 0.00266 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_numa with 2 threads and 3 hashbits at Wed  9 Apr 21:18:39 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 3' (5 runs):
+
+     4,839,476,649      cpu-cycles                                                              ( +-  0.52% )
+        13,254,042      cache-misses                                                            ( +- 13.41% )
+           131,169      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           207,559      dTLB-load-misses                                                        ( +-  1.07% )
+                12      context-switches                                                        ( +- 10.74% )
+
+           1.95962 +- 0.00429 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_numa with 2 threads and 4 hashbits at Wed  9 Apr 21:18:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 4' (5 runs):
+
+     4,675,356,918      cpu-cycles                                                              ( +-  0.34% )
+        16,302,377      cache-misses                                                            ( +-  4.02% )
+           131,176      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 50.99% )
+           262,813      dTLB-load-misses                                                        ( +- 23.30% )
+                12      context-switches                                                        ( +- 10.07% )
+
+           1.92005 +- 0.00405 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_numa with 2 threads and 5 hashbits at Wed  9 Apr 21:18:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 5' (5 runs):
+
+     4,253,315,893      cpu-cycles                                                              ( +-  0.06% )
+         8,952,332      cache-misses                                                            ( +-  3.90% )
+           131,190      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 60.00% )
+           218,369      dTLB-load-misses                                                        ( +-  1.45% )
+                12      context-switches                                                        ( +- 10.07% )
+
+          1.826207 +- 0.000847 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_numa with 2 threads and 6 hashbits at Wed  9 Apr 21:19:07 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 6' (5 runs):
+
+     4,092,375,397      cpu-cycles                                                              ( +-  0.10% )
+         6,519,298      cache-misses                                                            ( +-  0.28% )
+           131,225      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           215,017      dTLB-load-misses                                                        ( +-  1.19% )
+                10      context-switches                                                        ( +- 10.20% )
+
+           1.77764 +- 0.00113 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running independent_numa with 2 threads and 7 hashbits at Wed  9 Apr 21:19:16 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 7' (5 runs):
+
+     4,095,744,740      cpu-cycles                                                              ( +-  0.14% )
+         6,437,383      cache-misses                                                            ( +-  0.56% )
+           131,292      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 40.00% )
+           263,108      dTLB-load-misses                                                        ( +-  5.29% )
+                12      context-switches                                                        ( +- 13.79% )
+
+           1.77616 +- 0.00365 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_numa with 2 threads and 8 hashbits at Wed  9 Apr 21:19:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 8' (5 runs):
+
+     4,005,126,676      cpu-cycles                                                              ( +-  0.10% )
+         5,904,447      cache-misses                                                            ( +-  0.31% )
+           131,415      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           242,011      dTLB-load-misses                                                        ( +-  1.10% )
+                12      context-switches                                                        ( +- 10.34% )
+
+           1.74727 +- 0.00219 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_numa with 2 threads and 9 hashbits at Wed  9 Apr 21:19:34 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 9' (5 runs):
+
+     4,002,740,851      cpu-cycles                                                              ( +-  0.20% )
+         6,047,876      cache-misses                                                            ( +-  0.23% )
+           131,677      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           249,101      dTLB-load-misses                                                        ( +-  0.93% )
+                13      context-switches                                                        ( +-  6.62% )
+
+           1.75298 +- 0.00473 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running independent_numa with 2 threads and 10 hashbits at Wed  9 Apr 21:19:43 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 10' (5 runs):
+
+     3,996,226,743      cpu-cycles                                                              ( +-  0.11% )
+         6,475,803      cache-misses                                                            ( +-  0.24% )
+           132,200      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           262,818      dTLB-load-misses                                                        ( +-  2.29% )
+                 9      context-switches                                                        ( +- 11.44% )
+
+           1.74881 +- 0.00334 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_numa with 2 threads and 11 hashbits at Wed  9 Apr 21:19:52 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 11' (5 runs):
+
+     4,128,674,846      cpu-cycles                                                              ( +-  0.07% )
+         7,566,819      cache-misses                                                            ( +-  0.10% )
+           133,230      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           362,125      dTLB-load-misses                                                        ( +-  2.15% )
+                11      context-switches                                                        ( +-  8.13% )
+
+           1.78347 +- 0.00152 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_numa with 2 threads and 12 hashbits at Wed  9 Apr 21:20:01 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 12' (5 runs):
+
+     4,292,038,479      cpu-cycles                                                              ( +-  0.06% )
+         9,619,475      cache-misses                                                            ( +-  0.15% )
+           135,298      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           382,973      dTLB-load-misses                                                        ( +-  0.81% )
+                10      context-switches                                                        ( +-  8.00% )
+
+           1.82243 +- 0.00209 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_numa with 2 threads and 13 hashbits at Wed  9 Apr 21:20:10 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 13' (5 runs):
+
+     4,433,534,702      cpu-cycles                                                              ( +-  0.04% )
+        10,761,054      cache-misses                                                            ( +-  0.25% )
+           139,488      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 91.65% )
+           384,434      dTLB-load-misses                                                        ( +-  1.20% )
+                11      context-switches                                                        ( +-  8.43% )
+
+          1.861502 +- 0.000735 seconds time elapsed  ( +-  0.04% )
+
+
+>>> Running independent_numa with 2 threads and 14 hashbits at Wed  9 Apr 21:20:19 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 14' (5 runs):
+
+     4,657,987,374      cpu-cycles                                                              ( +-  0.11% )
+        12,818,756      cache-misses                                                            ( +-  0.14% )
+           147,855      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           437,407      dTLB-load-misses                                                        ( +-  0.74% )
+                10      context-switches                                                        ( +- 10.49% )
+
+          1.920180 +- 0.000587 seconds time elapsed  ( +-  0.03% )
+
+
+>>> Running independent_numa with 2 threads and 15 hashbits at Wed  9 Apr 21:20:29 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 15' (5 runs):
+
+     5,006,621,289      cpu-cycles                                                              ( +-  0.10% )
+        16,894,844      cache-misses                                                            ( +-  0.26% )
+           164,624      page-faults                                                             ( +-  0.03% )
+                 1      cpu-migrations                                                          ( +- 63.25% )
+           413,926      dTLB-load-misses                                                        ( +-  2.28% )
+                13      context-switches                                                        ( +- 12.73% )
+
+           2.01143 +- 0.00213 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_numa with 2 threads and 16 hashbits at Wed  9 Apr 21:20:39 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 16' (5 runs):
+
+     5,523,776,321      cpu-cycles                                                              ( +-  0.38% )
+        20,659,149      cache-misses                                                            ( +-  0.08% )
+           197,082      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           459,102      dTLB-load-misses                                                        ( +-  0.55% )
+                12      context-switches                                                        ( +-  7.73% )
+
+           2.15548 +- 0.00674 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_numa with 2 threads and 17 hashbits at Wed  9 Apr 21:20:50 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 17' (5 runs):
+
+     7,086,037,108      cpu-cycles                                                              ( +-  0.39% )
+        24,490,847      cache-misses                                                            ( +-  0.11% )
+           328,830      page-faults                                                             ( +-  0.07% )
+                 0      cpu-migrations                                                        
+         1,444,681      dTLB-load-misses                                                        ( +-  0.46% )
+                14      context-switches                                                        ( +-  5.35% )
+
+           2.58512 +- 0.00678 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running independent_numa with 2 threads and 18 hashbits at Wed  9 Apr 21:21:03 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 2 18' (5 runs):
+
+     8,126,367,851      cpu-cycles                                                              ( +-  0.13% )
+        25,928,877      cache-misses                                                            ( +-  0.61% )
+           391,019      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+         5,710,560      dTLB-load-misses                                                        ( +-  0.28% )
+                13      context-switches                                                        ( +-  9.10% )
+
+           2.90109 +- 0.00561 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_numa with 4 threads and 1 hashbits at Wed  9 Apr 21:21:18 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 1' (5 runs):
+
+     5,980,183,478      cpu-cycles                                                              ( +-  0.63% )
+        16,319,303      cache-misses                                                            ( +-  6.64% )
+           131,170      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 47.43% )
+           250,956      dTLB-load-misses                                                        ( +-  8.66% )
+                25      context-switches                                                        ( +-  5.85% )
+
+           1.89661 +- 0.00698 seconds time elapsed  ( +-  0.37% )
+
+
+>>> Running independent_numa with 4 threads and 2 hashbits at Wed  9 Apr 21:21:27 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 2' (5 runs):
+
+     5,584,233,544      cpu-cycles                                                              ( +-  0.68% )
+        11,565,012      cache-misses                                                            ( +-  6.02% )
+           131,174      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 29.06% )
+           216,845      dTLB-load-misses                                                        ( +-  1.28% )
+                28      context-switches                                                        ( +-  2.90% )
+
+           1.87045 +- 0.00361 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_numa with 4 threads and 3 hashbits at Wed  9 Apr 21:21:37 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 3' (5 runs):
+
+     6,750,443,502      cpu-cycles                                                              ( +-  0.44% )
+        29,620,658      cache-misses                                                            ( +-  3.02% )
+           131,182      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 34.32% )
+           232,828      dTLB-load-misses                                                        ( +-  3.28% )
+                30      context-switches                                                        ( +-  7.56% )
+
+           1.97035 +- 0.00450 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running independent_numa with 4 threads and 4 hashbits at Wed  9 Apr 21:21:47 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 4' (5 runs):
+
+     4,939,089,732      cpu-cycles                                                              ( +-  0.33% )
+        13,076,170      cache-misses                                                            ( +-  5.38% )
+           131,198      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +-  8.16% )
+           227,930      dTLB-load-misses                                                        ( +-  1.79% )
+                30      context-switches                                                        ( +-  4.35% )
+
+           1.76789 +- 0.00388 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_numa with 4 threads and 5 hashbits at Wed  9 Apr 21:21:56 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 5' (5 runs):
+
+     4,574,433,745      cpu-cycles                                                              ( +-  0.15% )
+        11,716,598      cache-misses                                                            ( +-  2.69% )
+           131,230      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 43.01% )
+           216,934      dTLB-load-misses                                                        ( +-  1.72% )
+                26      context-switches                                                        ( +-  8.37% )
+
+           1.70268 +- 0.00334 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_numa with 4 threads and 6 hashbits at Wed  9 Apr 21:22:04 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 6' (5 runs):
+
+     4,410,195,990      cpu-cycles                                                              ( +-  0.32% )
+        11,787,624      cache-misses                                                            ( +-  2.81% )
+           131,299      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 48.48% )
+           239,368      dTLB-load-misses                                                        ( +-  2.55% )
+                28      context-switches                                                        ( +-  6.83% )
+
+           1.67531 +- 0.00315 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_numa with 4 threads and 7 hashbits at Wed  9 Apr 21:22:13 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 7' (5 runs):
+
+     4,069,917,924      cpu-cycles                                                              ( +-  0.08% )
+         6,323,167      cache-misses                                                            ( +-  0.23% )
+           131,424      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 24.49% )
+           222,176      dTLB-load-misses                                                        ( +-  0.59% )
+                26      context-switches                                                        ( +-  1.96% )
+
+           1.62905 +- 0.00329 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_numa with 4 threads and 8 hashbits at Wed  9 Apr 21:22:21 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 8' (5 runs):
+
+     4,032,301,001      cpu-cycles                                                              ( +-  0.16% )
+         6,228,908      cache-misses                                                            ( +-  0.22% )
+           131,688      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 24.49% )
+           238,775      dTLB-load-misses                                                        ( +-  0.74% )
+                25      context-switches                                                        ( +-  5.15% )
+
+           1.63163 +- 0.00480 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_numa with 4 threads and 9 hashbits at Wed  9 Apr 21:22:29 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 9' (5 runs):
+
+     4,003,109,228      cpu-cycles                                                              ( +-  0.07% )
+         6,602,414      cache-misses                                                            ( +-  0.27% )
+           132,196      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 37.42% )
+           245,735      dTLB-load-misses                                                        ( +-  1.01% )
+                25      context-switches                                                        ( +-  5.85% )
+
+           1.62685 +- 0.00252 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_numa with 4 threads and 10 hashbits at Wed  9 Apr 21:22:37 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 10' (5 runs):
+
+     4,032,222,335      cpu-cycles                                                              ( +-  0.06% )
+         7,523,795      cache-misses                                                            ( +-  0.24% )
+           133,208      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 18.37% )
+           275,994      dTLB-load-misses                                                        ( +-  1.31% )
+                28      context-switches                                                        ( +-  2.77% )
+
+          1.617422 +- 0.000728 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_numa with 4 threads and 11 hashbits at Wed  9 Apr 21:22:46 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 11' (5 runs):
+
+     4,174,091,161      cpu-cycles                                                              ( +-  0.08% )
+         8,872,033      cache-misses                                                            ( +-  0.24% )
+           135,317      page-faults                                                             ( +-  0.01% )
+                 3      cpu-migrations                                                          ( +- 29.81% )
+           353,638      dTLB-load-misses                                                        ( +-  0.59% )
+                26      context-switches                                                        ( +-  8.99% )
+
+           1.64070 +- 0.00632 seconds time elapsed  ( +-  0.38% )
+
+
+>>> Running independent_numa with 4 threads and 12 hashbits at Wed  9 Apr 21:22:54 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 12' (5 runs):
+
+     4,368,715,988      cpu-cycles                                                              ( +-  0.11% )
+        10,529,813      cache-misses                                                            ( +-  0.16% )
+           139,471      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           424,045      dTLB-load-misses                                                        ( +-  9.11% )
+                30      context-switches                                                        ( +-  4.64% )
+
+           1.67800 +- 0.00164 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_numa with 4 threads and 13 hashbits at Wed  9 Apr 21:23:02 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 13' (5 runs):
+
+     4,596,189,025      cpu-cycles                                                              ( +-  0.37% )
+        12,044,082      cache-misses                                                            ( +-  0.95% )
+           147,797      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 48.99% )
+           382,798      dTLB-load-misses                                                        ( +-  0.74% )
+                26      context-switches                                                        ( +- 10.49% )
+
+           1.70070 +- 0.00214 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_numa with 4 threads and 14 hashbits at Wed  9 Apr 21:23:11 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 14' (5 runs):
+
+     5,037,910,109      cpu-cycles                                                              ( +-  0.34% )
+        16,373,031      cache-misses                                                            ( +-  0.73% )
+           164,599      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                          ( +- 40.00% )
+           448,917      dTLB-load-misses                                                        ( +-  2.09% )
+                26      context-switches                                                        ( +-  9.68% )
+
+           1.76825 +- 0.00318 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_numa with 4 threads and 15 hashbits at Wed  9 Apr 21:23:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 15' (5 runs):
+
+     5,720,186,659      cpu-cycles                                                              ( +-  0.78% )
+        20,873,670      cache-misses                                                            ( +-  0.35% )
+           197,088      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 16.33% )
+           601,894      dTLB-load-misses                                                        ( +- 18.27% )
+                27      context-switches                                                        ( +-  8.00% )
+
+           1.86672 +- 0.00333 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_numa with 4 threads and 16 hashbits at Wed  9 Apr 21:23:29 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 16' (5 runs):
+
+     7,442,957,673      cpu-cycles                                                              ( +-  0.23% )
+        24,917,948      cache-misses                                                            ( +-  0.27% )
+           328,544      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 32.66% )
+           765,376      dTLB-load-misses                                                        ( +-  0.87% )
+                32      context-switches                                                        ( +-  3.88% )
+
+           2.14671 +- 0.00426 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_numa with 4 threads and 17 hashbits at Wed  9 Apr 21:23:40 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 17' (5 runs):
+
+    10,678,323,528      cpu-cycles                                                              ( +-  0.08% )
+        30,917,750      cache-misses                                                            ( +-  0.22% )
+           591,456      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 37.42% )
+         2,049,848      dTLB-load-misses                                                        ( +-  0.58% )
+                32      context-switches                                                        ( +-  7.88% )
+
+           2.66191 +- 0.00353 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_numa with 4 threads and 18 hashbits at Wed  9 Apr 21:23:53 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 4 18' (5 runs):
+
+    10,938,707,948      cpu-cycles                                                              ( +-  0.22% )
+        34,074,978      cache-misses                                                            ( +-  1.07% )
+           592,992      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 18.37% )
+         6,209,400      dTLB-load-misses                                                        ( +-  0.51% )
+                32      context-switches                                                        ( +-  7.63% )
+
+           2.70754 +- 0.00413 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_numa with 8 threads and 1 hashbits at Wed  9 Apr 21:24:07 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 1' (5 runs):
+
+     5,890,282,107      cpu-cycles                                                              ( +-  0.62% )
+         9,314,685      cache-misses                                                            ( +-  1.01% )
+           131,187      page-faults                                                             ( +-  0.00% )
+                 6      cpu-migrations                                                          ( +- 22.61% )
+           232,878      dTLB-load-misses                                                        ( +-  2.08% )
+                72      context-switches                                                        ( +-  2.47% )
+
+           1.73579 +- 0.00273 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_numa with 8 threads and 2 hashbits at Wed  9 Apr 21:24:16 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 2' (5 runs):
+
+     6,615,138,552      cpu-cycles                                                              ( +-  1.00% )
+        14,549,801      cache-misses                                                            ( +-  3.06% )
+           131,193      page-faults                                                             ( +-  0.00% )
+                 7      cpu-migrations                                                          ( +- 10.69% )
+           218,624      dTLB-load-misses                                                        ( +-  0.66% )
+                69      context-switches                                                        ( +-  5.21% )
+
+           1.75060 +- 0.00249 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_numa with 8 threads and 3 hashbits at Wed  9 Apr 21:24:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 3' (5 runs):
+
+     5,081,056,067      cpu-cycles                                                              ( +-  0.24% )
+        10,106,757      cache-misses                                                            ( +-  0.52% )
+           131,209      page-faults                                                             ( +-  0.00% )
+                 8      cpu-migrations                                                          ( +-  7.29% )
+           215,371      dTLB-load-misses                                                        ( +-  2.07% )
+                72      context-switches                                                        ( +-  4.92% )
+
+           1.65487 +- 0.00275 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_numa with 8 threads and 4 hashbits at Wed  9 Apr 21:24:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 4' (5 runs):
+
+     5,434,872,194      cpu-cycles                                                              ( +-  0.67% )
+        14,064,574      cache-misses                                                            ( +-  1.30% )
+           131,241      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +- 11.40% )
+           220,031      dTLB-load-misses                                                        ( +-  3.57% )
+                79      context-switches                                                        ( +-  6.70% )
+
+           1.66045 +- 0.00188 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_numa with 8 threads and 5 hashbits at Wed  9 Apr 21:24:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 5' (5 runs):
+
+     5,555,057,143      cpu-cycles                                                              ( +-  0.34% )
+        28,203,198      cache-misses                                                            ( +-  0.74% )
+           131,307      page-faults                                                             ( +-  0.00% )
+                 7      cpu-migrations                                                          ( +- 19.90% )
+           231,479      dTLB-load-misses                                                        ( +-  1.50% )
+                76      context-switches                                                        ( +-  3.89% )
+
+           1.66051 +- 0.00504 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running independent_numa with 8 threads and 6 hashbits at Wed  9 Apr 21:24:50 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 6' (5 runs):
+
+     4,365,796,704      cpu-cycles                                                              ( +-  0.35% )
+        10,032,528      cache-misses                                                            ( +-  1.28% )
+           131,436      page-faults                                                             ( +-  0.00% )
+                 7      cpu-migrations                                                          ( +- 15.25% )
+           220,748      dTLB-load-misses                                                        ( +-  2.94% )
+                69      context-switches                                                        ( +-  5.05% )
+
+           1.58486 +- 0.00477 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running independent_numa with 8 threads and 7 hashbits at Wed  9 Apr 21:24:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 7' (5 runs):
+
+     4,168,992,860      cpu-cycles                                                              ( +-  0.77% )
+         7,509,731      cache-misses                                                            ( +-  1.45% )
+           131,698      page-faults                                                             ( +-  0.00% )
+                 9      cpu-migrations                                                          ( +- 10.77% )
+           234,161      dTLB-load-misses                                                        ( +-  4.38% )
+                70      context-switches                                                        ( +-  2.46% )
+
+           1.57213 +- 0.00285 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_numa with 8 threads and 8 hashbits at Wed  9 Apr 21:25:06 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 8' (5 runs):
+
+     4,041,094,156      cpu-cycles                                                              ( +-  0.36% )
+         6,862,185      cache-misses                                                            ( +-  0.20% )
+           132,208      page-faults                                                             ( +-  0.00% )
+                 7      cpu-migrations                                                          ( +-  7.82% )
+           245,143      dTLB-load-misses                                                        ( +-  1.31% )
+                68      context-switches                                                        ( +-  8.01% )
+
+           1.57170 +- 0.00244 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_numa with 8 threads and 9 hashbits at Wed  9 Apr 21:25:14 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 9' (5 runs):
+
+     4,064,105,178      cpu-cycles                                                              ( +-  0.58% )
+         7,581,852      cache-misses                                                            ( +-  0.28% )
+           133,244      page-faults                                                             ( +-  0.00% )
+                 7      cpu-migrations                                                          ( +- 16.54% )
+           265,036      dTLB-load-misses                                                        ( +-  2.91% )
+                74      context-switches                                                        ( +-  2.78% )
+
+           1.57301 +- 0.00563 seconds time elapsed  ( +-  0.36% )
+
+
+>>> Running independent_numa with 8 threads and 10 hashbits at Wed  9 Apr 21:25:22 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 10' (5 runs):
+
+     4,136,375,250      cpu-cycles                                                              ( +-  0.25% )
+         8,614,465      cache-misses                                                            ( +-  0.28% )
+           135,337      page-faults                                                             ( +-  0.00% )
+                 9      cpu-migrations                                                          ( +-  5.44% )
+           323,531      dTLB-load-misses                                                        ( +-  2.78% )
+                72      context-switches                                                        ( +-  3.96% )
+
+           1.58054 +- 0.00548 seconds time elapsed  ( +-  0.35% )
+
+
+>>> Running independent_numa with 8 threads and 11 hashbits at Wed  9 Apr 21:25:30 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 11' (5 runs):
+
+     4,281,892,219      cpu-cycles                                                              ( +-  0.72% )
+         9,992,996      cache-misses                                                            ( +-  0.61% )
+           139,499      page-faults                                                             ( +-  0.01% )
+                 9      cpu-migrations                                                          ( +- 10.54% )
+           364,261      dTLB-load-misses                                                        ( +-  2.64% )
+                79      context-switches                                                        ( +-  2.97% )
+
+           1.58727 +- 0.00487 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_numa with 8 threads and 12 hashbits at Wed  9 Apr 21:25:38 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 12' (5 runs):
+
+     4,529,430,098      cpu-cycles                                                              ( +-  0.13% )
+        11,399,119      cache-misses                                                            ( +-  0.37% )
+           147,832      page-faults                                                             ( +-  0.01% )
+                 8      cpu-migrations                                                          ( +- 17.50% )
+           367,708      dTLB-load-misses                                                        ( +-  1.92% )
+                83      context-switches                                                        ( +-  5.46% )
+
+           1.60564 +- 0.00391 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running independent_numa with 8 threads and 13 hashbits at Wed  9 Apr 21:25:46 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 13' (5 runs):
+
+     5,107,125,255      cpu-cycles                                                              ( +-  1.90% )
+        14,758,517      cache-misses                                                            ( +-  2.18% )
+           164,707      page-faults                                                             ( +-  0.01% )
+                 8      cpu-migrations                                                          ( +-  9.68% )
+           425,685      dTLB-load-misses                                                        ( +-  1.57% )
+                78      context-switches                                                        ( +-  2.84% )
+
+           1.64616 +- 0.00577 seconds time elapsed  ( +-  0.35% )
+
+
+>>> Running independent_numa with 8 threads and 14 hashbits at Wed  9 Apr 21:25:54 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 14' (5 runs):
+
+     6,313,726,928      cpu-cycles                                                              ( +-  1.95% )
+        20,411,306      cache-misses                                                            ( +-  0.76% )
+           197,101      page-faults                                                             ( +-  0.00% )
+                 6      cpu-migrations                                                          ( +- 15.46% )
+           541,880      dTLB-load-misses                                                        ( +-  2.78% )
+                82      context-switches                                                        ( +-  4.12% )
+
+            1.7534 +- 0.0106 seconds time elapsed  ( +-  0.60% )
+
+
+>>> Running independent_numa with 8 threads and 15 hashbits at Wed  9 Apr 21:26:03 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 15' (5 runs):
+
+     8,722,643,265      cpu-cycles                                                              ( +-  0.86% )
+        25,508,412      cache-misses                                                            ( +-  0.62% )
+           328,556      page-faults                                                             ( +-  0.00% )
+                 9      cpu-migrations                                                          ( +-  9.94% )
+           745,477      dTLB-load-misses                                                        ( +-  2.74% )
+                90      context-switches                                                        ( +-  4.52% )
+
+           1.97025 +- 0.00496 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_numa with 8 threads and 16 hashbits at Wed  9 Apr 21:26:13 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 16' (5 runs):
+
+    12,574,618,451      cpu-cycles                                                              ( +-  1.86% )
+        31,787,830      cache-misses                                                            ( +-  1.29% )
+           591,467      page-faults                                                             ( +-  0.00% )
+                 6      cpu-migrations                                                          ( +-  8.50% )
+         1,319,376      dTLB-load-misses                                                        ( +-  1.50% )
+                84      context-switches                                                        ( +-  5.25% )
+
+            2.3471 +- 0.0109 seconds time elapsed  ( +-  0.46% )
+
+
+>>> Running independent_numa with 8 threads and 17 hashbits at Wed  9 Apr 21:26:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 17' (5 runs):
+
+    19,374,801,509      cpu-cycles                                                              ( +-  0.40% )
+        45,859,065      cache-misses                                                            ( +-  0.95% )
+         1,117,291      page-faults                                                             ( +-  0.00% )
+                 7      cpu-migrations                                                          ( +-  9.48% )
+         3,275,015      dTLB-load-misses                                                        ( +-  1.08% )
+                89      context-switches                                                        ( +-  1.97% )
+
+           3.03699 +- 0.00402 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_numa with 8 threads and 18 hashbits at Wed  9 Apr 21:26:40 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 8 18' (5 runs):
+
+    18,132,806,953      cpu-cycles                                                              ( +-  0.12% )
+        54,305,689      cache-misses                                                            ( +-  0.24% )
+         1,120,365      page-faults                                                             ( +-  0.00% )
+                 9      cpu-migrations                                                          ( +- 20.79% )
+         7,601,352      dTLB-load-misses                                                        ( +-  0.36% )
+                88      context-switches                                                        ( +-  2.11% )
+
+           2.98566 +- 0.00541 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_numa with 16 threads and 1 hashbits at Wed  9 Apr 21:26:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 1' (5 runs):
+
+     7,262,199,483      cpu-cycles                                                              ( +-  1.35% )
+        13,330,995      cache-misses                                                            ( +-  1.96% )
+           131,222      page-faults                                                             ( +-  0.00% )
+                28      cpu-migrations                                                          ( +-  6.53% )
+           241,577      dTLB-load-misses                                                        ( +-  2.64% )
+               213      context-switches                                                        ( +-  4.63% )
+
+           1.65525 +- 0.00221 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_numa with 16 threads and 2 hashbits at Wed  9 Apr 21:27:03 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 2' (5 runs):
+
+     6,765,280,779      cpu-cycles                                                              ( +-  0.63% )
+        11,041,570      cache-misses                                                            ( +-  2.06% )
+           131,237      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  5.39% )
+           248,076      dTLB-load-misses                                                        ( +-  2.72% )
+               209      context-switches                                                        ( +-  4.36% )
+
+           1.62391 +- 0.00499 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_numa with 16 threads and 3 hashbits at Wed  9 Apr 21:27:12 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 3' (5 runs):
+
+     5,620,590,678      cpu-cycles                                                              ( +-  0.88% )
+        11,696,074      cache-misses                                                            ( +-  1.13% )
+           131,269      page-faults                                                             ( +-  0.00% )
+                25      cpu-migrations                                                          ( +-  7.16% )
+           256,869      dTLB-load-misses                                                        ( +-  2.79% )
+               188      context-switches                                                        ( +-  1.49% )
+
+           1.57809 +- 0.00323 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_numa with 16 threads and 4 hashbits at Wed  9 Apr 21:27:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 4' (5 runs):
+
+     7,943,423,342      cpu-cycles                                                              ( +-  0.42% )
+        42,589,179      cache-misses                                                            ( +-  0.69% )
+           131,335      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  8.20% )
+           252,963      dTLB-load-misses                                                        ( +-  0.55% )
+               220      context-switches                                                        ( +-  3.76% )
+
+           1.66258 +- 0.00430 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running independent_numa with 16 threads and 5 hashbits at Wed  9 Apr 21:27:28 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 5' (5 runs):
+
+     5,217,017,014      cpu-cycles                                                              ( +-  0.63% )
+        16,918,677      cache-misses                                                            ( +-  1.98% )
+           131,462      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  7.20% )
+           258,095      dTLB-load-misses                                                        ( +-  3.05% )
+               205      context-switches                                                        ( +-  2.21% )
+
+           1.56792 +- 0.00286 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_numa with 16 threads and 6 hashbits at Wed  9 Apr 21:27:36 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 6' (5 runs):
+
+     4,679,417,089      cpu-cycles                                                              ( +-  1.12% )
+        12,051,787      cache-misses                                                            ( +-  2.13% )
+           131,721      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  8.56% )
+           264,737      dTLB-load-misses                                                        ( +-  4.04% )
+               203      context-switches                                                        ( +-  2.23% )
+
+           1.54090 +- 0.00345 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_numa with 16 threads and 7 hashbits at Wed  9 Apr 21:27:44 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 7' (5 runs):
+
+     4,314,297,167      cpu-cycles                                                              ( +-  1.00% )
+         7,886,978      cache-misses                                                            ( +-  1.70% )
+           132,231      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  4.75% )
+           306,576      dTLB-load-misses                                                        ( +-  4.28% )
+               190      context-switches                                                        ( +-  3.52% )
+
+           1.54666 +- 0.00347 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_numa with 16 threads and 8 hashbits at Wed  9 Apr 21:27:51 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 8' (5 runs):
+
+     4,416,339,992      cpu-cycles                                                              ( +-  0.75% )
+         8,133,396      cache-misses                                                            ( +-  0.45% )
+           133,263      page-faults                                                             ( +-  0.01% )
+                27      cpu-migrations                                                          ( +-  7.72% )
+           385,632      dTLB-load-misses                                                        ( +-  5.19% )
+               196      context-switches                                                        ( +-  1.37% )
+
+           1.55197 +- 0.00315 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_numa with 16 threads and 9 hashbits at Wed  9 Apr 21:27:59 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 9' (5 runs):
+
+     4,348,836,330      cpu-cycles                                                              ( +-  0.74% )
+         8,946,116      cache-misses                                                            ( +-  0.44% )
+           135,343      page-faults                                                             ( +-  0.01% )
+                31      cpu-migrations                                                          ( +-  5.14% )
+           358,365      dTLB-load-misses                                                        ( +-  3.06% )
+               197      context-switches                                                        ( +-  4.25% )
+
+           1.54289 +- 0.00578 seconds time elapsed  ( +-  0.37% )
+
+
+>>> Running independent_numa with 16 threads and 10 hashbits at Wed  9 Apr 21:28:07 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 10' (5 runs):
+
+     4,433,081,798      cpu-cycles                                                              ( +-  1.42% )
+        10,024,537      cache-misses                                                            ( +-  0.28% )
+           139,491      page-faults                                                             ( +-  0.01% )
+                26      cpu-migrations                                                          ( +- 10.22% )
+           374,143      dTLB-load-misses                                                        ( +-  5.97% )
+               212      context-switches                                                        ( +-  3.93% )
+
+           1.55385 +- 0.00388 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_numa with 16 threads and 11 hashbits at Wed  9 Apr 21:28:15 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 11' (5 runs):
+
+     4,726,285,779      cpu-cycles                                                              ( +-  1.26% )
+        11,480,831      cache-misses                                                            ( +-  0.54% )
+           147,883      page-faults                                                             ( +-  0.02% )
+                24      cpu-migrations                                                          ( +-  7.14% )
+           421,106      dTLB-load-misses                                                        ( +-  3.66% )
+               219      context-switches                                                        ( +-  2.96% )
+
+           1.56168 +- 0.00264 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_numa with 16 threads and 12 hashbits at Wed  9 Apr 21:28:23 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 12' (5 runs):
+
+     5,285,747,422      cpu-cycles                                                              ( +-  1.03% )
+        13,667,683      cache-misses                                                            ( +-  0.83% )
+           164,744      page-faults                                                             ( +-  0.03% )
+                30      cpu-migrations                                                          ( +-  6.55% )
+           496,155      dTLB-load-misses                                                        ( +-  6.84% )
+               199      context-switches                                                        ( +-  3.85% )
+
+           1.59387 +- 0.00429 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running independent_numa with 16 threads and 13 hashbits at Wed  9 Apr 21:28:31 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 13' (5 runs):
+
+     6,772,207,873      cpu-cycles                                                              ( +-  2.63% )
+        18,096,915      cache-misses                                                            ( +-  0.67% )
+           197,126      page-faults                                                             ( +-  0.00% )
+                27      cpu-migrations                                                          ( +-  9.56% )
+           561,910      dTLB-load-misses                                                        ( +-  2.73% )
+               204      context-switches                                                        ( +-  3.68% )
+
+           1.67466 +- 0.00942 seconds time elapsed  ( +-  0.56% )
+
+
+>>> Running independent_numa with 16 threads and 14 hashbits at Wed  9 Apr 21:28:39 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 14' (5 runs):
+
+    10,453,276,689      cpu-cycles                                                              ( +-  3.93% )
+        25,483,425      cache-misses                                                            ( +-  1.08% )
+           328,582      page-faults                                                             ( +-  0.00% )
+                34      cpu-migrations                                                          ( +-  4.30% )
+           987,832      dTLB-load-misses                                                        ( +-  6.14% )
+               227      context-switches                                                        ( +-  3.48% )
+
+            1.8707 +- 0.0166 seconds time elapsed  ( +-  0.89% )
+
+
+>>> Running independent_numa with 16 threads and 15 hashbits at Wed  9 Apr 21:28:49 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 15' (5 runs):
+
+    16,238,412,996      cpu-cycles                                                              ( +-  3.80% )
+        33,695,255      cache-misses                                                            ( +-  0.98% )
+           591,495      page-faults                                                             ( +-  0.00% )
+                28      cpu-migrations                                                          ( +-  8.19% )
+         1,405,027      dTLB-load-misses                                                        ( +-  1.76% )
+               219      context-switches                                                        ( +-  3.32% )
+
+            2.2027 +- 0.0202 seconds time elapsed  ( +-  0.92% )
+
+
+>>> Running independent_numa with 16 threads and 16 hashbits at Wed  9 Apr 21:29:00 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 16' (5 runs):
+
+    25,156,597,103      cpu-cycles                                                              ( +-  3.35% )
+        47,763,807      cache-misses                                                            ( +-  1.84% )
+         1,117,320      page-faults                                                             ( +-  0.00% )
+                31      cpu-migrations                                                          ( +-  4.21% )
+         2,568,803      dTLB-load-misses                                                        ( +-  1.84% )
+               216      context-switches                                                        ( +-  4.20% )
+
+            2.7734 +- 0.0212 seconds time elapsed  ( +-  0.76% )
+
+
+>>> Running independent_numa with 16 threads and 17 hashbits at Wed  9 Apr 21:29:14 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 17' (5 runs):
+
+    39,546,818,009      cpu-cycles                                                              ( +-  0.71% )
+        82,837,490      cache-misses                                                            ( +-  1.86% )
+         2,194,328      page-faults                                                             ( +-  0.15% )
+                29      cpu-migrations                                                          ( +-  6.95% )
+         6,073,356      dTLB-load-misses                                                        ( +-  0.48% )
+               219      context-switches                                                        ( +-  2.34% )
+
+           3.82903 +- 0.00414 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_numa with 16 threads and 18 hashbits at Wed  9 Apr 21:29:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 16 18' (5 runs):
+
+    35,530,558,153      cpu-cycles                                                              ( +-  0.66% )
+        89,237,807      cache-misses                                                            ( +-  1.49% )
+         2,175,948      page-faults                                                             ( +-  0.07% )
+                28      cpu-migrations                                                          ( +-  7.20% )
+        10,186,957      dTLB-load-misses                                                        ( +-  0.41% )
+               211      context-switches                                                        ( +-  3.42% )
+
+            3.7146 +- 0.0113 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running independent_numa with 32 threads and 1 hashbits at Wed  9 Apr 21:29:52 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 1' (5 runs):
+
+     8,467,699,769      cpu-cycles                                                              ( +-  1.73% )
+        11,073,836      cache-misses                                                            ( +-  1.64% )
+           131,286      page-faults                                                             ( +-  0.00% )
+                87      cpu-migrations                                                          ( +-  5.37% )
+           328,952      dTLB-load-misses                                                        ( +-  4.04% )
+               557      context-switches                                                        ( +-  2.82% )
+
+           1.59573 +- 0.00167 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_numa with 32 threads and 2 hashbits at Wed  9 Apr 21:30:00 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 2' (5 runs):
+
+     8,500,044,491      cpu-cycles                                                              ( +-  2.39% )
+        14,640,350      cache-misses                                                            ( +-  1.60% )
+           131,318      page-faults                                                             ( +-  0.00% )
+                90      cpu-migrations                                                          ( +-  6.28% )
+           326,513      dTLB-load-misses                                                        ( +-  2.72% )
+               512      context-switches                                                        ( +-  2.54% )
+
+           1.60355 +- 0.00677 seconds time elapsed  ( +-  0.42% )
+
+
+>>> Running independent_numa with 32 threads and 3 hashbits at Wed  9 Apr 21:30:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 3' (5 runs):
+
+    11,736,319,266      cpu-cycles                                                              ( +-  0.76% )
+        43,669,272      cache-misses                                                            ( +-  0.89% )
+           131,380      page-faults                                                             ( +-  0.00% )
+                84      cpu-migrations                                                          ( +-  5.22% )
+           342,548      dTLB-load-misses                                                        ( +-  2.70% )
+               573      context-switches                                                        ( +-  3.38% )
+
+           1.65219 +- 0.00473 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_numa with 32 threads and 4 hashbits at Wed  9 Apr 21:30:16 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 4' (5 runs):
+
+     6,595,749,356      cpu-cycles                                                              ( +-  1.52% )
+        19,457,676      cache-misses                                                            ( +-  2.35% )
+           131,510      page-faults                                                             ( +-  0.00% )
+                90      cpu-migrations                                                          ( +-  1.81% )
+           366,722      dTLB-load-misses                                                        ( +-  5.33% )
+               566      context-switches                                                        ( +-  8.04% )
+
+           1.55992 +- 0.00396 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_numa with 32 threads and 5 hashbits at Wed  9 Apr 21:30:24 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 5' (5 runs):
+
+     5,716,245,526      cpu-cycles                                                              ( +-  0.91% )
+        17,161,074      cache-misses                                                            ( +-  2.06% )
+           131,766      page-faults                                                             ( +-  0.00% )
+                92      cpu-migrations                                                          ( +-  3.25% )
+           347,953      dTLB-load-misses                                                        ( +-  3.73% )
+               540      context-switches                                                        ( +-  2.15% )
+
+           1.55001 +- 0.00192 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running independent_numa with 32 threads and 6 hashbits at Wed  9 Apr 21:30:32 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 6' (5 runs):
+
+     4,902,319,858      cpu-cycles                                                              ( +-  0.51% )
+        10,374,250      cache-misses                                                            ( +-  2.46% )
+           132,277      page-faults                                                             ( +-  0.00% )
+                91      cpu-migrations                                                          ( +-  3.43% )
+           372,780      dTLB-load-misses                                                        ( +-  2.50% )
+               519      context-switches                                                        ( +-  2.50% )
+
+           1.54128 +- 0.00379 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_numa with 32 threads and 7 hashbits at Wed  9 Apr 21:30:40 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 7' (5 runs):
+
+     4,687,297,506      cpu-cycles                                                              ( +-  0.47% )
+         8,416,843      cache-misses                                                            ( +-  0.67% )
+           133,315      page-faults                                                             ( +-  0.01% )
+               102      cpu-migrations                                                          ( +-  3.83% )
+           418,666      dTLB-load-misses                                                        ( +-  3.12% )
+               489      context-switches                                                        ( +-  5.16% )
+
+           1.53947 +- 0.00485 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_numa with 32 threads and 8 hashbits at Wed  9 Apr 21:30:47 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 8' (5 runs):
+
+     4,834,552,674      cpu-cycles                                                              ( +-  0.32% )
+         9,636,965      cache-misses                                                            ( +-  0.27% )
+           135,376      page-faults                                                             ( +-  0.01% )
+                97      cpu-migrations                                                          ( +-  4.26% )
+           437,450      dTLB-load-misses                                                        ( +-  2.76% )
+               538      context-switches                                                        ( +-  6.43% )
+
+           1.55640 +- 0.00125 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_numa with 32 threads and 9 hashbits at Wed  9 Apr 21:30:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 9' (5 runs):
+
+     4,931,302,248      cpu-cycles                                                              ( +-  0.44% )
+        10,540,944      cache-misses                                                            ( +-  0.25% )
+           139,567      page-faults                                                             ( +-  0.02% )
+                95      cpu-migrations                                                          ( +-  4.37% )
+           585,442      dTLB-load-misses                                                        ( +-  5.34% )
+               554      context-switches                                                        ( +-  4.12% )
+
+           1.55668 +- 0.00297 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_numa with 32 threads and 10 hashbits at Wed  9 Apr 21:31:03 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 10' (5 runs):
+
+     5,375,480,753      cpu-cycles                                                              ( +-  1.82% )
+        11,960,642      cache-misses                                                            ( +-  0.49% )
+           147,913      page-faults                                                             ( +-  0.02% )
+                92      cpu-migrations                                                          ( +-  2.39% )
+           811,651      dTLB-load-misses                                                        ( +-  1.68% )
+               501      context-switches                                                        ( +-  3.20% )
+
+           1.57008 +- 0.00542 seconds time elapsed  ( +-  0.35% )
+
+
+>>> Running independent_numa with 32 threads and 11 hashbits at Wed  9 Apr 21:31:11 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 11' (5 runs):
+
+     6,477,451,933      cpu-cycles                                                              ( +-  2.48% )
+        14,836,217      cache-misses                                                            ( +-  1.63% )
+           164,845      page-faults                                                             ( +-  0.02% )
+                93      cpu-migrations                                                          ( +-  4.13% )
+           656,873      dTLB-load-misses                                                        ( +-  5.36% )
+               529      context-switches                                                        ( +-  2.93% )
+
+           1.59715 +- 0.00495 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_numa with 32 threads and 12 hashbits at Wed  9 Apr 21:31:19 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 12' (5 runs):
+
+     9,179,747,551      cpu-cycles                                                              ( +-  3.94% )
+        19,377,938      cache-misses                                                            ( +-  2.06% )
+           197,175      page-faults                                                             ( +-  0.00% )
+                90      cpu-migrations                                                          ( +-  4.95% )
+           777,810      dTLB-load-misses                                                        ( +-  3.72% )
+               533      context-switches                                                        ( +-  4.54% )
+
+           1.65610 +- 0.00699 seconds time elapsed  ( +-  0.42% )
+
+
+>>> Running independent_numa with 32 threads and 13 hashbits at Wed  9 Apr 21:31:27 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 13' (5 runs):
+
+    15,536,878,808      cpu-cycles                                                              ( +-  4.10% )
+        27,805,006      cache-misses                                                            ( +-  1.92% )
+           328,632      page-faults                                                             ( +-  0.00% )
+                86      cpu-migrations                                                          ( +-  2.81% )
+         1,404,204      dTLB-load-misses                                                        ( +-  1.43% )
+               619      context-switches                                                        ( +-  2.69% )
+
+           1.84094 +- 0.00941 seconds time elapsed  ( +-  0.51% )
+
+
+>>> Running independent_numa with 32 threads and 14 hashbits at Wed  9 Apr 21:31:37 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 14' (5 runs):
+
+    26,262,032,681      cpu-cycles                                                              ( +-  2.84% )
+        38,103,413      cache-misses                                                            ( +-  2.15% )
+           591,546      page-faults                                                             ( +-  0.00% )
+                94      cpu-migrations                                                          ( +-  2.93% )
+         2,849,156      dTLB-load-misses                                                        ( +-  9.48% )
+               624      context-switches                                                        ( +-  4.04% )
+
+           2.16920 +- 0.00935 seconds time elapsed  ( +-  0.43% )
+
+
+>>> Running independent_numa with 32 threads and 15 hashbits at Wed  9 Apr 21:31:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 15' (5 runs):
+
+    45,660,480,459      cpu-cycles                                                              ( +-  2.62% )
+        54,997,780      cache-misses                                                            ( +-  2.02% )
+         1,117,366      page-faults                                                             ( +-  0.00% )
+                83      cpu-migrations                                                          ( +-  2.27% )
+         4,774,778      dTLB-load-misses                                                        ( +-  4.66% )
+               751      context-switches                                                        ( +-  2.43% )
+
+            2.7814 +- 0.0135 seconds time elapsed  ( +-  0.49% )
+
+
+>>> Running independent_numa with 32 threads and 16 hashbits at Wed  9 Apr 21:32:01 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 16' (5 runs):
+
+    70,584,163,971      cpu-cycles                                                              ( +-  0.96% )
+        89,358,303      cache-misses                                                            ( +-  2.47% )
+         2,168,447      page-faults                                                             ( +-  0.00% )
+                94      cpu-migrations                                                          ( +-  2.29% )
+        10,605,113      dTLB-load-misses                                                        ( +-  6.43% )
+               807      context-switches                                                        ( +-  3.27% )
+
+            3.7455 +- 0.0116 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_numa with 32 threads and 17 hashbits at Wed  9 Apr 21:32:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 17' (5 runs):
+
+   106,405,085,945      cpu-cycles                                                              ( +-  2.47% )
+       147,799,098      cache-misses                                                            ( +-  1.78% )
+         4,195,636      page-faults                                                             ( +-  0.00% )
+                96      cpu-migrations                                                          ( +-  6.87% )
+        23,427,378      dTLB-load-misses                                                        ( +-  6.51% )
+               993      context-switches                                                        ( +-  2.09% )
+
+            5.4942 +- 0.0456 seconds time elapsed  ( +-  0.83% )
+
+
+>>> Running independent_numa with 32 threads and 18 hashbits at Wed  9 Apr 21:32:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_numa 32 18' (5 runs):
+
+   106,473,649,585      cpu-cycles                                                              ( +-  0.54% )
+       149,068,984      cache-misses                                                            ( +-  2.06% )
+         4,208,082      page-faults                                                             ( +-  0.00% )
+                83      cpu-migrations                                                          ( +-  4.20% )
+        30,761,051      dTLB-load-misses                                                        ( +-  3.54% )
+             1,049      context-switches                                                        ( +-  2.74% )
+
+           5.55052 +- 0.00979 seconds time elapsed  ( +-  0.18% )
+
+

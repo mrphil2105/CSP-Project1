@@ -1,0 +1,1621 @@
+===== concurrent_numa experiments (run at Wed  9 Apr 22:31:18 CEST 2025) =====
+>>> Running concurrent_numa with 1 threads and 1 hashbits at Wed  9 Apr 22:31:18 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 1' (5 runs):
+
+     5,305,595,199      cpu-cycles                                                              ( +-  0.06% )
+         5,996,131      cache-misses                                                            ( +-  0.43% )
+           131,165      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           236,964      dTLB-load-misses                                                        ( +-  2.20% )
+                 7      context-switches                                                        ( +- 12.45% )
+
+           2.67592 +- 0.00185 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_numa with 1 threads and 2 hashbits at Wed  9 Apr 22:31:31 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 2' (5 runs):
+
+     5,303,508,259      cpu-cycles                                                              ( +-  0.06% )
+         5,982,660      cache-misses                                                            ( +-  0.49% )
+           131,167      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           236,430      dTLB-load-misses                                                        ( +-  1.36% )
+                 7      context-switches                                                        ( +- 11.07% )
+
+          2.675480 +- 0.000879 seconds time elapsed  ( +-  0.03% )
+
+
+>>> Running concurrent_numa with 1 threads and 3 hashbits at Wed  9 Apr 22:31:45 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 3' (5 runs):
+
+     5,317,660,778      cpu-cycles                                                              ( +-  0.10% )
+         5,973,096      cache-misses                                                            ( +-  0.45% )
+           131,172      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           254,071      dTLB-load-misses                                                        ( +-  5.31% )
+                 7      context-switches                                                        ( +- 11.43% )
+
+           2.68030 +- 0.00478 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_numa with 1 threads and 4 hashbits at Wed  9 Apr 22:31:58 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 4' (5 runs):
+
+     5,306,478,999      cpu-cycles                                                              ( +-  0.11% )
+         5,965,034      cache-misses                                                            ( +-  0.42% )
+           131,179      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           242,905      dTLB-load-misses                                                        ( +-  1.00% )
+                 7      context-switches                                                        ( +- 10.10% )
+
+           2.67715 +- 0.00299 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_numa with 1 threads and 5 hashbits at Wed  9 Apr 22:32:11 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 5' (5 runs):
+
+     5,311,809,203      cpu-cycles                                                              ( +-  0.07% )
+         5,942,127      cache-misses                                                            ( +-  0.74% )
+           131,194      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           245,735      dTLB-load-misses                                                        ( +-  1.73% )
+                10      context-switches                                                        ( +-  7.48% )
+
+           2.67886 +- 0.00250 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running concurrent_numa with 1 threads and 6 hashbits at Wed  9 Apr 22:32:25 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 6' (5 runs):
+
+     5,313,270,170      cpu-cycles                                                              ( +-  0.10% )
+         5,301,673      cache-misses                                                            ( +-  0.44% )
+           131,227      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           251,271      dTLB-load-misses                                                        ( +-  2.15% )
+                 8      context-switches                                                        ( +- 11.18% )
+
+           2.67947 +- 0.00214 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_numa with 1 threads and 7 hashbits at Wed  9 Apr 22:32:38 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 7' (5 runs):
+
+     5,333,182,643      cpu-cycles                                                              ( +-  0.12% )
+         5,360,915      cache-misses                                                            ( +-  0.45% )
+           131,291      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           264,856      dTLB-load-misses                                                        ( +-  1.22% )
+                 8      context-switches                                                        ( +-  7.50% )
+
+           2.69220 +- 0.00385 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_numa with 1 threads and 8 hashbits at Wed  9 Apr 22:32:52 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 8' (5 runs):
+
+     5,344,580,528      cpu-cycles                                                              ( +-  0.15% )
+         5,486,663      cache-misses                                                            ( +-  0.72% )
+           131,418      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           281,558      dTLB-load-misses                                                        ( +-  0.57% )
+                 7      context-switches                                                        ( +-  8.33% )
+
+           2.69616 +- 0.00535 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running concurrent_numa with 1 threads and 9 hashbits at Wed  9 Apr 22:33:06 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 9' (5 runs):
+
+     5,356,440,661      cpu-cycles                                                              ( +-  0.11% )
+         5,728,724      cache-misses                                                            ( +-  0.35% )
+           131,672      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           303,786      dTLB-load-misses                                                        ( +-  1.54% )
+                 7      context-switches                                                        ( +-  4.52% )
+
+           2.70258 +- 0.00388 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_numa with 1 threads and 10 hashbits at Wed  9 Apr 22:33:19 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 10' (5 runs):
+
+     5,418,709,801      cpu-cycles                                                              ( +-  0.15% )
+         6,286,096      cache-misses                                                            ( +-  0.18% )
+           132,194      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           356,256      dTLB-load-misses                                                        ( +-  1.44% )
+                 9      context-switches                                                        ( +- 11.86% )
+
+           2.73502 +- 0.00469 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_numa with 1 threads and 11 hashbits at Wed  9 Apr 22:33:33 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 11' (5 runs):
+
+     5,476,573,147      cpu-cycles                                                              ( +-  0.05% )
+         7,405,082      cache-misses                                                            ( +-  0.23% )
+           133,240      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           493,531      dTLB-load-misses                                                        ( +-  1.39% )
+                 9      context-switches                                                        ( +- 10.89% )
+
+          2.763859 +- 0.000970 seconds time elapsed  ( +-  0.04% )
+
+
+>>> Running concurrent_numa with 1 threads and 12 hashbits at Wed  9 Apr 22:33:47 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 12' (5 runs):
+
+     5,663,887,129      cpu-cycles                                                              ( +-  0.16% )
+         9,340,355      cache-misses                                                            ( +-  0.23% )
+           135,295      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           612,961      dTLB-load-misses                                                        ( +-  1.25% )
+                 8      context-switches                                                        ( +-  8.48% )
+
+           2.85658 +- 0.00421 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_numa with 1 threads and 13 hashbits at Wed  9 Apr 22:34:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 13' (5 runs):
+
+     5,800,926,479      cpu-cycles                                                              ( +-  0.20% )
+        10,412,341      cache-misses                                                            ( +-  0.37% )
+           139,396      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           603,836      dTLB-load-misses                                                        ( +-  1.15% )
+                 7      context-switches                                                        ( +-  2.86% )
+
+           2.92480 +- 0.00604 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running concurrent_numa with 1 threads and 14 hashbits at Wed  9 Apr 22:34:16 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 14' (5 runs):
+
+     6,081,761,385      cpu-cycles                                                              ( +-  0.09% )
+        12,234,688      cache-misses                                                            ( +-  0.19% )
+           147,597      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           703,669      dTLB-load-misses                                                        ( +-  3.62% )
+                 9      context-switches                                                        ( +- 11.97% )
+
+           3.06487 +- 0.00230 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_numa with 1 threads and 15 hashbits at Wed  9 Apr 22:34:31 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 15' (5 runs):
+
+     6,435,854,384      cpu-cycles                                                              ( +-  0.04% )
+        16,127,550      cache-misses                                                            ( +-  0.16% )
+           163,796      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+         1,685,185      dTLB-load-misses                                                        ( +-  0.71% )
+                 8      context-switches                                                        ( +-  7.29% )
+
+           3.24063 +- 0.00333 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_numa with 1 threads and 16 hashbits at Wed  9 Apr 22:34:48 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 16' (5 runs):
+
+     7,020,514,267      cpu-cycles                                                              ( +-  0.11% )
+        20,827,533      cache-misses                                                            ( +-  0.08% )
+           198,142      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                        
+         5,784,388      dTLB-load-misses                                                        ( +-  0.15% )
+                 9      context-switches                                                        ( +-  7.37% )
+
+           3.53809 +- 0.00361 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_numa with 1 threads and 17 hashbits at Wed  9 Apr 22:35:05 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 17' (5 runs):
+
+     7,959,702,268      cpu-cycles                                                              ( +-  0.02% )
+        26,423,887      cache-misses                                                            ( +-  0.45% )
+           327,512      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+        13,177,885      dTLB-load-misses                                                        ( +-  0.08% )
+                 9      context-switches                                                        ( +-  9.30% )
+
+           4.00564 +- 0.00276 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_numa with 1 threads and 18 hashbits at Wed  9 Apr 22:35:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 1 18' (5 runs):
+
+     8,917,602,549      cpu-cycles                                                              ( +-  0.14% )
+        40,988,420      cache-misses                                                            ( +-  0.22% )
+           329,055      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+        22,885,063      dTLB-load-misses                                                        ( +-  0.09% )
+                 9      context-switches                                                        ( +- 11.44% )
+
+           4.48651 +- 0.00523 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_numa with 2 threads and 1 hashbits at Wed  9 Apr 22:35:48 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 1' (5 runs):
+
+    15,789,536,723      cpu-cycles                                                              ( +-  0.49% )
+        58,385,323      cache-misses                                                            ( +-  1.78% )
+           198,415      page-faults                                                             ( +-  0.20% )
+                 0      cpu-migrations                                                        
+         2,396,028      dTLB-load-misses                                                        ( +-  1.21% )
+               816      context-switches                                                        ( +-  9.58% )
+
+            4.7420 +- 0.0172 seconds time elapsed  ( +-  0.36% )
+
+
+>>> Running concurrent_numa with 2 threads and 2 hashbits at Wed  9 Apr 22:36:12 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 2' (5 runs):
+
+    17,291,470,449      cpu-cycles                                                              ( +-  0.36% )
+        85,395,962      cache-misses                                                            ( +-  4.46% )
+           204,192      page-faults                                                             ( +-  0.13% )
+                 0      cpu-migrations                                                        
+         2,019,705      dTLB-load-misses                                                        ( +-  1.55% )
+               606      context-switches                                                        ( +-  8.48% )
+
+            5.1073 +- 0.0162 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running concurrent_numa with 2 threads and 3 hashbits at Wed  9 Apr 22:36:37 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 3' (5 runs):
+
+    18,225,334,250      cpu-cycles                                                              ( +-  1.14% )
+       119,864,971      cache-misses                                                            ( +-  2.79% )
+           203,332      page-faults                                                             ( +-  0.44% )
+                 1      cpu-migrations                                                          ( +- 73.48% )
+         1,794,228      dTLB-load-misses                                                        ( +-  1.44% )
+               656      context-switches                                                        ( +-  5.17% )
+
+            5.3541 +- 0.0411 seconds time elapsed  ( +-  0.77% )
+
+
+>>> Running concurrent_numa with 2 threads and 4 hashbits at Wed  9 Apr 22:37:04 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 4' (5 runs):
+
+    16,473,849,686      cpu-cycles                                                              ( +-  1.37% )
+       132,334,762      cache-misses                                                            ( +-  3.94% )
+           186,967      page-faults                                                             ( +-  0.57% )
+                 1      cpu-migrations                                                          ( +- 48.99% )
+         1,376,192      dTLB-load-misses                                                        ( +-  1.67% )
+               430      context-switches                                                        ( +-  3.38% )
+
+            4.9464 +- 0.0406 seconds time elapsed  ( +-  0.82% )
+
+
+>>> Running concurrent_numa with 2 threads and 5 hashbits at Wed  9 Apr 22:37:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 5' (5 runs):
+
+    14,893,489,542      cpu-cycles                                                              ( +-  0.95% )
+       129,997,045      cache-misses                                                            ( +-  1.76% )
+           162,592      page-faults                                                             ( +-  0.46% )
+                 1      cpu-migrations                                                          ( +- 44.72% )
+         1,005,646      dTLB-load-misses                                                        ( +-  1.23% )
+               292      context-switches                                                        ( +-  5.52% )
+
+            4.5261 +- 0.0260 seconds time elapsed  ( +-  0.57% )
+
+
+>>> Running concurrent_numa with 2 threads and 6 hashbits at Wed  9 Apr 22:37:52 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 6' (5 runs):
+
+    12,047,721,232      cpu-cycles                                                              ( +-  1.98% )
+        95,894,018      cache-misses                                                            ( +-  3.36% )
+           148,472      page-faults                                                             ( +-  0.43% )
+                 0      cpu-migrations                                                        
+           704,900      dTLB-load-misses                                                        ( +-  2.54% )
+               160      context-switches                                                        ( +-  5.05% )
+
+            3.8371 +- 0.0431 seconds time elapsed  ( +-  1.12% )
+
+
+>>> Running concurrent_numa with 2 threads and 7 hashbits at Wed  9 Apr 22:38:11 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 7' (5 runs):
+
+    10,684,698,418      cpu-cycles                                                              ( +-  1.88% )
+        85,925,516      cache-misses                                                            ( +-  3.72% )
+           140,535      page-faults                                                             ( +-  0.26% )
+                 1      cpu-migrations                                                          ( +- 50.99% )
+           554,147      dTLB-load-misses                                                        ( +-  2.70% )
+                99      context-switches                                                        ( +-  4.88% )
+
+            3.4792 +- 0.0330 seconds time elapsed  ( +-  0.95% )
+
+
+>>> Running concurrent_numa with 2 threads and 8 hashbits at Wed  9 Apr 22:38:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 8' (5 runs):
+
+     9,546,676,701      cpu-cycles                                                              ( +-  0.58% )
+        86,656,393      cache-misses                                                            ( +-  1.46% )
+           135,640      page-faults                                                             ( +-  0.05% )
+                 0      cpu-migrations                                                        
+           442,529      dTLB-load-misses                                                        ( +-  1.08% )
+                42      context-switches                                                        ( +-  6.97% )
+
+           3.22738 +- 0.00927 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running concurrent_numa with 2 threads and 9 hashbits at Wed  9 Apr 22:38:45 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 9' (5 runs):
+
+     8,682,604,069      cpu-cycles                                                              ( +-  0.10% )
+        60,525,082      cache-misses                                                            ( +-  0.69% )
+           133,916      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                          ( +- 44.72% )
+           471,562      dTLB-load-misses                                                        ( +-  3.86% )
+                25      context-switches                                                        ( +-  9.21% )
+
+           3.01110 +- 0.00531 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_numa with 2 threads and 10 hashbits at Wed  9 Apr 22:39:00 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 10' (5 runs):
+
+     8,470,842,490      cpu-cycles                                                              ( +-  0.66% )
+        51,759,285      cache-misses                                                            ( +-  1.56% )
+           133,490      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                          ( +- 31.62% )
+           463,033      dTLB-load-misses                                                        ( +-  2.79% )
+                19      context-switches                                                        ( +-  9.27% )
+
+           2.93318 +- 0.00661 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running concurrent_numa with 2 threads and 11 hashbits at Wed  9 Apr 22:39:15 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 11' (5 runs):
+
+     8,327,199,034      cpu-cycles                                                              ( +-  0.29% )
+        42,080,001      cache-misses                                                            ( +-  0.72% )
+           134,240      page-faults                                                             ( +-  0.03% )
+                 0      cpu-migrations                                                        
+           593,329      dTLB-load-misses                                                        ( +-  1.76% )
+                15      context-switches                                                        ( +-  7.18% )
+
+           2.87479 +- 0.00216 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_numa with 2 threads and 12 hashbits at Wed  9 Apr 22:39:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 12' (5 runs):
+
+     8,288,866,163      cpu-cycles                                                              ( +-  0.04% )
+        40,174,511      cache-misses                                                            ( +-  0.05% )
+           136,452      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+           688,721      dTLB-load-misses                                                        ( +-  0.54% )
+                16      context-switches                                                        ( +-  5.45% )
+
+           2.87391 +- 0.00161 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running concurrent_numa with 2 threads and 13 hashbits at Wed  9 Apr 22:39:44 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 13' (5 runs):
+
+     8,421,334,840      cpu-cycles                                                              ( +-  0.05% )
+        41,633,779      cache-misses                                                            ( +-  0.07% )
+           141,299      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           682,893      dTLB-load-misses                                                        ( +-  0.68% )
+                13      context-switches                                                        ( +-  8.21% )
+
+           2.90217 +- 0.00211 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_numa with 2 threads and 14 hashbits at Wed  9 Apr 22:39:58 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 14' (5 runs):
+
+     8,627,931,164      cpu-cycles                                                              ( +-  0.14% )
+        43,078,172      cache-misses                                                            ( +-  0.08% )
+           151,177      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+           752,073      dTLB-load-misses                                                        ( +-  1.18% )
+                15      context-switches                                                        ( +-  6.46% )
+
+           2.96381 +- 0.00450 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_numa with 2 threads and 15 hashbits at Wed  9 Apr 22:40:13 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 15' (5 runs):
+
+     9,035,615,948      cpu-cycles                                                              ( +-  0.13% )
+        45,985,341      cache-misses                                                            ( +-  0.10% )
+           171,191      page-faults                                                             ( +-  0.03% )
+                 1      cpu-migrations                                                          ( +- 60.00% )
+         1,765,571      dTLB-load-misses                                                        ( +-  0.58% )
+                17      context-switches                                                        ( +-  7.76% )
+
+           3.07491 +- 0.00526 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_numa with 2 threads and 16 hashbits at Wed  9 Apr 22:40:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 16' (5 runs):
+
+     9,699,793,448      cpu-cycles                                                              ( +-  0.07% )
+        50,588,314      cache-misses                                                            ( +-  0.26% )
+           211,753      page-faults                                                             ( +-  0.04% )
+                 0      cpu-migrations                                                        
+         5,633,363      dTLB-load-misses                                                        ( +-  0.17% )
+                15      context-switches                                                        ( +-  9.57% )
+
+           3.22983 +- 0.00477 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_numa with 2 threads and 17 hashbits at Wed  9 Apr 22:40:45 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 17' (5 runs):
+
+    10,845,409,205      cpu-cycles                                                              ( +-  0.12% )
+        55,988,665      cache-misses                                                            ( +-  0.07% )
+           290,676      page-faults                                                             ( +-  0.08% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+        12,845,639      dTLB-load-misses                                                        ( +-  0.97% )
+                19      context-switches                                                        ( +-  5.37% )
+
+           3.50127 +- 0.00413 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_numa with 2 threads and 18 hashbits at Wed  9 Apr 22:41:02 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 2 18' (5 runs):
+
+    12,719,972,241      cpu-cycles                                                              ( +-  0.15% )
+        64,322,111      cache-misses                                                            ( +-  0.13% )
+           389,813      page-faults                                                             ( +-  0.06% )
+                 2      cpu-migrations                                                          ( +- 43.59% )
+        23,071,214      dTLB-load-misses                                                        ( +-  0.28% )
+                22      context-switches                                                        ( +-  7.52% )
+
+           3.97265 +- 0.00535 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_numa with 4 threads and 1 hashbits at Wed  9 Apr 22:41:22 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 1' (5 runs):
+
+    27,599,754,495      cpu-cycles                                                              ( +-  0.45% )
+        89,679,126      cache-misses                                                            ( +-  3.44% )
+           271,779      page-faults                                                             ( +-  0.26% )
+                 4      cpu-migrations                                                          ( +- 15.81% )
+         4,724,643      dTLB-load-misses                                                        ( +-  0.55% )
+            90,225      context-switches                                                        ( +-  1.05% )
+
+            4.8118 +- 0.0191 seconds time elapsed  ( +-  0.40% )
+
+
+>>> Running concurrent_numa with 4 threads and 2 hashbits at Wed  9 Apr 22:41:47 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 2' (5 runs):
+
+    33,538,483,354      cpu-cycles                                                              ( +-  1.11% )
+       132,719,269      cache-misses                                                            ( +-  7.26% )
+           266,714      page-faults                                                             ( +-  0.27% )
+                 5      cpu-migrations                                                          ( +- 10.20% )
+         4,938,358      dTLB-load-misses                                                        ( +-  1.00% )
+            71,439      context-switches                                                        ( +-  3.80% )
+
+            5.5210 +- 0.0459 seconds time elapsed  ( +-  0.83% )
+
+
+>>> Running concurrent_numa with 4 threads and 3 hashbits at Wed  9 Apr 22:42:14 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 3' (5 runs):
+
+    32,575,544,776      cpu-cycles                                                              ( +-  0.93% )
+       179,783,820      cache-misses                                                            ( +-  6.59% )
+           232,046      page-faults                                                             ( +-  0.19% )
+                 4      cpu-migrations                                                          ( +- 17.68% )
+         4,123,608      dTLB-load-misses                                                        ( +-  0.70% )
+            38,343      context-switches                                                        ( +-  2.50% )
+
+            5.3593 +- 0.0279 seconds time elapsed  ( +-  0.52% )
+
+
+>>> Running concurrent_numa with 4 threads and 4 hashbits at Wed  9 Apr 22:42:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 4' (5 runs):
+
+    29,479,057,795      cpu-cycles                                                              ( +-  0.70% )
+       199,447,309      cache-misses                                                            ( +-  1.59% )
+           193,906      page-faults                                                             ( +-  0.28% )
+                 6      cpu-migrations                                                          ( +- 14.91% )
+         3,138,669      dTLB-load-misses                                                        ( +-  1.03% )
+            19,896      context-switches                                                        ( +-  1.73% )
+
+            4.9076 +- 0.0174 seconds time elapsed  ( +-  0.35% )
+
+
+>>> Running concurrent_numa with 4 threads and 5 hashbits at Wed  9 Apr 22:43:06 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 5' (5 runs):
+
+    25,318,195,815      cpu-cycles                                                              ( +-  0.83% )
+       206,824,396      cache-misses                                                            ( +-  1.93% )
+           166,074      page-faults                                                             ( +-  0.07% )
+                 4      cpu-migrations                                                          ( +- 22.91% )
+         2,130,217      dTLB-load-misses                                                        ( +-  0.86% )
+             8,061      context-switches                                                        ( +-  2.04% )
+
+            4.3553 +- 0.0142 seconds time elapsed  ( +-  0.33% )
+
+
+>>> Running concurrent_numa with 4 threads and 6 hashbits at Wed  9 Apr 22:43:28 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 6' (5 runs):
+
+    19,628,973,212      cpu-cycles                                                              ( +-  1.74% )
+       147,091,726      cache-misses                                                            ( +-  3.17% )
+           153,973      page-faults                                                             ( +-  0.09% )
+                 4      cpu-migrations                                                          ( +- 30.21% )
+         1,439,044      dTLB-load-misses                                                        ( +-  2.15% )
+             3,334      context-switches                                                        ( +-  3.49% )
+
+            3.6532 +- 0.0217 seconds time elapsed  ( +-  0.59% )
+
+
+>>> Running concurrent_numa with 4 threads and 7 hashbits at Wed  9 Apr 22:43:46 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 7' (5 runs):
+
+    15,652,949,043      cpu-cycles                                                              ( +-  1.00% )
+       122,825,336      cache-misses                                                            ( +-  1.80% )
+           145,511      page-faults                                                             ( +-  0.05% )
+                 3      cpu-migrations                                                          ( +- 26.67% )
+           999,437      dTLB-load-misses                                                        ( +-  1.29% )
+             1,110      context-switches                                                        ( +-  2.08% )
+
+           3.13258 +- 0.00791 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running concurrent_numa with 4 threads and 8 hashbits at Wed  9 Apr 22:44:02 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 8' (5 runs):
+
+    12,971,533,824      cpu-cycles                                                              ( +-  0.28% )
+       122,843,729      cache-misses                                                            ( +-  0.80% )
+           139,743      page-faults                                                             ( +-  0.03% )
+                 3      cpu-migrations                                                          ( +- 28.67% )
+           715,072      dTLB-load-misses                                                        ( +-  0.50% )
+               320      context-switches                                                        ( +-  1.39% )
+
+           2.81928 +- 0.00625 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running concurrent_numa with 4 threads and 9 hashbits at Wed  9 Apr 22:44:16 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 9' (5 runs):
+
+    10,699,994,505      cpu-cycles                                                              ( +-  0.20% )
+        80,356,479      cache-misses                                                            ( +-  0.51% )
+           136,769      page-faults                                                             ( +-  0.02% )
+                 3      cpu-migrations                                                          ( +- 29.06% )
+           588,922      dTLB-load-misses                                                        ( +-  0.34% )
+               110      context-switches                                                        ( +-  5.43% )
+
+           2.54030 +- 0.00303 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_numa with 4 threads and 10 hashbits at Wed  9 Apr 22:44:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 10' (5 runs):
+
+     9,671,675,218      cpu-cycles                                                              ( +-  0.13% )
+        61,394,827      cache-misses                                                            ( +-  0.68% )
+           134,501      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 25.50% )
+           546,155      dTLB-load-misses                                                        ( +-  0.41% )
+                48      context-switches                                                        ( +-  8.14% )
+
+           2.39106 +- 0.00262 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_numa with 4 threads and 11 hashbits at Wed  9 Apr 22:44:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 11' (5 runs):
+
+     9,067,225,107      cpu-cycles                                                              ( +-  0.19% )
+        47,184,832      cache-misses                                                            ( +-  0.27% )
+           133,779      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 67.82% )
+           597,322      dTLB-load-misses                                                        ( +-  0.86% )
+                30      context-switches                                                        ( +-  4.55% )
+
+           2.29323 +- 0.00309 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_numa with 4 threads and 12 hashbits at Wed  9 Apr 22:44:52 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 12' (5 runs):
+
+     8,860,784,291      cpu-cycles                                                              ( +-  0.18% )
+        41,171,602      cache-misses                                                            ( +-  0.10% )
+           134,039      page-faults                                                             ( +-  0.03% )
+                 2      cpu-migrations                                                          ( +- 30.00% )
+           619,208      dTLB-load-misses                                                        ( +-  0.88% )
+                34      context-switches                                                        ( +-  9.05% )
+
+           2.25678 +- 0.00162 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_numa with 4 threads and 13 hashbits at Wed  9 Apr 22:45:04 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 13' (5 runs):
+
+     8,922,145,343      cpu-cycles                                                              ( +-  0.10% )
+        42,081,217      cache-misses                                                            ( +-  0.10% )
+           135,763      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 40.62% )
+           604,507      dTLB-load-misses                                                        ( +-  0.55% )
+                29      context-switches                                                        ( +-  5.83% )
+
+           2.26604 +- 0.00189 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_numa with 4 threads and 14 hashbits at Wed  9 Apr 22:45:15 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 14' (5 runs):
+
+     8,987,789,294      cpu-cycles                                                              ( +-  0.09% )
+        43,630,710      cache-misses                                                            ( +-  0.07% )
+           139,767      page-faults                                                             ( +-  0.02% )
+                 3      cpu-migrations                                                          ( +-  8.16% )
+           674,981      dTLB-load-misses                                                        ( +-  1.76% )
+                33      context-switches                                                        ( +-  7.58% )
+
+           2.27539 +- 0.00280 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_numa with 4 threads and 15 hashbits at Wed  9 Apr 22:45:27 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 15' (5 runs):
+
+     9,211,942,668      cpu-cycles                                                              ( +-  0.10% )
+        45,561,179      cache-misses                                                            ( +-  0.11% )
+           148,241      page-faults                                                             ( +-  0.02% )
+                 3      cpu-migrations                                                          ( +- 17.00% )
+         1,632,168      dTLB-load-misses                                                        ( +-  1.15% )
+                32      context-switches                                                        ( +- 10.19% )
+
+           2.31566 +- 0.00203 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running concurrent_numa with 4 threads and 16 hashbits at Wed  9 Apr 22:45:38 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 16' (5 runs):
+
+     9,596,390,280      cpu-cycles                                                              ( +-  0.11% )
+        48,691,425      cache-misses                                                            ( +-  0.13% )
+           165,357      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 22.36% )
+         5,354,896      dTLB-load-misses                                                        ( +-  0.09% )
+                29      context-switches                                                        ( +-  8.56% )
+
+           2.36693 +- 0.00277 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_numa with 4 threads and 17 hashbits at Wed  9 Apr 22:45:50 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 17' (5 runs):
+
+    10,313,122,787      cpu-cycles                                                              ( +-  0.11% )
+        52,339,328      cache-misses                                                            ( +-  0.08% )
+           198,378      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 12.25% )
+        12,230,353      dTLB-load-misses                                                        ( +-  0.04% )
+                30      context-switches                                                        ( +-  3.27% )
+
+           2.45620 +- 0.00229 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running concurrent_numa with 4 threads and 18 hashbits at Wed  9 Apr 22:46:03 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 4 18' (5 runs):
+
+    12,139,533,187      cpu-cycles                                                              ( +-  0.06% )
+        60,337,989      cache-misses                                                            ( +-  0.17% )
+           285,160      page-faults                                                             ( +-  0.06% )
+                 3      cpu-migrations                                                          ( +- 12.47% )
+        22,550,168      dTLB-load-misses                                                        ( +-  0.05% )
+                34      context-switches                                                        ( +-  7.64% )
+
+           2.68687 +- 0.00270 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_numa with 8 threads and 1 hashbits at Wed  9 Apr 22:46:16 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 1' (5 runs):
+
+    58,839,241,469      cpu-cycles                                                              ( +-  0.63% )
+       166,962,175      cache-misses                                                            ( +-  4.38% )
+           306,655      page-faults                                                             ( +-  0.50% )
+                20      cpu-migrations                                                          ( +- 17.07% )
+         8,961,558      dTLB-load-misses                                                        ( +-  0.56% )
+           686,009      context-switches                                                        ( +-  0.88% )
+
+            5.7771 +- 0.0307 seconds time elapsed  ( +-  0.53% )
+
+
+>>> Running concurrent_numa with 8 threads and 2 hashbits at Wed  9 Apr 22:46:45 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 2' (5 runs):
+
+    73,490,835,269      cpu-cycles                                                              ( +-  0.67% )
+       209,376,603      cache-misses                                                            ( +-  1.83% )
+           284,612      page-faults                                                             ( +-  0.37% )
+                19      cpu-migrations                                                          ( +-  8.96% )
+        15,461,364      dTLB-load-misses                                                        ( +-  1.69% )
+           691,477      context-switches                                                        ( +-  1.49% )
+
+            6.7254 +- 0.0487 seconds time elapsed  ( +-  0.72% )
+
+
+>>> Running concurrent_numa with 8 threads and 3 hashbits at Wed  9 Apr 22:47:19 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 3' (5 runs):
+
+    65,841,815,432      cpu-cycles                                                              ( +-  0.73% )
+       274,248,263      cache-misses                                                            ( +-  1.75% )
+           235,230      page-faults                                                             ( +-  0.16% )
+                19      cpu-migrations                                                          ( +-  5.37% )
+         9,864,431      dTLB-load-misses                                                        ( +-  3.08% )
+           413,307      context-switches                                                        ( +-  1.82% )
+
+            5.9536 +- 0.0321 seconds time elapsed  ( +-  0.54% )
+
+
+>>> Running concurrent_numa with 8 threads and 4 hashbits at Wed  9 Apr 22:47:49 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 4' (5 runs):
+
+    54,228,635,910      cpu-cycles                                                              ( +-  0.68% )
+       285,910,604      cache-misses                                                            ( +-  1.73% )
+           195,114      page-faults                                                             ( +-  0.13% )
+                14      cpu-migrations                                                          ( +-  4.84% )
+         6,676,202      dTLB-load-misses                                                        ( +-  0.74% )
+           218,317      context-switches                                                        ( +-  0.74% )
+
+            5.0062 +- 0.0127 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running concurrent_numa with 8 threads and 5 hashbits at Wed  9 Apr 22:48:14 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 5' (5 runs):
+
+    44,152,845,584      cpu-cycles                                                              ( +-  0.24% )
+       297,048,740      cache-misses                                                            ( +-  0.26% )
+           168,016      page-faults                                                             ( +-  0.10% )
+                12      cpu-migrations                                                          ( +- 11.61% )
+         4,315,814      dTLB-load-misses                                                        ( +-  0.31% )
+           103,075      context-switches                                                        ( +-  3.14% )
+
+            4.2610 +- 0.0114 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running concurrent_numa with 8 threads and 6 hashbits at Wed  9 Apr 22:48:35 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 6' (5 runs):
+
+    33,651,263,569      cpu-cycles                                                              ( +-  0.83% )
+       216,000,236      cache-misses                                                            ( +-  1.66% )
+           156,569      page-faults                                                             ( +-  0.05% )
+                11      cpu-migrations                                                          ( +- 14.83% )
+         2,932,840      dTLB-load-misses                                                        ( +-  1.01% )
+            48,440      context-switches                                                        ( +-  1.92% )
+
+           3.51038 +- 0.00647 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_numa with 8 threads and 7 hashbits at Wed  9 Apr 22:48:53 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 7' (5 runs):
+
+    23,924,124,881      cpu-cycles                                                              ( +-  0.61% )
+       160,321,501      cache-misses                                                            ( +-  1.33% )
+           149,613      page-faults                                                             ( +-  0.05% )
+                11      cpu-migrations                                                          ( +-  7.61% )
+         1,860,369      dTLB-load-misses                                                        ( +-  0.53% )
+            15,821      context-switches                                                        ( +-  1.73% )
+
+           2.87410 +- 0.00815 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running concurrent_numa with 8 threads and 8 hashbits at Wed  9 Apr 22:49:07 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 8' (5 runs):
+
+    18,348,471,756      cpu-cycles                                                              ( +-  0.19% )
+       160,514,773      cache-misses                                                            ( +-  0.63% )
+           143,442      page-faults                                                             ( +-  0.02% )
+                 9      cpu-migrations                                                          ( +- 11.86% )
+         1,186,582      dTLB-load-misses                                                        ( +-  0.18% )
+             3,664      context-switches                                                        ( +-  1.09% )
+
+           2.53071 +- 0.00288 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_numa with 8 threads and 9 hashbits at Wed  9 Apr 22:49:20 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 9' (5 runs):
+
+    13,685,837,040      cpu-cycles                                                              ( +-  0.22% )
+        96,996,966      cache-misses                                                            ( +-  0.60% )
+           139,854      page-faults                                                             ( +-  0.05% )
+                 8      cpu-migrations                                                          ( +- 17.05% )
+           889,295      dTLB-load-misses                                                        ( +-  0.38% )
+               823      context-switches                                                        ( +-  2.07% )
+
+           2.22238 +- 0.00251 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_numa with 8 threads and 10 hashbits at Wed  9 Apr 22:49:31 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 10' (5 runs):
+
+    11,395,979,056      cpu-cycles                                                              ( +-  0.30% )
+        70,644,755      cache-misses                                                            ( +-  0.51% )
+           137,005      page-faults                                                             ( +-  0.01% )
+                10      cpu-migrations                                                          ( +- 13.19% )
+           782,501      dTLB-load-misses                                                        ( +-  1.15% )
+               212      context-switches                                                        ( +-  2.17% )
+
+           2.05416 +- 0.00306 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_numa with 8 threads and 11 hashbits at Wed  9 Apr 22:49:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 11' (5 runs):
+
+    10,006,814,952      cpu-cycles                                                              ( +-  0.17% )
+        51,735,228      cache-misses                                                            ( +-  0.51% )
+           135,391      page-faults                                                             ( +-  0.01% )
+                 9      cpu-migrations                                                          ( +-  7.37% )
+           729,597      dTLB-load-misses                                                        ( +-  0.59% )
+                99      context-switches                                                        ( +-  3.23% )
+
+           1.96015 +- 0.00165 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_numa with 8 threads and 12 hashbits at Wed  9 Apr 22:49:51 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 12' (5 runs):
+
+     9,342,181,933      cpu-cycles                                                              ( +-  0.24% )
+        42,503,278      cache-misses                                                            ( +-  0.15% )
+           134,967      page-faults                                                             ( +-  0.01% )
+                 9      cpu-migrations                                                          ( +- 15.56% )
+           746,216      dTLB-load-misses                                                        ( +-  5.64% )
+                83      context-switches                                                        ( +-  3.49% )
+
+           1.91545 +- 0.00285 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_numa with 8 threads and 13 hashbits at Wed  9 Apr 22:50:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 13' (5 runs):
+
+     9,256,926,005      cpu-cycles                                                              ( +-  0.22% )
+        42,081,699      cache-misses                                                            ( +-  0.21% )
+           136,192      page-faults                                                             ( +-  0.01% )
+                 8      cpu-migrations                                                          ( +- 10.00% )
+           624,479      dTLB-load-misses                                                        ( +-  0.75% )
+                82      context-switches                                                        ( +-  5.03% )
+
+           1.90596 +- 0.00199 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_numa with 8 threads and 14 hashbits at Wed  9 Apr 22:50:11 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 14' (5 runs):
+
+     9,309,346,006      cpu-cycles                                                              ( +-  0.28% )
+        43,520,685      cache-misses                                                            ( +-  0.23% )
+           139,987      page-faults                                                             ( +-  0.02% )
+                 7      cpu-migrations                                                          ( +- 16.54% )
+           691,772      dTLB-load-misses                                                        ( +-  1.10% )
+                78      context-switches                                                        ( +-  3.51% )
+
+           1.91294 +- 0.00393 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running concurrent_numa with 8 threads and 15 hashbits at Wed  9 Apr 22:50:20 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 15' (5 runs):
+
+     9,540,918,956      cpu-cycles                                                              ( +-  0.34% )
+        45,350,951      cache-misses                                                            ( +-  0.20% )
+           148,294      page-faults                                                             ( +-  0.02% )
+                 8      cpu-migrations                                                          ( +- 12.25% )
+         1,678,273      dTLB-load-misses                                                        ( +-  2.20% )
+                74      context-switches                                                        ( +-  2.16% )
+
+           1.93225 +- 0.00209 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_numa with 8 threads and 16 hashbits at Wed  9 Apr 22:50:30 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 16' (5 runs):
+
+    10,116,145,702      cpu-cycles                                                              ( +-  0.31% )
+        47,940,075      cache-misses                                                            ( +-  0.10% )
+           165,316      page-faults                                                             ( +-  0.01% )
+                10      cpu-migrations                                                          ( +-  8.37% )
+         5,442,632      dTLB-load-misses                                                        ( +-  0.65% )
+                77      context-switches                                                        ( +-  2.07% )
+
+          1.980689 +- 0.000564 seconds time elapsed  ( +-  0.03% )
+
+
+>>> Running concurrent_numa with 8 threads and 17 hashbits at Wed  9 Apr 22:50:40 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 17' (5 runs):
+
+    11,093,446,028      cpu-cycles                                                              ( +-  0.23% )
+        51,167,738      cache-misses                                                            ( +-  0.08% )
+           198,396      page-faults                                                             ( +-  0.00% )
+                 8      cpu-migrations                                                          ( +- 13.35% )
+        12,257,346      dTLB-load-misses                                                        ( +-  0.14% )
+                74      context-switches                                                        ( +-  2.76% )
+
+           2.05224 +- 0.00281 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_numa with 8 threads and 18 hashbits at Wed  9 Apr 22:50:50 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 8 18' (5 runs):
+
+    11,689,586,103      cpu-cycles                                                              ( +-  0.33% )
+        55,068,464      cache-misses                                                            ( +-  0.18% )
+           200,060      page-faults                                                             ( +-  0.00% )
+                 9      cpu-migrations                                                          ( +- 12.86% )
+        21,993,067      dTLB-load-misses                                                        ( +-  0.13% )
+                73      context-switches                                                        ( +-  3.31% )
+
+           2.09878 +- 0.00198 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running concurrent_numa with 16 threads and 1 hashbits at Wed  9 Apr 22:51:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 1' (5 runs):
+
+   122,278,259,755      cpu-cycles                                                              ( +-  0.53% )
+       200,993,052      cache-misses                                                            ( +-  3.61% )
+           274,580      page-faults                                                             ( +-  0.27% )
+                88      cpu-migrations                                                          ( +- 12.19% )
+        10,908,750      dTLB-load-misses                                                        ( +-  1.91% )
+         1,319,318      context-switches                                                        ( +-  1.47% )
+
+            6.0308 +- 0.0303 seconds time elapsed  ( +-  0.50% )
+
+
+>>> Running concurrent_numa with 16 threads and 2 hashbits at Wed  9 Apr 22:51:31 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 2' (5 runs):
+
+   149,178,708,243      cpu-cycles                                                              ( +-  0.36% )
+       309,124,951      cache-misses                                                            ( +-  2.40% )
+           267,651      page-faults                                                             ( +-  0.70% )
+                97      cpu-migrations                                                          ( +-  3.99% )
+        25,770,161      dTLB-load-misses                                                        ( +-  6.30% )
+         2,493,385      context-switches                                                        ( +-  4.76% )
+
+            7.5601 +- 0.0657 seconds time elapsed  ( +-  0.87% )
+
+
+>>> Running concurrent_numa with 16 threads and 3 hashbits at Wed  9 Apr 22:52:09 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 3' (5 runs):
+
+   117,910,295,228      cpu-cycles                                                              ( +-  0.33% )
+       307,239,324      cache-misses                                                            ( +-  1.39% )
+           227,483      page-faults                                                             ( +-  0.13% )
+                67      cpu-migrations                                                          ( +-  4.90% )
+        16,245,493      dTLB-load-misses                                                        ( +-  0.65% )
+         1,645,677      context-switches                                                        ( +-  1.04% )
+
+            6.0785 +- 0.0181 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running concurrent_numa with 16 threads and 4 hashbits at Wed  9 Apr 22:52:40 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 4' (5 runs):
+
+    92,124,148,639      cpu-cycles                                                              ( +-  0.62% )
+       335,791,001      cache-misses                                                            ( +-  1.17% )
+           192,128      page-faults                                                             ( +-  0.17% )
+                58      cpu-migrations                                                          ( +-  6.06% )
+        11,926,773      dTLB-load-misses                                                        ( +-  0.57% )
+           976,622      context-switches                                                        ( +-  1.38% )
+
+            4.8813 +- 0.0150 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running concurrent_numa with 16 threads and 5 hashbits at Wed  9 Apr 22:53:04 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 5' (5 runs):
+
+    74,097,491,200      cpu-cycles                                                              ( +-  0.56% )
+       357,255,124      cache-misses                                                            ( +-  0.88% )
+           171,573      page-faults                                                             ( +-  0.16% )
+                53      cpu-migrations                                                          ( +-  5.01% )
+         7,990,546      dTLB-load-misses                                                        ( +-  0.89% )
+           529,861      context-switches                                                        ( +-  2.01% )
+
+            4.0719 +- 0.0132 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running concurrent_numa with 16 threads and 6 hashbits at Wed  9 Apr 22:53:24 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 6' (5 runs):
+
+    54,785,318,441      cpu-cycles                                                              ( +-  0.93% )
+       260,055,529      cache-misses                                                            ( +-  1.27% )
+           160,176      page-faults                                                             ( +-  0.11% )
+                43      cpu-migrations                                                          ( +-  5.76% )
+         5,328,705      dTLB-load-misses                                                        ( +-  0.71% )
+           287,425      context-switches                                                        ( +-  1.90% )
+
+           3.31785 +- 0.00944 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running concurrent_numa with 16 threads and 7 hashbits at Wed  9 Apr 22:53:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 7' (5 runs):
+
+    37,788,009,768      cpu-cycles                                                              ( +-  0.23% )
+       198,758,055      cache-misses                                                            ( +-  0.48% )
+           153,710      page-faults                                                             ( +-  0.08% )
+                39      cpu-migrations                                                          ( +-  4.89% )
+         3,355,683      dTLB-load-misses                                                        ( +-  0.24% )
+           113,197      context-switches                                                        ( +-  1.30% )
+
+           2.69535 +- 0.00383 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_numa with 16 threads and 8 hashbits at Wed  9 Apr 22:53:55 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 8' (5 runs):
+
+    28,283,277,466      cpu-cycles                                                              ( +-  0.14% )
+       210,796,620      cache-misses                                                            ( +-  0.61% )
+           147,103      page-faults                                                             ( +-  0.05% )
+                32      cpu-migrations                                                          ( +-  5.47% )
+         2,090,033      dTLB-load-misses                                                        ( +-  0.39% )
+            34,197      context-switches                                                        ( +-  1.41% )
+
+           2.35172 +- 0.00382 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running concurrent_numa with 16 threads and 9 hashbits at Wed  9 Apr 22:54:06 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 9' (5 runs):
+
+    18,840,002,363      cpu-cycles                                                              ( +-  0.12% )
+       118,864,236      cache-misses                                                            ( +-  0.45% )
+           143,641      page-faults                                                             ( +-  0.07% )
+                28      cpu-migrations                                                          ( +-  6.68% )
+         1,442,232      dTLB-load-misses                                                        ( +-  0.95% )
+             8,131      context-switches                                                        ( +-  2.13% )
+
+           2.03298 +- 0.00378 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running concurrent_numa with 16 threads and 10 hashbits at Wed  9 Apr 22:54:17 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 10' (5 runs):
+
+    14,243,541,478      cpu-cycles                                                              ( +-  0.57% )
+        80,985,285      cache-misses                                                            ( +-  0.65% )
+           140,264      page-faults                                                             ( +-  0.03% )
+                29      cpu-migrations                                                          ( +-  9.44% )
+         1,134,476      dTLB-load-misses                                                        ( +-  0.60% )
+             1,637      context-switches                                                        ( +-  1.15% )
+
+           1.87662 +- 0.00269 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_numa with 16 threads and 11 hashbits at Wed  9 Apr 22:54:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 11' (5 runs):
+
+    11,492,733,295      cpu-cycles                                                              ( +-  0.50% )
+        57,500,620      cache-misses                                                            ( +-  1.27% )
+           137,922      page-faults                                                             ( +-  0.03% )
+                29      cpu-migrations                                                          ( +-  5.04% )
+           964,482      dTLB-load-misses                                                        ( +-  0.56% )
+               356      context-switches                                                        ( +-  2.39% )
+
+           1.77475 +- 0.00184 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_numa with 16 threads and 12 hashbits at Wed  9 Apr 22:54:35 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 12' (5 runs):
+
+    10,072,470,209      cpu-cycles                                                              ( +-  0.47% )
+        42,685,863      cache-misses                                                            ( +-  0.45% )
+           136,569      page-faults                                                             ( +-  0.02% )
+                28      cpu-migrations                                                          ( +- 10.91% )
+           791,263      dTLB-load-misses                                                        ( +-  0.69% )
+               244      context-switches                                                        ( +-  3.52% )
+
+           1.72986 +- 0.00294 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_numa with 16 threads and 13 hashbits at Wed  9 Apr 22:54:44 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 13' (5 runs):
+
+     9,884,611,019      cpu-cycles                                                              ( +-  0.50% )
+        42,962,308      cache-misses                                                            ( +-  1.07% )
+           137,031      page-faults                                                             ( +-  0.01% )
+                31      cpu-migrations                                                          ( +-  2.99% )
+           708,999      dTLB-load-misses                                                        ( +-  0.91% )
+               211      context-switches                                                        ( +-  3.17% )
+
+           1.72528 +- 0.00219 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_numa with 16 threads and 14 hashbits at Wed  9 Apr 22:54:53 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 14' (5 runs):
+
+    10,022,157,091      cpu-cycles                                                              ( +-  0.69% )
+        44,048,285      cache-misses                                                            ( +-  0.48% )
+           140,407      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  5.39% )
+           896,066      dTLB-load-misses                                                        ( +-  3.67% )
+               208      context-switches                                                        ( +-  6.44% )
+
+           1.73130 +- 0.00391 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running concurrent_numa with 16 threads and 15 hashbits at Wed  9 Apr 22:55:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 15' (5 runs):
+
+    10,253,370,477      cpu-cycles                                                              ( +-  0.54% )
+        44,592,281      cache-misses                                                            ( +-  0.92% )
+           148,482      page-faults                                                             ( +-  0.02% )
+                26      cpu-migrations                                                          ( +-  8.28% )
+         1,916,796      dTLB-load-misses                                                        ( +-  1.69% )
+               215      context-switches                                                        ( +-  2.81% )
+
+           1.75209 +- 0.00743 seconds time elapsed  ( +-  0.42% )
+
+
+>>> Running concurrent_numa with 16 threads and 16 hashbits at Wed  9 Apr 22:55:10 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 16' (5 runs):
+
+    11,680,784,292      cpu-cycles                                                              ( +-  0.60% )
+        47,053,900      cache-misses                                                            ( +-  0.35% )
+           165,443      page-faults                                                             ( +-  0.03% )
+                29      cpu-migrations                                                          ( +-  9.21% )
+         5,865,659      dTLB-load-misses                                                        ( +-  1.05% )
+               221      context-switches                                                        ( +-  2.55% )
+
+           1.80064 +- 0.00255 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_numa with 16 threads and 17 hashbits at Wed  9 Apr 22:55:19 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 17' (5 runs):
+
+    15,220,207,587      cpu-cycles                                                              ( +-  1.07% )
+        49,926,610      cache-misses                                                            ( +-  0.21% )
+           198,440      page-faults                                                             ( +-  0.00% )
+                28      cpu-migrations                                                          ( +-  7.95% )
+        12,810,877      dTLB-load-misses                                                        ( +-  0.42% )
+               226      context-switches                                                        ( +-  1.46% )
+
+           1.93840 +- 0.00927 seconds time elapsed  ( +-  0.48% )
+
+
+>>> Running concurrent_numa with 16 threads and 18 hashbits at Wed  9 Apr 22:55:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 16 18' (5 runs):
+
+    14,147,518,681      cpu-cycles                                                              ( +-  0.91% )
+        53,695,459      cache-misses                                                            ( +-  0.07% )
+           200,098      page-faults                                                             ( +-  0.00% )
+                26      cpu-migrations                                                          ( +-  8.80% )
+        22,357,821      dTLB-load-misses                                                        ( +-  0.29% )
+               214      context-switches                                                        ( +-  3.69% )
+
+           1.90823 +- 0.00643 seconds time elapsed  ( +-  0.34% )
+
+
+>>> Running concurrent_numa with 32 threads and 1 hashbits at Wed  9 Apr 22:55:39 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 1' (5 runs):
+
+   299,025,953,914      cpu-cycles                                                              ( +-  0.97% )
+       204,159,723      cache-misses                                                            ( +-  2.57% )
+           291,359      page-faults                                                             ( +-  0.46% )
+               141      cpu-migrations                                                          ( +-  7.94% )
+        16,186,897      dTLB-load-misses                                                        ( +-  4.09% )
+         1,569,132      context-switches                                                        ( +-  2.90% )
+
+            6.7395 +- 0.0465 seconds time elapsed  ( +-  0.69% )
+
+
+>>> Running concurrent_numa with 32 threads and 2 hashbits at Wed  9 Apr 22:56:12 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 2' (5 runs):
+
+   329,467,794,378      cpu-cycles                                                              ( +-  0.90% )
+       458,271,952      cache-misses                                                            ( +-  1.02% )
+           286,136      page-faults                                                             ( +-  0.25% )
+               368      cpu-migrations                                                          ( +- 19.33% )
+        30,404,839      dTLB-load-misses                                                        ( +-  4.59% )
+         4,671,971      context-switches                                                        ( +-  1.50% )
+
+            8.4460 +- 0.0667 seconds time elapsed  ( +-  0.79% )
+
+
+>>> Running concurrent_numa with 32 threads and 3 hashbits at Wed  9 Apr 22:56:55 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 3' (5 runs):
+
+   220,422,168,379      cpu-cycles                                                              ( +-  0.28% )
+       395,572,641      cache-misses                                                            ( +-  2.50% )
+           249,224      page-faults                                                             ( +-  0.18% )
+               228      cpu-migrations                                                          ( +- 17.37% )
+        25,314,806      dTLB-load-misses                                                        ( +-  1.83% )
+         3,264,580      context-switches                                                        ( +-  0.59% )
+
+            6.2414 +- 0.0143 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running concurrent_numa with 32 threads and 4 hashbits at Wed  9 Apr 22:57:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 4' (5 runs):
+
+   157,001,263,089      cpu-cycles                                                              ( +-  0.59% )
+       335,951,468      cache-misses                                                            ( +-  1.24% )
+           222,700      page-faults                                                             ( +-  0.21% )
+               242      cpu-migrations                                                          ( +- 10.88% )
+        18,954,866      dTLB-load-misses                                                        ( +-  3.51% )
+         1,831,980      context-switches                                                        ( +-  0.82% )
+
+            4.6780 +- 0.0122 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running concurrent_numa with 32 threads and 5 hashbits at Wed  9 Apr 22:57:49 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 5' (5 runs):
+
+   118,536,426,852      cpu-cycles                                                              ( +-  0.34% )
+       320,824,127      cache-misses                                                            ( +-  0.60% )
+           199,677      page-faults                                                             ( +-  0.13% )
+               197      cpu-migrations                                                          ( +- 16.86% )
+        12,958,506      dTLB-load-misses                                                        ( +-  2.92% )
+           914,461      context-switches                                                        ( +-  0.59% )
+
+           3.70172 +- 0.00662 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_numa with 32 threads and 6 hashbits at Wed  9 Apr 22:58:08 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 6' (5 runs):
+
+    82,283,751,478      cpu-cycles                                                              ( +-  0.42% )
+       216,737,174      cache-misses                                                            ( +-  0.52% )
+           184,056      page-faults                                                             ( +-  0.19% )
+               141      cpu-migrations                                                          ( +-  9.04% )
+         9,722,940      dTLB-load-misses                                                        ( +-  2.83% )
+           431,247      context-switches                                                        ( +-  1.35% )
+
+           2.94112 +- 0.00534 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_numa with 32 threads and 7 hashbits at Wed  9 Apr 22:58:23 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 7' (5 runs):
+
+    53,846,117,608      cpu-cycles                                                              ( +-  0.34% )
+       163,420,498      cache-misses                                                            ( +-  0.38% )
+           173,706      page-faults                                                             ( +-  0.08% )
+               137      cpu-migrations                                                          ( +- 12.26% )
+         5,901,005      dTLB-load-misses                                                        ( +-  1.64% )
+           147,688      context-switches                                                        ( +-  0.68% )
+
+           2.38497 +- 0.00264 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_numa with 32 threads and 8 hashbits at Wed  9 Apr 22:58:35 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 8' (5 runs):
+
+    37,881,324,134      cpu-cycles                                                              ( +-  0.46% )
+       168,562,443      cache-misses                                                            ( +-  0.77% )
+           162,392      page-faults                                                             ( +-  0.08% )
+               108      cpu-migrations                                                          ( +- 11.44% )
+         3,842,758      dTLB-load-misses                                                        ( +-  1.65% )
+            40,265      context-switches                                                        ( +-  0.78% )
+
+           2.08967 +- 0.00403 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running concurrent_numa with 32 threads and 9 hashbits at Wed  9 Apr 22:58:45 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 9' (5 runs):
+
+    25,079,057,400      cpu-cycles                                                              ( +-  0.39% )
+        99,886,007      cache-misses                                                            ( +-  0.58% )
+           155,553      page-faults                                                             ( +-  0.04% )
+                97      cpu-migrations                                                          ( +-  9.09% )
+         2,836,793      dTLB-load-misses                                                        ( +-  1.57% )
+            10,029      context-switches                                                        ( +-  0.65% )
+
+           1.87663 +- 0.00311 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_numa with 32 threads and 10 hashbits at Wed  9 Apr 22:58:55 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 10' (5 runs):
+
+    18,798,528,770      cpu-cycles                                                              ( +-  0.49% )
+        70,672,582      cache-misses                                                            ( +-  0.87% )
+           148,199      page-faults                                                             ( +-  0.04% )
+                92      cpu-migrations                                                          ( +-  2.49% )
+         2,122,482      dTLB-load-misses                                                        ( +-  0.42% )
+             2,338      context-switches                                                        ( +-  1.76% )
+
+           1.75327 +- 0.00135 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_numa with 32 threads and 11 hashbits at Wed  9 Apr 22:59:03 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 11' (5 runs):
+
+    15,036,010,921      cpu-cycles                                                              ( +-  0.27% )
+        51,262,693      cache-misses                                                            ( +-  0.50% )
+           142,930      page-faults                                                             ( +-  0.02% )
+                92      cpu-migrations                                                          ( +-  5.32% )
+         1,569,320      dTLB-load-misses                                                        ( +-  1.46% )
+               814      context-switches                                                        ( +-  1.14% )
+
+           1.69912 +- 0.00400 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running concurrent_numa with 32 threads and 12 hashbits at Wed  9 Apr 22:59:12 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 12' (5 runs):
+
+    13,494,626,434      cpu-cycles                                                              ( +-  0.31% )
+        42,088,187      cache-misses                                                            ( +-  0.19% )
+           139,151      page-faults                                                             ( +-  0.02% )
+                99      cpu-migrations                                                          ( +-  3.95% )
+         1,202,250      dTLB-load-misses                                                        ( +-  0.61% )
+               681      context-switches                                                        ( +-  5.93% )
+
+           1.67688 +- 0.00399 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running concurrent_numa with 32 threads and 13 hashbits at Wed  9 Apr 22:59:21 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 13' (5 runs):
+
+    13,123,740,273      cpu-cycles                                                              ( +-  0.22% )
+        41,735,952      cache-misses                                                            ( +-  0.44% )
+           138,340      page-faults                                                             ( +-  0.01% )
+                90      cpu-migrations                                                          ( +-  5.38% )
+         1,140,412      dTLB-load-misses                                                        ( +-  1.52% )
+               554      context-switches                                                        ( +-  3.17% )
+
+           1.66326 +- 0.00558 seconds time elapsed  ( +-  0.34% )
+
+
+>>> Running concurrent_numa with 32 threads and 14 hashbits at Wed  9 Apr 22:59:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 14' (5 runs):
+
+    13,309,737,637      cpu-cycles                                                              ( +-  0.50% )
+        42,138,569      cache-misses                                                            ( +-  0.28% )
+           141,016      page-faults                                                             ( +-  0.01% )
+                93      cpu-migrations                                                          ( +-  6.74% )
+         2,149,509      dTLB-load-misses                                                        ( +-  0.89% )
+               609      context-switches                                                        ( +-  2.46% )
+
+           1.67509 +- 0.00327 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running concurrent_numa with 32 threads and 15 hashbits at Wed  9 Apr 22:59:37 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 15' (5 runs):
+
+    14,995,854,685      cpu-cycles                                                              ( +-  0.53% )
+        43,587,882      cache-misses                                                            ( +-  0.26% )
+           148,801      page-faults                                                             ( +-  0.02% )
+                90      cpu-migrations                                                          ( +-  6.16% )
+         6,131,801      dTLB-load-misses                                                        ( +-  0.32% )
+               593      context-switches                                                        ( +-  1.79% )
+
+           1.70528 +- 0.00119 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_numa with 32 threads and 16 hashbits at Wed  9 Apr 22:59:46 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 16' (5 runs):
+
+    19,253,873,717      cpu-cycles                                                              ( +-  1.10% )
+        45,361,550      cache-misses                                                            ( +-  0.14% )
+           165,587      page-faults                                                             ( +-  0.03% )
+                91      cpu-migrations                                                          ( +-  3.26% )
+        13,367,198      dTLB-load-misses                                                        ( +-  0.36% )
+               611      context-switches                                                        ( +-  1.44% )
+
+           1.78343 +- 0.00424 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running concurrent_numa with 32 threads and 17 hashbits at Wed  9 Apr 22:59:55 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 17' (5 runs):
+
+    26,918,257,223      cpu-cycles                                                              ( +-  1.45% )
+        48,426,285      cache-misses                                                            ( +-  0.25% )
+           198,513      page-faults                                                             ( +-  0.00% )
+                87      cpu-migrations                                                          ( +-  4.22% )
+        23,206,627      dTLB-load-misses                                                        ( +-  0.11% )
+               684      context-switches                                                        ( +-  1.12% )
+
+           1.93580 +- 0.00765 seconds time elapsed  ( +-  0.40% )
+
+
+>>> Running concurrent_numa with 32 threads and 18 hashbits at Wed  9 Apr 23:00:05 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_numa 32 18' (5 runs):
+
+    23,988,444,171      cpu-cycles                                                              ( +-  0.32% )
+        53,167,392      cache-misses                                                            ( +-  0.16% )
+           200,185      page-faults                                                             ( +-  0.00% )
+                76      cpu-migrations                                                          ( +-  3.30% )
+        32,981,672      dTLB-load-misses                                                        ( +-  0.16% )
+               670      context-switches                                                        ( +-  4.25% )
+
+           1.89113 +- 0.00431 seconds time elapsed  ( +-  0.23% )
+
+

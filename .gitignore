@@ -63,3 +63,4 @@ dkms.conf
 # macOS
 .DS_Store
 .vscode
+venv/
