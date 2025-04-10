@@ -1,0 +1,1621 @@
+===== concurrent_cpu_aff experiments (run at Wed  9 Apr 22:02:13 CEST 2025) =====
+>>> Running concurrent_cpu_aff with 1 threads and 1 hashbits at Wed  9 Apr 22:02:13 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 1' (5 runs):
+
+     5,318,361,339      cpu-cycles                                                              ( +-  0.09% )
+         6,060,169      cache-misses                                                            ( +-  0.30% )
+           131,146      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           242,828      dTLB-load-misses                                                        ( +-  2.37% )
+                 9      context-switches                                                        ( +-  6.67% )
+
+           2.67981 +- 0.00413 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 2 hashbits at Wed  9 Apr 22:02:27 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 2' (5 runs):
+
+     5,318,218,527      cpu-cycles                                                              ( +-  0.04% )
+         6,062,300      cache-misses                                                            ( +-  0.12% )
+           131,148      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           229,790      dTLB-load-misses                                                        ( +-  1.59% )
+                 8      context-switches                                                        ( +-  2.50% )
+
+           2.67844 +- 0.00215 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 3 hashbits at Wed  9 Apr 22:02:40 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 3' (5 runs):
+
+     5,323,571,260      cpu-cycles                                                              ( +-  0.08% )
+         6,032,083      cache-misses                                                            ( +-  0.38% )
+           131,153      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           240,470      dTLB-load-misses                                                        ( +-  1.82% )
+                 8      context-switches                                                        ( +-  8.48% )
+
+           2.68067 +- 0.00469 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 4 hashbits at Wed  9 Apr 22:02:54 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 4' (5 runs):
+
+     5,325,845,472      cpu-cycles                                                              ( +-  0.05% )
+         6,042,760      cache-misses                                                            ( +-  0.35% )
+           131,160      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 40.00% )
+           244,619      dTLB-load-misses                                                        ( +-  0.90% )
+                 9      context-switches                                                        ( +-  7.54% )
+
+           2.68415 +- 0.00217 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 5 hashbits at Wed  9 Apr 22:03:07 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 5' (5 runs):
+
+     5,330,934,976      cpu-cycles                                                              ( +-  0.11% )
+         5,910,143      cache-misses                                                            ( +-  0.40% )
+           131,175      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           255,450      dTLB-load-misses                                                        ( +-  1.42% )
+                 9      context-switches                                                        ( +-  5.67% )
+
+           2.68993 +- 0.00436 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 6 hashbits at Wed  9 Apr 22:03:21 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 6' (5 runs):
+
+     5,339,421,441      cpu-cycles                                                              ( +-  0.12% )
+         5,389,944      cache-misses                                                            ( +-  0.29% )
+           131,210      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 24.49% )
+           252,148      dTLB-load-misses                                                        ( +-  1.75% )
+                 9      context-switches                                                        ( +-  5.44% )
+
+           2.69134 +- 0.00467 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 7 hashbits at Wed  9 Apr 22:03:34 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 7' (5 runs):
+
+     5,365,130,595      cpu-cycles                                                              ( +-  0.06% )
+         5,390,649      cache-misses                                                            ( +-  0.41% )
+           131,274      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           280,269      dTLB-load-misses                                                        ( +-  1.18% )
+                 9      context-switches                                                        ( +-  9.30% )
+
+           2.70734 +- 0.00203 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 8 hashbits at Wed  9 Apr 22:03:48 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 8' (5 runs):
+
+     5,349,944,564      cpu-cycles                                                              ( +-  0.03% )
+         5,535,469      cache-misses                                                            ( +-  0.12% )
+           131,403      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           286,074      dTLB-load-misses                                                        ( +-  1.02% )
+                 9      context-switches                                                        ( +-  4.44% )
+
+           2.69635 +- 0.00271 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 9 hashbits at Wed  9 Apr 22:04:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 9' (5 runs):
+
+     5,374,856,894      cpu-cycles                                                              ( +-  0.11% )
+         5,790,481      cache-misses                                                            ( +-  0.50% )
+           131,658      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 24.49% )
+           299,763      dTLB-load-misses                                                        ( +-  1.82% )
+                10      context-switches                                                        ( +-  9.49% )
+
+           2.71213 +- 0.00168 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 10 hashbits at Wed  9 Apr 22:04:15 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 10' (5 runs):
+
+     5,399,823,449      cpu-cycles                                                              ( +-  0.03% )
+         6,277,338      cache-misses                                                            ( +-  0.15% )
+           132,175      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           336,052      dTLB-load-misses                                                        ( +-  1.04% )
+                 9      context-switches                                                        ( +-  6.48% )
+
+           2.72293 +- 0.00276 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 11 hashbits at Wed  9 Apr 22:04:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 11' (5 runs):
+
+     5,497,791,463      cpu-cycles                                                              ( +-  0.05% )
+         7,444,953      cache-misses                                                            ( +-  0.08% )
+           133,218      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           488,236      dTLB-load-misses                                                        ( +-  0.47% )
+                10      context-switches                                                        ( +-  7.35% )
+
+           2.77433 +- 0.00147 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 12 hashbits at Wed  9 Apr 22:04:43 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 12' (5 runs):
+
+     5,684,939,053      cpu-cycles                                                              ( +-  0.13% )
+         9,419,283      cache-misses                                                            ( +-  0.19% )
+           135,256      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           608,078      dTLB-load-misses                                                        ( +-  2.59% )
+                10      context-switches                                                        ( +-  5.10% )
+
+           2.86605 +- 0.00509 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 13 hashbits at Wed  9 Apr 22:04:57 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 13' (5 runs):
+
+     5,813,374,722      cpu-cycles                                                              ( +-  0.19% )
+        10,411,083      cache-misses                                                            ( +-  0.07% )
+           139,346      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 24.49% )
+           572,827      dTLB-load-misses                                                        ( +-  0.86% )
+                10      context-switches                                                        ( +-  3.16% )
+
+           2.92997 +- 0.00680 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 14 hashbits at Wed  9 Apr 22:05:12 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 14' (5 runs):
+
+     6,069,457,998      cpu-cycles                                                              ( +-  0.15% )
+        12,297,295      cache-misses                                                            ( +-  0.28% )
+           147,628      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           656,631      dTLB-load-misses                                                        ( +-  1.80% )
+                 9      context-switches                                                        ( +-  5.67% )
+
+           3.06207 +- 0.00443 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 15 hashbits at Wed  9 Apr 22:05:27 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 15' (5 runs):
+
+     6,449,548,624      cpu-cycles                                                              ( +-  0.08% )
+        16,084,150      cache-misses                                                            ( +-  0.13% )
+           163,776      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 24.49% )
+         1,670,987      dTLB-load-misses                                                        ( +-  0.70% )
+                11      context-switches                                                        ( +-  6.68% )
+
+           3.25123 +- 0.00136 seconds time elapsed  ( +-  0.04% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 16 hashbits at Wed  9 Apr 22:05:44 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 16' (5 runs):
+
+     6,935,827,871      cpu-cycles                                                              ( +-  0.05% )
+        20,783,000      cache-misses                                                            ( +-  0.14% )
+           197,356      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                        
+         5,688,093      dTLB-load-misses                                                        ( +-  0.27% )
+                13      context-switches                                                        ( +-  6.71% )
+
+           3.49239 +- 0.00217 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 17 hashbits at Wed  9 Apr 22:06:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 17' (5 runs):
+
+     7,985,882,009      cpu-cycles                                                              ( +-  0.05% )
+        26,615,654      cache-misses                                                            ( +-  0.44% )
+           327,569      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+        13,103,799      dTLB-load-misses                                                        ( +-  0.08% )
+                12      context-switches                                                        ( +-  5.65% )
+
+           4.01881 +- 0.00360 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running concurrent_cpu_aff with 1 threads and 18 hashbits at Wed  9 Apr 22:06:21 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 1 18' (5 runs):
+
+     8,998,976,182      cpu-cycles                                                              ( +-  0.77% )
+        41,019,930      cache-misses                                                            ( +-  0.29% )
+           329,547      page-faults                                                             ( +-  0.16% )
+                 1      cpu-migrations                                                          ( +- 31.62% )
+        22,789,484      dTLB-load-misses                                                        ( +-  0.08% )
+                16      context-switches                                                        ( +-  8.84% )
+
+            4.5257 +- 0.0341 seconds time elapsed  ( +-  0.75% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 1 hashbits at Wed  9 Apr 22:06:44 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 1' (5 runs):
+
+    15,884,570,904      cpu-cycles                                                              ( +-  0.36% )
+        62,687,040      cache-misses                                                            ( +-  1.32% )
+           198,969      page-faults                                                             ( +-  0.20% )
+                 2      cpu-migrations                                                        
+         2,383,662      dTLB-load-misses                                                        ( +-  0.97% )
+               951      context-switches                                                        ( +-  8.71% )
+
+            4.7529 +- 0.0140 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 2 hashbits at Wed  9 Apr 22:07:08 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 2' (5 runs):
+
+    17,590,970,741      cpu-cycles                                                              ( +-  0.65% )
+        98,149,037      cache-misses                                                            ( +-  2.90% )
+           205,027      page-faults                                                             ( +-  0.18% )
+                 2      cpu-migrations                                                        
+         2,026,911      dTLB-load-misses                                                        ( +-  0.72% )
+               861      context-switches                                                        ( +-  1.05% )
+
+            5.1832 +- 0.0288 seconds time elapsed  ( +-  0.56% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 3 hashbits at Wed  9 Apr 22:07:34 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 3' (5 runs):
+
+    17,991,111,784      cpu-cycles                                                              ( +-  0.82% )
+       132,750,136      cache-misses                                                            ( +-  6.54% )
+           202,029      page-faults                                                             ( +-  0.31% )
+                 2      cpu-migrations                                                        
+         1,791,133      dTLB-load-misses                                                        ( +-  0.77% )
+               713      context-switches                                                        ( +-  3.78% )
+
+            5.3207 +- 0.0282 seconds time elapsed  ( +-  0.53% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 4 hashbits at Wed  9 Apr 22:08:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 4' (5 runs):
+
+    16,665,856,077      cpu-cycles                                                              ( +-  1.25% )
+       129,390,359      cache-misses                                                            ( +-  1.92% )
+           187,504      page-faults                                                             ( +-  0.44% )
+                 2      cpu-migrations                                                        
+         1,416,526      dTLB-load-misses                                                        ( +-  1.95% )
+               472      context-switches                                                        ( +-  2.46% )
+
+            4.9805 +- 0.0357 seconds time elapsed  ( +-  0.72% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 5 hashbits at Wed  9 Apr 22:08:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 5' (5 runs):
+
+    14,668,699,164      cpu-cycles                                                              ( +-  1.26% )
+       122,918,625      cache-misses                                                            ( +-  1.86% )
+           161,611      page-faults                                                             ( +-  0.50% )
+                 2      cpu-migrations                                                          ( +- 12.25% )
+           994,839      dTLB-load-misses                                                        ( +-  1.77% )
+               302      context-switches                                                        ( +-  5.26% )
+
+            4.4721 +- 0.0383 seconds time elapsed  ( +-  0.86% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 6 hashbits at Wed  9 Apr 22:08:48 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 6' (5 runs):
+
+    12,607,563,213      cpu-cycles                                                              ( +-  1.92% )
+       113,200,681      cache-misses                                                            ( +-  3.25% )
+           148,730      page-faults                                                             ( +-  0.37% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           706,280      dTLB-load-misses                                                        ( +-  2.36% )
+               172      context-switches                                                        ( +-  5.33% )
+
+            3.9621 +- 0.0415 seconds time elapsed  ( +-  1.05% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 7 hashbits at Wed  9 Apr 22:09:08 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 7' (5 runs):
+
+    11,142,015,036      cpu-cycles                                                              ( +-  1.56% )
+       105,987,399      cache-misses                                                            ( +-  2.94% )
+           140,601      page-faults                                                             ( +-  0.17% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+           561,381      dTLB-load-misses                                                        ( +-  1.62% )
+               105      context-switches                                                        ( +-  6.21% )
+
+            3.5843 +- 0.0278 seconds time elapsed  ( +-  0.77% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 8 hashbits at Wed  9 Apr 22:09:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 8' (5 runs):
+
+     9,499,400,560      cpu-cycles                                                              ( +-  0.03% )
+        83,803,497      cache-misses                                                            ( +-  0.09% )
+           135,502      page-faults                                                             ( +-  0.02% )
+                 2      cpu-migrations                                                        
+           462,411      dTLB-load-misses                                                        ( +-  0.99% )
+                54      context-switches                                                        ( +-  3.95% )
+
+           3.22213 +- 0.00260 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 9 hashbits at Wed  9 Apr 22:09:42 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 9' (5 runs):
+
+     8,736,505,158      cpu-cycles                                                              ( +-  0.11% )
+        62,812,205      cache-misses                                                            ( +-  0.41% )
+           133,929      page-faults                                                             ( +-  0.03% )
+                 2      cpu-migrations                                                        
+           429,941      dTLB-load-misses                                                        ( +-  2.04% )
+                30      context-switches                                                        ( +-  7.93% )
+
+           3.02229 +- 0.00374 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 10 hashbits at Wed  9 Apr 22:09:57 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 10' (5 runs):
+
+     8,499,584,487      cpu-cycles                                                              ( +-  0.63% )
+        52,501,055      cache-misses                                                            ( +-  1.30% )
+           133,510      page-faults                                                             ( +-  0.03% )
+                 2      cpu-migrations                                                        
+           447,792      dTLB-load-misses                                                        ( +-  2.02% )
+                22      context-switches                                                        ( +-  7.79% )
+
+           2.93058 +- 0.00392 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 11 hashbits at Wed  9 Apr 22:10:12 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 11' (5 runs):
+
+     8,327,968,811      cpu-cycles                                                              ( +-  0.42% )
+        41,668,291      cache-misses                                                            ( +-  0.90% )
+           134,204      page-faults                                                             ( +-  0.02% )
+                 2      cpu-migrations                                                        
+           567,750      dTLB-load-misses                                                        ( +-  1.72% )
+                21      context-switches                                                        ( +-  8.44% )
+
+           2.87665 +- 0.00458 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 12 hashbits at Wed  9 Apr 22:10:27 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 12' (5 runs):
+
+     8,327,072,590      cpu-cycles                                                              ( +-  0.18% )
+        40,183,832      cache-misses                                                            ( +-  0.19% )
+           136,416      page-faults                                                             ( +-  0.02% )
+                 2      cpu-migrations                                                        
+           642,993      dTLB-load-misses                                                        ( +-  1.92% )
+                17      context-switches                                                        ( +-  8.61% )
+
+          2.884977 +- 0.000560 seconds time elapsed  ( +-  0.02% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 13 hashbits at Wed  9 Apr 22:10:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 13' (5 runs):
+
+     8,474,805,474      cpu-cycles                                                              ( +-  0.05% )
+        41,721,013      cache-misses                                                            ( +-  0.03% )
+           141,279      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                        
+           677,431      dTLB-load-misses                                                        ( +-  6.32% )
+                16      context-switches                                                        ( +-  5.38% )
+
+           2.91738 +- 0.00199 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 14 hashbits at Wed  9 Apr 22:10:56 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 14' (5 runs):
+
+     8,643,147,793      cpu-cycles                                                              ( +-  0.09% )
+        42,966,564      cache-misses                                                            ( +-  0.07% )
+           151,243      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           743,949      dTLB-load-misses                                                        ( +-  1.16% )
+                16      context-switches                                                        ( +-  6.06% )
+
+           2.97146 +- 0.00137 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 15 hashbits at Wed  9 Apr 22:11:11 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 15' (5 runs):
+
+     9,040,206,376      cpu-cycles                                                              ( +-  0.04% )
+        45,891,899      cache-misses                                                            ( +-  0.06% )
+           171,233      page-faults                                                             ( +-  0.02% )
+                 2      cpu-migrations                                                        
+         1,742,493      dTLB-load-misses                                                        ( +-  1.27% )
+                16      context-switches                                                        ( +-  6.12% )
+
+           3.07793 +- 0.00158 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 16 hashbits at Wed  9 Apr 22:11:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 16' (5 runs):
+
+     9,750,431,788      cpu-cycles                                                              ( +-  0.10% )
+        50,801,966      cache-misses                                                            ( +-  0.34% )
+           212,089      page-faults                                                             ( +-  0.06% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+         5,566,039      dTLB-load-misses                                                        ( +-  0.23% )
+                16      context-switches                                                        ( +-  5.80% )
+
+           3.22431 +- 0.00557 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 17 hashbits at Wed  9 Apr 22:11:42 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 17' (5 runs):
+
+    10,838,700,257      cpu-cycles                                                              ( +-  0.03% )
+        55,895,721      cache-misses                                                            ( +-  0.13% )
+           290,592      page-faults                                                             ( +-  0.09% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+        12,654,824      dTLB-load-misses                                                        ( +-  0.12% )
+                18      context-switches                                                        ( +-  2.08% )
+
+           3.49594 +- 0.00413 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_cpu_aff with 2 threads and 18 hashbits at Wed  9 Apr 22:12:00 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 2 18' (5 runs):
+
+    12,743,050,870      cpu-cycles                                                              ( +-  0.10% )
+        64,470,051      cache-misses                                                            ( +-  0.09% )
+           389,675      page-faults                                                             ( +-  0.08% )
+                 2      cpu-migrations                                                        
+        22,941,912      dTLB-load-misses                                                        ( +-  0.21% )
+                22      context-switches                                                        ( +-  4.22% )
+
+           3.98217 +- 0.00800 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 1 hashbits at Wed  9 Apr 22:12:20 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 1' (5 runs):
+
+    27,972,880,391      cpu-cycles                                                              ( +-  0.38% )
+        90,235,556      cache-misses                                                            ( +-  1.80% )
+           273,039      page-faults                                                             ( +-  0.42% )
+                 4      cpu-migrations                                                          ( +-  5.00% )
+         4,793,227      dTLB-load-misses                                                        ( +-  0.26% )
+            94,445      context-switches                                                        ( +-  1.74% )
+
+            4.8562 +- 0.0104 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 2 hashbits at Wed  9 Apr 22:12:44 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 2' (5 runs):
+
+    33,320,873,721      cpu-cycles                                                              ( +-  0.67% )
+       152,480,577      cache-misses                                                            ( +-  1.40% )
+           266,512      page-faults                                                             ( +-  0.33% )
+                 4      cpu-migrations                                                        
+         4,899,172      dTLB-load-misses                                                        ( +-  0.71% )
+            69,424      context-switches                                                        ( +-  1.24% )
+
+            5.4976 +- 0.0230 seconds time elapsed  ( +-  0.42% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 3 hashbits at Wed  9 Apr 22:13:12 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 3' (5 runs):
+
+    32,739,747,291      cpu-cycles                                                              ( +-  0.80% )
+       187,616,329      cache-misses                                                            ( +-  2.93% )
+           232,363      page-faults                                                             ( +-  0.16% )
+                 4      cpu-migrations                                                        
+         4,126,100      dTLB-load-misses                                                        ( +-  0.78% )
+            37,589      context-switches                                                        ( +-  1.63% )
+
+            5.3763 +- 0.0245 seconds time elapsed  ( +-  0.46% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 4 hashbits at Wed  9 Apr 22:13:39 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 4' (5 runs):
+
+    29,564,820,237      cpu-cycles                                                              ( +-  0.90% )
+       196,644,201      cache-misses                                                            ( +-  1.19% )
+           193,914      page-faults                                                             ( +-  0.28% )
+                 4      cpu-migrations                                                          ( +-  6.12% )
+         3,142,077      dTLB-load-misses                                                        ( +-  0.88% )
+            19,731      context-switches                                                        ( +-  3.08% )
+
+            4.9210 +- 0.0277 seconds time elapsed  ( +-  0.56% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 5 hashbits at Wed  9 Apr 22:14:04 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 5' (5 runs):
+
+    25,006,309,946      cpu-cycles                                                              ( +-  1.06% )
+       200,547,025      cache-misses                                                            ( +-  1.80% )
+           166,195      page-faults                                                             ( +-  0.03% )
+                 3      cpu-migrations                                                          ( +- 12.47% )
+         2,142,742      dTLB-load-misses                                                        ( +-  1.04% )
+             7,859      context-switches                                                        ( +-  1.65% )
+
+            4.3290 +- 0.0190 seconds time elapsed  ( +-  0.44% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 6 hashbits at Wed  9 Apr 22:14:25 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 6' (5 runs):
+
+    21,427,311,674      cpu-cycles                                                              ( +-  1.53% )
+       194,156,464      cache-misses                                                            ( +-  2.30% )
+           152,512      page-faults                                                             ( +-  0.10% )
+                 4      cpu-migrations                                                          ( +- 11.18% )
+         1,452,448      dTLB-load-misses                                                        ( +-  1.31% )
+             3,313      context-switches                                                        ( +-  3.85% )
+
+            3.8497 +- 0.0210 seconds time elapsed  ( +-  0.55% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 7 hashbits at Wed  9 Apr 22:14:45 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 7' (5 runs):
+
+    16,222,615,459      cpu-cycles                                                              ( +-  0.54% )
+       152,318,076      cache-misses                                                            ( +-  0.96% )
+           145,055      page-faults                                                             ( +-  0.04% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+         1,001,937      dTLB-load-misses                                                        ( +-  0.88% )
+             1,024      context-switches                                                        ( +-  2.23% )
+
+           3.21510 +- 0.00272 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 8 hashbits at Wed  9 Apr 22:15:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 8' (5 runs):
+
+    12,969,538,910      cpu-cycles                                                              ( +-  0.31% )
+       118,929,202      cache-misses                                                            ( +-  0.66% )
+           139,853      page-faults                                                             ( +-  0.04% )
+                 4      cpu-migrations                                                          ( +-  5.00% )
+           707,026      dTLB-load-misses                                                        ( +-  0.94% )
+               305      context-switches                                                        ( +-  3.62% )
+
+           2.82083 +- 0.00412 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 9 hashbits at Wed  9 Apr 22:15:15 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 9' (5 runs):
+
+    10,771,206,273      cpu-cycles                                                              ( +-  0.16% )
+        80,501,176      cache-misses                                                            ( +-  0.37% )
+           136,604      page-faults                                                             ( +-  0.04% )
+                 4      cpu-migrations                                                          ( +-  7.91% )
+           567,943      dTLB-load-misses                                                        ( +-  1.22% )
+                94      context-switches                                                        ( +-  6.67% )
+
+           2.54636 +- 0.00270 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 10 hashbits at Wed  9 Apr 22:15:28 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 10' (5 runs):
+
+     9,684,705,979      cpu-cycles                                                              ( +-  0.07% )
+        61,094,654      cache-misses                                                            ( +-  0.24% )
+           134,567      page-faults                                                             ( +-  0.02% )
+                 4      cpu-migrations                                                          ( +-  5.00% )
+           533,545      dTLB-load-misses                                                        ( +-  0.95% )
+                50      context-switches                                                        ( +-  8.63% )
+
+           2.38823 +- 0.00177 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 11 hashbits at Wed  9 Apr 22:15:40 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 11' (5 runs):
+
+     9,114,350,395      cpu-cycles                                                              ( +-  0.08% )
+        46,378,539      cache-misses                                                            ( +-  0.26% )
+           133,758      page-faults                                                             ( +-  0.01% )
+                 4      cpu-migrations                                                          ( +- 21.51% )
+           582,274      dTLB-load-misses                                                        ( +-  1.67% )
+                36      context-switches                                                        ( +-  9.42% )
+
+           2.29296 +- 0.00311 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 12 hashbits at Wed  9 Apr 22:15:51 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 12' (5 runs):
+
+     8,915,229,821      cpu-cycles                                                              ( +-  0.09% )
+        41,155,487      cache-misses                                                            ( +-  0.09% )
+           134,010      page-faults                                                             ( +-  0.01% )
+                 4      cpu-migrations                                                          ( +-  5.00% )
+           617,734      dTLB-load-misses                                                        ( +-  0.90% )
+                32      context-switches                                                        ( +-  9.13% )
+
+           2.25908 +- 0.00383 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 13 hashbits at Wed  9 Apr 22:16:03 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 13' (5 runs):
+
+     8,969,716,651      cpu-cycles                                                              ( +-  0.06% )
+        42,143,074      cache-misses                                                            ( +-  0.16% )
+           135,737      page-faults                                                             ( +-  0.01% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           591,032      dTLB-load-misses                                                        ( +-  0.95% )
+                28      context-switches                                                        ( +-  6.35% )
+
+           2.27325 +- 0.00269 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 14 hashbits at Wed  9 Apr 22:16:14 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 14' (5 runs):
+
+     9,033,726,970      cpu-cycles                                                              ( +-  0.03% )
+        43,686,282      cache-misses                                                            ( +-  0.03% )
+           139,765      page-faults                                                             ( +-  0.01% )
+                 4      cpu-migrations                                                          ( +-  7.91% )
+           642,015      dTLB-load-misses                                                        ( +-  0.81% )
+                29      context-switches                                                        ( +-  6.40% )
+
+           2.28299 +- 0.00323 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 15 hashbits at Wed  9 Apr 22:16:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 15' (5 runs):
+
+     9,228,402,258      cpu-cycles                                                              ( +-  0.04% )
+        45,460,748      cache-misses                                                            ( +-  0.06% )
+           148,212      page-faults                                                             ( +-  0.02% )
+                 4      cpu-migrations                                                          ( +-  6.12% )
+         1,597,200      dTLB-load-misses                                                        ( +-  0.75% )
+                30      context-switches                                                        ( +-  6.75% )
+
+           2.31509 +- 0.00179 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 16 hashbits at Wed  9 Apr 22:16:37 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 16' (5 runs):
+
+     9,619,187,151      cpu-cycles                                                              ( +-  0.09% )
+        48,625,385      cache-misses                                                            ( +-  0.09% )
+           165,326      page-faults                                                             ( +-  0.03% )
+                 4      cpu-migrations                                                          ( +-  5.00% )
+         5,338,176      dTLB-load-misses                                                        ( +-  0.10% )
+                29      context-switches                                                        ( +-  2.58% )
+
+          2.372933 +- 0.000961 seconds time elapsed  ( +-  0.04% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 17 hashbits at Wed  9 Apr 22:16:49 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 17' (5 runs):
+
+    10,341,316,256      cpu-cycles                                                              ( +-  0.02% )
+        52,263,999      cache-misses                                                            ( +-  0.07% )
+           198,358      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +-  6.12% )
+        12,156,512      dTLB-load-misses                                                        ( +-  0.10% )
+                31      context-switches                                                        ( +-  6.74% )
+
+           2.45591 +- 0.00322 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_cpu_aff with 4 threads and 18 hashbits at Wed  9 Apr 22:17:02 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 4 18' (5 runs):
+
+    12,182,557,939      cpu-cycles                                                              ( +-  0.07% )
+        60,304,193      cache-misses                                                            ( +-  0.18% )
+           285,428      page-faults                                                             ( +-  0.05% )
+                 5      cpu-migrations                                                          ( +- 10.95% )
+        22,537,736      dTLB-load-misses                                                        ( +-  0.09% )
+                31      context-switches                                                        ( +-  6.03% )
+
+           2.69972 +- 0.00157 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 1 hashbits at Wed  9 Apr 22:17:15 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 1' (5 runs):
+
+    58,942,657,401      cpu-cycles                                                              ( +-  0.33% )
+       181,038,066      cache-misses                                                            ( +-  3.47% )
+           304,789      page-faults                                                             ( +-  0.40% )
+                11      cpu-migrations                                                          ( +-  2.87% )
+         8,825,036      dTLB-load-misses                                                        ( +-  0.23% )
+           691,225      context-switches                                                        ( +-  1.08% )
+
+            5.7883 +- 0.0197 seconds time elapsed  ( +-  0.34% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 2 hashbits at Wed  9 Apr 22:17:44 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 2' (5 runs):
+
+    73,448,082,180      cpu-cycles                                                              ( +-  0.59% )
+       222,503,627      cache-misses                                                            ( +-  2.10% )
+           285,401      page-faults                                                             ( +-  0.14% )
+                10      cpu-migrations                                                          ( +-  4.00% )
+        14,219,299      dTLB-load-misses                                                        ( +-  5.38% )
+           690,733      context-switches                                                        ( +-  1.06% )
+
+            6.7106 +- 0.0270 seconds time elapsed  ( +-  0.40% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 3 hashbits at Wed  9 Apr 22:18:18 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 3' (5 runs):
+
+    65,940,802,748      cpu-cycles                                                              ( +-  0.46% )
+       231,488,474      cache-misses                                                            ( +-  5.12% )
+           234,869      page-faults                                                             ( +-  0.09% )
+                10      cpu-migrations                                                          ( +-  2.00% )
+         9,908,221      dTLB-load-misses                                                        ( +-  1.87% )
+           408,673      context-switches                                                        ( +-  0.83% )
+
+            5.9445 +- 0.0156 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 4 hashbits at Wed  9 Apr 22:18:48 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 4' (5 runs):
+
+    53,804,722,015      cpu-cycles                                                              ( +-  0.40% )
+       261,241,949      cache-misses                                                            ( +-  0.63% )
+           195,070      page-faults                                                             ( +-  0.18% )
+                11      cpu-migrations                                                          ( +-  3.40% )
+         6,691,806      dTLB-load-misses                                                        ( +-  0.53% )
+           220,652      context-switches                                                        ( +-  1.04% )
+
+            4.9791 +- 0.0126 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 5 hashbits at Wed  9 Apr 22:19:13 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 5' (5 runs):
+
+    44,346,784,085      cpu-cycles                                                              ( +-  0.63% )
+       293,426,145      cache-misses                                                            ( +-  0.87% )
+           167,982      page-faults                                                             ( +-  0.13% )
+                11      cpu-migrations                                                          ( +-  4.64% )
+         4,456,639      dTLB-load-misses                                                        ( +-  0.68% )
+           104,388      context-switches                                                        ( +-  1.62% )
+
+            4.2417 +- 0.0123 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 6 hashbits at Wed  9 Apr 22:19:34 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 6' (5 runs):
+
+    36,255,684,489      cpu-cycles                                                              ( +-  1.14% )
+       279,935,616      cache-misses                                                            ( +-  1.91% )
+           154,800      page-faults                                                             ( +-  0.08% )
+                10      cpu-migrations                                                          ( +-  3.16% )
+         2,831,948      dTLB-load-misses                                                        ( +-  1.20% )
+            47,140      context-switches                                                        ( +-  1.94% )
+
+            3.6749 +- 0.0116 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 7 hashbits at Wed  9 Apr 22:19:53 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 7' (5 runs):
+
+    25,275,472,670      cpu-cycles                                                              ( +-  0.85% )
+       217,274,488      cache-misses                                                            ( +-  1.67% )
+           148,519      page-faults                                                             ( +-  0.07% )
+                11      cpu-migrations                                                          ( +-  6.17% )
+         1,816,227      dTLB-load-misses                                                        ( +-  0.81% )
+            13,637      context-switches                                                        ( +-  1.88% )
+
+           2.95299 +- 0.00824 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 8 hashbits at Wed  9 Apr 22:20:07 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 8' (5 runs):
+
+    18,418,177,502      cpu-cycles                                                              ( +-  0.27% )
+       159,052,466      cache-misses                                                            ( +-  0.46% )
+           143,475      page-faults                                                             ( +-  0.06% )
+                10      cpu-migrations                                                          ( +-  5.83% )
+         1,188,358      dTLB-load-misses                                                        ( +-  0.41% )
+             3,653      context-switches                                                        ( +-  1.33% )
+
+           2.53713 +- 0.00491 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 9 hashbits at Wed  9 Apr 22:20:20 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 9' (5 runs):
+
+    13,779,324,444      cpu-cycles                                                              ( +-  0.43% )
+        98,997,006      cache-misses                                                            ( +-  0.60% )
+           139,761      page-faults                                                             ( +-  0.01% )
+                12      cpu-migrations                                                          ( +-  6.77% )
+           872,367      dTLB-load-misses                                                        ( +-  0.60% )
+               804      context-switches                                                        ( +-  0.82% )
+
+           2.22209 +- 0.00410 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 10 hashbits at Wed  9 Apr 22:20:31 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 10' (5 runs):
+
+    11,266,004,701      cpu-cycles                                                              ( +-  0.22% )
+        70,126,825      cache-misses                                                            ( +-  0.50% )
+           137,032      page-faults                                                             ( +-  0.03% )
+                11      cpu-migrations                                                          ( +-  7.27% )
+           746,665      dTLB-load-misses                                                        ( +-  0.62% )
+               182      context-switches                                                        ( +-  3.00% )
+
+           2.05690 +- 0.00289 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 11 hashbits at Wed  9 Apr 22:20:42 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 11' (5 runs):
+
+     9,944,186,458      cpu-cycles                                                              ( +-  0.11% )
+        51,269,378      cache-misses                                                            ( +-  0.28% )
+           135,387      page-faults                                                             ( +-  0.01% )
+                11      cpu-migrations                                                          ( +-  3.40% )
+           704,499      dTLB-load-misses                                                        ( +-  0.52% )
+                80      context-switches                                                        ( +-  2.45% )
+
+           1.95151 +- 0.00380 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 12 hashbits at Wed  9 Apr 22:20:52 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 12' (5 runs):
+
+     9,384,816,592      cpu-cycles                                                              ( +-  0.15% )
+        42,449,153      cache-misses                                                            ( +-  0.49% )
+           134,946      page-faults                                                             ( +-  0.02% )
+                11      cpu-migrations                                                          ( +-  1.82% )
+           678,175      dTLB-load-misses                                                        ( +-  0.91% )
+                65      context-switches                                                        ( +-  3.42% )
+
+           1.91635 +- 0.00415 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 13 hashbits at Wed  9 Apr 22:21:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 13' (5 runs):
+
+     9,265,546,707      cpu-cycles                                                              ( +-  0.09% )
+        42,282,847      cache-misses                                                            ( +-  0.36% )
+           136,172      page-faults                                                             ( +-  0.01% )
+                10      cpu-migrations                                                          ( +-  3.74% )
+           622,152      dTLB-load-misses                                                        ( +-  0.76% )
+                71      context-switches                                                        ( +-  3.92% )
+
+           1.90566 +- 0.00258 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 14 hashbits at Wed  9 Apr 22:21:11 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 14' (5 runs):
+
+     9,304,426,888      cpu-cycles                                                              ( +-  0.15% )
+        43,630,870      cache-misses                                                            ( +-  0.34% )
+           139,951      page-faults                                                             ( +-  0.01% )
+                11      cpu-migrations                                                          ( +-  6.80% )
+           693,352      dTLB-load-misses                                                        ( +-  1.36% )
+                71      context-switches                                                        ( +-  3.01% )
+
+           1.91036 +- 0.00530 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 15 hashbits at Wed  9 Apr 22:21:21 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 15' (5 runs):
+
+     9,533,837,265      cpu-cycles                                                              ( +-  0.15% )
+        45,291,793      cache-misses                                                            ( +-  0.16% )
+           148,347      page-faults                                                             ( +-  0.01% )
+                11      cpu-migrations                                                          ( +-  5.45% )
+         1,694,797      dTLB-load-misses                                                        ( +-  2.02% )
+                63      context-switches                                                        ( +-  3.74% )
+
+           1.93479 +- 0.00378 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 16 hashbits at Wed  9 Apr 22:21:30 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 16' (5 runs):
+
+    10,032,898,887      cpu-cycles                                                              ( +-  0.16% )
+        47,815,900      cache-misses                                                            ( +-  0.14% )
+           165,363      page-faults                                                             ( +-  0.03% )
+                11      cpu-migrations                                                          ( +-  6.43% )
+         5,370,405      dTLB-load-misses                                                        ( +-  0.16% )
+                60      context-switches                                                        ( +-  2.30% )
+
+           1.97798 +- 0.00167 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 17 hashbits at Wed  9 Apr 22:21:40 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 17' (5 runs):
+
+    11,116,998,856      cpu-cycles                                                              ( +-  0.30% )
+        51,227,760      cache-misses                                                            ( +-  0.18% )
+           198,377      page-faults                                                             ( +-  0.00% )
+                11      cpu-migrations                                                          ( +-  4.98% )
+        12,212,845      dTLB-load-misses                                                        ( +-  0.06% )
+                69      context-switches                                                        ( +-  4.73% )
+
+           2.05548 +- 0.00439 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running concurrent_cpu_aff with 8 threads and 18 hashbits at Wed  9 Apr 22:21:51 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 8 18' (5 runs):
+
+    11,682,537,115      cpu-cycles                                                              ( +-  0.03% )
+        55,378,873      cache-misses                                                            ( +-  0.12% )
+           200,040      page-faults                                                             ( +-  0.00% )
+                11      cpu-migrations                                                          ( +-  4.07% )
+        21,911,011      dTLB-load-misses                                                        ( +-  0.05% )
+                70      context-switches                                                        ( +-  4.41% )
+
+           2.09699 +- 0.00311 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 1 hashbits at Wed  9 Apr 22:22:01 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 1' (5 runs):
+
+   120,167,292,062      cpu-cycles                                                              ( +-  0.59% )
+       195,319,011      cache-misses                                                            ( +-  3.03% )
+           273,731      page-faults                                                             ( +-  0.33% )
+                32      cpu-migrations                                                          ( +-  2.54% )
+        10,757,233      dTLB-load-misses                                                        ( +-  1.13% )
+         1,330,041      context-switches                                                        ( +-  1.58% )
+
+            5.9710 +- 0.0288 seconds time elapsed  ( +-  0.48% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 2 hashbits at Wed  9 Apr 22:22:31 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 2' (5 runs):
+
+   151,869,054,058      cpu-cycles                                                              ( +-  0.70% )
+       332,307,981      cache-misses                                                            ( +-  2.43% )
+           265,992      page-faults                                                             ( +-  0.40% )
+                29      cpu-migrations                                                          ( +-  2.34% )
+        28,906,927      dTLB-load-misses                                                        ( +-  0.76% )
+         2,685,685      context-switches                                                        ( +-  1.10% )
+
+            7.7174 +- 0.0289 seconds time elapsed  ( +-  0.37% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 3 hashbits at Wed  9 Apr 22:23:10 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 3' (5 runs):
+
+   119,367,713,038      cpu-cycles                                                              ( +-  0.62% )
+       343,657,349      cache-misses                                                            ( +-  1.44% )
+           224,484      page-faults                                                             ( +-  0.28% )
+                31      cpu-migrations                                                          ( +-  8.45% )
+        17,395,084      dTLB-load-misses                                                        ( +-  1.67% )
+         1,713,498      context-switches                                                        ( +-  1.01% )
+
+            6.1337 +- 0.0297 seconds time elapsed  ( +-  0.48% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 4 hashbits at Wed  9 Apr 22:23:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 4' (5 runs):
+
+    91,207,307,246      cpu-cycles                                                              ( +-  0.45% )
+       346,756,397      cache-misses                                                            ( +-  0.69% )
+           191,559      page-faults                                                             ( +-  0.21% )
+                32      cpu-migrations                                                          ( +-  3.22% )
+        11,928,090      dTLB-load-misses                                                        ( +-  0.25% )
+           989,175      context-switches                                                        ( +-  0.98% )
+
+           4.86579 +- 0.00846 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 5 hashbits at Wed  9 Apr 22:24:05 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 5' (5 runs):
+
+    73,656,804,133      cpu-cycles                                                              ( +-  0.49% )
+       365,750,610      cache-misses                                                            ( +-  0.66% )
+           171,032      page-faults                                                             ( +-  0.16% )
+                31      cpu-migrations                                                          ( +-  5.82% )
+         8,026,154      dTLB-load-misses                                                        ( +-  0.45% )
+           540,932      context-switches                                                        ( +-  1.23% )
+
+           4.05206 +- 0.00749 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 6 hashbits at Wed  9 Apr 22:24:25 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 6' (5 runs):
+
+    60,192,570,405      cpu-cycles                                                              ( +-  0.92% )
+       350,812,830      cache-misses                                                            ( +-  1.41% )
+           157,622      page-faults                                                             ( +-  0.10% )
+                29      cpu-migrations                                                          ( +-  7.43% )
+         5,154,499      dTLB-load-misses                                                        ( +-  0.87% )
+           285,615      context-switches                                                        ( +-  2.05% )
+
+           3.49107 +- 0.00969 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 7 hashbits at Wed  9 Apr 22:24:43 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 7' (5 runs):
+
+    41,046,076,498      cpu-cycles                                                              ( +-  0.41% )
+       295,065,754      cache-misses                                                            ( +-  0.96% )
+           151,710      page-faults                                                             ( +-  0.04% )
+                34      cpu-migrations                                                          ( +-  2.46% )
+         3,239,490      dTLB-load-misses                                                        ( +-  0.25% )
+           104,623      context-switches                                                        ( +-  0.87% )
+
+           2.80549 +- 0.00741 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 8 hashbits at Wed  9 Apr 22:24:57 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 8' (5 runs):
+
+    28,623,292,694      cpu-cycles                                                              ( +-  0.41% )
+       216,553,512      cache-misses                                                            ( +-  0.46% )
+           146,589      page-faults                                                             ( +-  0.02% )
+                30      cpu-migrations                                                          ( +-  5.64% )
+         2,068,303      dTLB-load-misses                                                        ( +-  0.60% )
+            38,254      context-switches                                                        ( +-  1.19% )
+
+           2.37103 +- 0.00405 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 9 hashbits at Wed  9 Apr 22:25:09 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 9' (5 runs):
+
+    18,904,309,393      cpu-cycles                                                              ( +-  0.06% )
+       124,248,386      cache-misses                                                            ( +-  0.35% )
+           143,313      page-faults                                                             ( +-  0.06% )
+                33      cpu-migrations                                                          ( +-  2.61% )
+         1,415,760      dTLB-load-misses                                                        ( +-  0.48% )
+             8,384      context-switches                                                        ( +-  0.86% )
+
+           2.04187 +- 0.00259 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 10 hashbits at Wed  9 Apr 22:25:19 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 10' (5 runs):
+
+    13,974,877,605      cpu-cycles                                                              ( +-  0.19% )
+        82,278,442      cache-misses                                                            ( +-  0.51% )
+           140,282      page-faults                                                             ( +-  0.03% )
+                32      cpu-migrations                                                          ( +-  5.13% )
+         1,089,778      dTLB-load-misses                                                        ( +-  0.33% )
+             1,566      context-switches                                                        ( +-  1.98% )
+
+           1.87410 +- 0.00240 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 11 hashbits at Wed  9 Apr 22:25:29 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 11' (5 runs):
+
+    11,132,061,013      cpu-cycles                                                              ( +-  0.29% )
+        56,457,875      cache-misses                                                            ( +-  0.59% )
+           137,957      page-faults                                                             ( +-  0.03% )
+                31      cpu-migrations                                                          ( +-  5.06% )
+           925,517      dTLB-load-misses                                                        ( +-  0.27% )
+               320      context-switches                                                        ( +-  2.73% )
+
+           1.77733 +- 0.00259 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 12 hashbits at Wed  9 Apr 22:25:38 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 12' (5 runs):
+
+     9,906,368,101      cpu-cycles                                                              ( +-  0.19% )
+        43,635,743      cache-misses                                                            ( +-  0.66% )
+           136,558      page-faults                                                             ( +-  0.02% )
+                34      cpu-migrations                                                          ( +-  5.06% )
+           774,786      dTLB-load-misses                                                        ( +-  0.57% )
+               213      context-switches                                                        ( +-  2.23% )
+
+           1.72599 +- 0.00301 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 13 hashbits at Wed  9 Apr 22:25:46 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 13' (5 runs):
+
+     9,631,699,006      cpu-cycles                                                              ( +-  0.15% )
+        43,359,279      cache-misses                                                            ( +-  0.25% )
+           137,011      page-faults                                                             ( +-  0.02% )
+                31      cpu-migrations                                                          ( +-  4.26% )
+           678,667      dTLB-load-misses                                                        ( +-  1.87% )
+               198      context-switches                                                        ( +-  2.12% )
+
+           1.72027 +- 0.00337 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 14 hashbits at Wed  9 Apr 22:25:55 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 14' (5 runs):
+
+     9,627,523,467      cpu-cycles                                                              ( +-  0.29% )
+        43,592,454      cache-misses                                                            ( +-  0.37% )
+           140,346      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  5.23% )
+           723,838      dTLB-load-misses                                                        ( +-  1.10% )
+               184      context-switches                                                        ( +-  6.06% )
+
+           1.73053 +- 0.00190 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 15 hashbits at Wed  9 Apr 22:26:04 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 15' (5 runs):
+
+    10,072,508,277      cpu-cycles                                                              ( +-  0.26% )
+        44,558,971      cache-misses                                                            ( +-  0.31% )
+           148,449      page-faults                                                             ( +-  0.02% )
+                27      cpu-migrations                                                          ( +-  3.95% )
+         1,743,247      dTLB-load-misses                                                        ( +-  2.40% )
+               181      context-switches                                                        ( +-  4.78% )
+
+           1.75060 +- 0.00383 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 16 hashbits at Wed  9 Apr 22:26:12 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 16' (5 runs):
+
+    11,688,455,381      cpu-cycles                                                              ( +-  0.61% )
+        46,746,829      cache-misses                                                            ( +-  0.14% )
+           165,431      page-faults                                                             ( +-  0.03% )
+                30      cpu-migrations                                                          ( +-  8.23% )
+         5,453,110      dTLB-load-misses                                                        ( +-  0.05% )
+               195      context-switches                                                        ( +-  4.15% )
+
+           1.81178 +- 0.00305 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 17 hashbits at Wed  9 Apr 22:26:22 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 17' (5 runs):
+
+    14,853,799,896      cpu-cycles                                                              ( +-  1.06% )
+        49,988,132      cache-misses                                                            ( +-  0.17% )
+           198,414      page-faults                                                             ( +-  0.00% )
+                28      cpu-migrations                                                          ( +-  8.41% )
+        12,388,981      dTLB-load-misses                                                        ( +-  0.05% )
+               192      context-switches                                                        ( +-  2.58% )
+
+           1.92123 +- 0.00616 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running concurrent_cpu_aff with 16 threads and 18 hashbits at Wed  9 Apr 22:26:31 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 16 18' (5 runs):
+
+    14,024,580,011      cpu-cycles                                                              ( +-  0.64% )
+        53,794,563      cache-misses                                                            ( +-  0.26% )
+           200,075      page-faults                                                             ( +-  0.00% )
+                30      cpu-migrations                                                          ( +-  6.70% )
+        22,061,824      dTLB-load-misses                                                        ( +-  0.04% )
+               186      context-switches                                                        ( +-  3.90% )
+
+           1.89756 +- 0.00304 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 1 hashbits at Wed  9 Apr 22:26:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 1' (5 runs):
+
+   300,711,387,906      cpu-cycles                                                              ( +-  0.54% )
+       219,704,152      cache-misses                                                            ( +-  0.88% )
+           291,679      page-faults                                                             ( +-  0.35% )
+                85      cpu-migrations                                                          ( +-  4.96% )
+        18,921,957      dTLB-load-misses                                                        ( +-  3.49% )
+         1,644,558      context-switches                                                        ( +-  2.44% )
+
+            6.8102 +- 0.0394 seconds time elapsed  ( +-  0.58% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 2 hashbits at Wed  9 Apr 22:27:15 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 2' (5 runs):
+
+   325,586,638,358      cpu-cycles                                                              ( +-  0.70% )
+       440,610,353      cache-misses                                                            ( +-  1.71% )
+           285,272      page-faults                                                             ( +-  0.44% )
+                89      cpu-migrations                                                          ( +-  5.96% )
+        29,963,629      dTLB-load-misses                                                        ( +-  3.35% )
+         4,622,845      context-switches                                                        ( +-  1.60% )
+
+            8.4467 +- 0.0584 seconds time elapsed  ( +-  0.69% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 3 hashbits at Wed  9 Apr 22:27:57 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 3' (5 runs):
+
+   216,545,480,060      cpu-cycles                                                              ( +-  0.54% )
+       378,177,471      cache-misses                                                            ( +-  1.06% )
+           248,371      page-faults                                                             ( +-  0.16% )
+                79      cpu-migrations                                                          ( +-  3.30% )
+        26,309,234      dTLB-load-misses                                                        ( +-  1.16% )
+         3,217,168      context-switches                                                        ( +-  0.73% )
+
+            6.2192 +- 0.0230 seconds time elapsed  ( +-  0.37% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 4 hashbits at Wed  9 Apr 22:28:28 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 4' (5 runs):
+
+   156,220,424,063      cpu-cycles                                                              ( +-  0.39% )
+       347,462,838      cache-misses                                                            ( +-  0.91% )
+           221,473      page-faults                                                             ( +-  0.18% )
+                84      cpu-migrations                                                          ( +-  2.65% )
+        19,668,386      dTLB-load-misses                                                        ( +-  2.15% )
+         1,845,138      context-switches                                                        ( +-  0.93% )
+
+            4.7092 +- 0.0125 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 5 hashbits at Wed  9 Apr 22:28:52 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 5' (5 runs):
+
+   115,407,209,167      cpu-cycles                                                              ( +-  0.29% )
+       318,372,270      cache-misses                                                            ( +-  0.49% )
+           200,588      page-faults                                                             ( +-  0.08% )
+                82      cpu-migrations                                                          ( +-  2.13% )
+        13,479,296      dTLB-load-misses                                                        ( +-  3.42% )
+           885,887      context-switches                                                        ( +-  0.52% )
+
+           3.67016 +- 0.00661 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 6 hashbits at Wed  9 Apr 22:29:10 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 6' (5 runs):
+
+    86,650,553,672      cpu-cycles                                                              ( +-  0.22% )
+       276,838,846      cache-misses                                                            ( +-  0.49% )
+           181,447      page-faults                                                             ( +-  0.09% )
+                79      cpu-migrations                                                          ( +-  2.79% )
+         8,740,652      dTLB-load-misses                                                        ( +-  2.89% )
+           410,535      context-switches                                                        ( +-  0.86% )
+
+           3.02549 +- 0.00308 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 7 hashbits at Wed  9 Apr 22:29:26 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 7' (5 runs):
+
+    56,825,339,390      cpu-cycles                                                              ( +-  0.65% )
+       229,422,714      cache-misses                                                            ( +-  0.95% )
+           171,800      page-faults                                                             ( +-  0.12% )
+                84      cpu-migrations                                                          ( +-  6.27% )
+         6,137,336      dTLB-load-misses                                                        ( +-  1.37% )
+           133,069      context-switches                                                        ( +-  1.15% )
+
+           2.44446 +- 0.00305 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 8 hashbits at Wed  9 Apr 22:29:38 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 8' (5 runs):
+
+    37,555,627,375      cpu-cycles                                                              ( +-  0.26% )
+       169,214,201      cache-misses                                                            ( +-  0.49% )
+           162,746      page-faults                                                             ( +-  0.06% )
+                81      cpu-migrations                                                          ( +-  3.53% )
+         4,077,008      dTLB-load-misses                                                        ( +-  1.05% )
+            39,413      context-switches                                                        ( +-  0.71% )
+
+           2.09689 +- 0.00381 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 9 hashbits at Wed  9 Apr 22:29:49 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 9' (5 runs):
+
+    25,201,454,279      cpu-cycles                                                              ( +-  0.32% )
+       103,833,645      cache-misses                                                            ( +-  0.75% )
+           155,405      page-faults                                                             ( +-  0.02% )
+                79      cpu-migrations                                                          ( +-  2.61% )
+         2,914,152      dTLB-load-misses                                                        ( +-  0.69% )
+             9,965      context-switches                                                        ( +-  0.74% )
+
+           1.88689 +- 0.00235 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 10 hashbits at Wed  9 Apr 22:29:58 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 10' (5 runs):
+
+    18,434,376,325      cpu-cycles                                                              ( +-  0.36% )
+        71,165,582      cache-misses                                                            ( +-  0.82% )
+           148,422      page-faults                                                             ( +-  0.03% )
+                77      cpu-migrations                                                          ( +-  2.15% )
+         2,048,635      dTLB-load-misses                                                        ( +-  0.91% )
+             2,135      context-switches                                                        ( +-  2.61% )
+
+           1.76137 +- 0.00390 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 11 hashbits at Wed  9 Apr 22:30:07 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 11' (5 runs):
+
+    14,899,129,614      cpu-cycles                                                              ( +-  0.26% )
+        51,590,610      cache-misses                                                            ( +-  0.48% )
+           142,887      page-faults                                                             ( +-  0.04% )
+                77      cpu-migrations                                                          ( +-  3.62% )
+         1,510,453      dTLB-load-misses                                                        ( +-  1.36% )
+               831      context-switches                                                        ( +-  6.62% )
+
+           1.70106 +- 0.00374 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 12 hashbits at Wed  9 Apr 22:30:15 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 12' (5 runs):
+
+    13,401,181,517      cpu-cycles                                                              ( +-  0.23% )
+        42,513,397      cache-misses                                                            ( +-  0.60% )
+           139,302      page-faults                                                             ( +-  0.05% )
+                85      cpu-migrations                                                          ( +-  4.10% )
+         1,221,558      dTLB-load-misses                                                        ( +-  1.38% )
+               647      context-switches                                                        ( +-  4.38% )
+
+           1.67219 +- 0.00171 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 13 hashbits at Wed  9 Apr 22:30:24 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 13' (5 runs):
+
+    12,939,346,319      cpu-cycles                                                              ( +-  0.28% )
+        41,742,656      cache-misses                                                            ( +-  0.45% )
+           138,353      page-faults                                                             ( +-  0.02% )
+                87      cpu-migrations                                                          ( +-  3.46% )
+         1,115,831      dTLB-load-misses                                                        ( +-  2.07% )
+               535      context-switches                                                        ( +-  3.03% )
+
+           1.66493 +- 0.00188 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 14 hashbits at Wed  9 Apr 22:30:32 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 14' (5 runs):
+
+    13,230,777,699      cpu-cycles                                                              ( +-  0.20% )
+        42,094,800      cache-misses                                                            ( +-  0.31% )
+           140,984      page-faults                                                             ( +-  0.02% )
+                84      cpu-migrations                                                          ( +-  3.72% )
+         2,151,375      dTLB-load-misses                                                        ( +-  1.15% )
+               531      context-switches                                                        ( +-  3.78% )
+
+           1.67769 +- 0.00111 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 15 hashbits at Wed  9 Apr 22:30:41 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 15' (5 runs):
+
+    14,612,383,520      cpu-cycles                                                              ( +-  0.40% )
+        43,946,163      cache-misses                                                            ( +-  0.17% )
+           148,771      page-faults                                                             ( +-  0.02% )
+                83      cpu-migrations                                                          ( +-  5.05% )
+         6,297,473      dTLB-load-misses                                                        ( +-  0.27% )
+               516      context-switches                                                        ( +-  7.73% )
+
+           1.70524 +- 0.00224 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 16 hashbits at Wed  9 Apr 22:30:49 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 16' (5 runs):
+
+    18,991,396,134      cpu-cycles                                                              ( +-  1.28% )
+        45,552,657      cache-misses                                                            ( +-  0.15% )
+           165,573      page-faults                                                             ( +-  0.01% )
+                80      cpu-migrations                                                          ( +-  5.67% )
+        13,336,673      dTLB-load-misses                                                        ( +-  0.38% )
+               563      context-switches                                                        ( +-  4.50% )
+
+           1.78645 +- 0.00504 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 17 hashbits at Wed  9 Apr 22:30:58 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 17' (5 runs):
+
+    26,365,550,950      cpu-cycles                                                              ( +-  1.56% )
+        48,422,691      cache-misses                                                            ( +-  0.26% )
+           198,483      page-faults                                                             ( +-  0.00% )
+                86      cpu-migrations                                                          ( +-  3.02% )
+        23,292,636      dTLB-load-misses                                                        ( +-  0.15% )
+               591      context-switches                                                        ( +-  2.70% )
+
+           1.92412 +- 0.00216 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running concurrent_cpu_aff with 32 threads and 18 hashbits at Wed  9 Apr 22:31:08 CEST 2025
+----
+
+ Performance counter stats for './build/concurrent_cpu_aff 32 18' (5 runs):
+
+    24,001,844,461      cpu-cycles                                                              ( +-  0.65% )
+        53,190,102      cache-misses                                                            ( +-  0.27% )
+           200,155      page-faults                                                             ( +-  0.00% )
+                78      cpu-migrations                                                          ( +-  2.78% )
+        33,146,220      dTLB-load-misses                                                        ( +-  0.13% )
+               560      context-switches                                                        ( +-  3.25% )
+
+           1.89578 +- 0.00517 seconds time elapsed  ( +-  0.27% )
+
+

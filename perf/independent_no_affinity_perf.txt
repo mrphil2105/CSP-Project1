@@ -1,0 +1,1621 @@
+===== independent_no_affinity experiments (run at Wed  9 Apr 20:38:14 CEST 2025) =====
+>>> Running independent_no_affinity with 1 threads and 1 hashbits at Wed  9 Apr 20:38:14 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 1' (5 runs):
+
+     3,848,069,571      cpu-cycles                                                              ( +-  0.11% )
+         5,905,477      cache-misses                                                            ( +-  0.41% )
+           131,140      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           199,187      dTLB-load-misses                                                        ( +-  0.61% )
+                 6      context-switches                                                        ( +-  8.50% )
+
+           1.94777 +- 0.00340 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_no_affinity with 1 threads and 2 hashbits at Wed  9 Apr 20:38:24 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 2' (5 runs):
+
+     3,843,272,652      cpu-cycles                                                              ( +-  0.15% )
+         5,950,701      cache-misses                                                            ( +-  1.20% )
+           131,142      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           201,875      dTLB-load-misses                                                        ( +-  0.64% )
+                 6      context-switches                                                        ( +- 13.33% )
+
+           1.94218 +- 0.00237 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running independent_no_affinity with 1 threads and 3 hashbits at Wed  9 Apr 20:38:34 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 3' (5 runs):
+
+     3,871,249,383      cpu-cycles                                                              ( +-  0.52% )
+         5,938,572      cache-misses                                                            ( +-  0.39% )
+           131,144      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           200,124      dTLB-load-misses                                                        ( +-  1.85% )
+                 9      context-switches                                                        ( +-  5.44% )
+
+            1.9525 +- 0.0121 seconds time elapsed  ( +-  0.62% )
+
+
+>>> Running independent_no_affinity with 1 threads and 4 hashbits at Wed  9 Apr 20:38:44 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 4' (5 runs):
+
+     3,852,566,278      cpu-cycles                                                              ( +-  0.08% )
+         5,982,054      cache-misses                                                            ( +-  0.09% )
+           131,147      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           197,534      dTLB-load-misses                                                        ( +-  0.82% )
+                 7      context-switches                                                        ( +-  7.28% )
+
+           1.94444 +- 0.00376 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_no_affinity with 1 threads and 5 hashbits at Wed  9 Apr 20:38:54 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 5' (5 runs):
+
+     3,843,698,022      cpu-cycles                                                              ( +-  0.12% )
+         5,806,979      cache-misses                                                            ( +-  0.27% )
+           131,154      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           193,116      dTLB-load-misses                                                        ( +-  3.47% )
+                 6      context-switches                                                        ( +- 12.25% )
+
+           1.94456 +- 0.00230 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running independent_no_affinity with 1 threads and 6 hashbits at Wed  9 Apr 20:39:03 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 6' (5 runs):
+
+     3,880,466,727      cpu-cycles                                                              ( +-  0.09% )
+         5,329,746      cache-misses                                                            ( +-  0.66% )
+           131,172      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           211,798      dTLB-load-misses                                                        ( +-  1.36% )
+                 6      context-switches                                                        ( +-  9.72% )
+
+           1.96160 +- 0.00196 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_no_affinity with 1 threads and 7 hashbits at Wed  9 Apr 20:39:13 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 7' (5 runs):
+
+     3,908,918,181      cpu-cycles                                                              ( +-  0.18% )
+         5,428,445      cache-misses                                                            ( +-  0.48% )
+           131,203      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           227,778      dTLB-load-misses                                                        ( +-  1.08% )
+                 6      context-switches                                                        ( +-  8.16% )
+
+           1.97451 +- 0.00391 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_no_affinity with 1 threads and 8 hashbits at Wed  9 Apr 20:39:23 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 8' (5 runs):
+
+     3,921,755,475      cpu-cycles                                                              ( +-  0.76% )
+         5,413,994      cache-misses                                                            ( +-  0.62% )
+           131,267      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           229,514      dTLB-load-misses                                                        ( +-  1.40% )
+                 6      context-switches                                                        ( +- 13.33% )
+
+            1.9844 +- 0.0147 seconds time elapsed  ( +-  0.74% )
+
+
+>>> Running independent_no_affinity with 1 threads and 9 hashbits at Wed  9 Apr 20:39:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 9' (5 runs):
+
+     3,901,500,934      cpu-cycles                                                              ( +-  0.07% )
+         5,664,004      cache-misses                                                            ( +-  0.74% )
+           131,398      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           236,084      dTLB-load-misses                                                        ( +-  1.98% )
+                 6      context-switches                                                        ( +- 13.33% )
+
+           1.97134 +- 0.00166 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_no_affinity with 1 threads and 10 hashbits at Wed  9 Apr 20:39:43 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 10' (5 runs):
+
+     3,938,533,898      cpu-cycles                                                              ( +-  0.33% )
+         6,228,230      cache-misses                                                            ( +-  0.51% )
+           131,666      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           259,331      dTLB-load-misses                                                        ( +-  3.31% )
+                 7      context-switches                                                        ( +- 12.29% )
+
+           1.98727 +- 0.00872 seconds time elapsed  ( +-  0.44% )
+
+
+>>> Running independent_no_affinity with 1 threads and 11 hashbits at Wed  9 Apr 20:39:53 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 11' (5 runs):
+
+     4,074,071,465      cpu-cycles                                                              ( +-  0.05% )
+         7,329,898      cache-misses                                                            ( +-  0.24% )
+           132,171      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           356,289      dTLB-load-misses                                                        ( +-  1.79% )
+                 6      context-switches                                                        ( +-  6.24% )
+
+           2.05996 +- 0.00156 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_no_affinity with 1 threads and 12 hashbits at Wed  9 Apr 20:40:04 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 12' (5 runs):
+
+     4,217,708,869      cpu-cycles                                                              ( +-  0.09% )
+         9,164,469      cache-misses                                                            ( +-  0.41% )
+           133,223      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           407,419      dTLB-load-misses                                                        ( +-  1.12% )
+                 6      context-switches                                                        ( +-  9.72% )
+
+           2.13073 +- 0.00402 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_no_affinity with 1 threads and 13 hashbits at Wed  9 Apr 20:40:14 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 13' (5 runs):
+
+     4,344,118,624      cpu-cycles                                                              ( +-  0.11% )
+        10,198,210      cache-misses                                                            ( +-  0.53% )
+           135,287      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           428,781      dTLB-load-misses                                                        ( +-  0.81% )
+                 6      context-switches                                                        ( +-  4.08% )
+
+           2.19675 +- 0.00280 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_no_affinity with 1 threads and 14 hashbits at Wed  9 Apr 20:40:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 14' (5 runs):
+
+     4,495,162,383      cpu-cycles                                                              ( +-  0.07% )
+        11,777,987      cache-misses                                                            ( +-  0.09% )
+           139,443      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           455,254      dTLB-load-misses                                                        ( +-  0.73% )
+                 6      context-switches                                                        ( +-  8.50% )
+
+           2.26833 +- 0.00320 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_no_affinity with 1 threads and 15 hashbits at Wed  9 Apr 20:40:37 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 15' (5 runs):
+
+     4,753,223,484      cpu-cycles                                                              ( +-  0.18% )
+        15,126,809      cache-misses                                                            ( +-  0.06% )
+           147,826      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+           391,956      dTLB-load-misses                                                        ( +-  0.33% )
+                 7      context-switches                                                        ( +-  3.50% )
+
+           2.39963 +- 0.00631 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running independent_no_affinity with 1 threads and 16 hashbits at Wed  9 Apr 20:40:49 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 16' (5 runs):
+
+     5,263,223,716      cpu-cycles                                                              ( +-  0.23% )
+        18,984,370      cache-misses                                                            ( +-  0.16% )
+           195,737      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+           484,906      dTLB-load-misses                                                        ( +-  0.60% )
+                 8      context-switches                                                        ( +-  8.48% )
+
+           2.65269 +- 0.00759 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_no_affinity with 1 threads and 17 hashbits at Wed  9 Apr 20:41:02 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 17' (5 runs):
+
+     5,942,198,359      cpu-cycles                                                              ( +-  0.12% )
+        21,948,893      cache-misses                                                            ( +-  0.10% )
+           260,554      page-faults                                                           
+                 0      cpu-migrations                                                        
+         1,276,499      dTLB-load-misses                                                        ( +-  1.46% )
+                 8      context-switches                                                        ( +- 10.00% )
+
+           2.99545 +- 0.00241 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_no_affinity with 1 threads and 18 hashbits at Wed  9 Apr 20:41:17 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 1 18' (5 runs):
+
+     6,699,535,066      cpu-cycles                                                              ( +-  0.12% )
+        22,800,913      cache-misses                                                            ( +-  0.12% )
+           260,938      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+         5,230,858      dTLB-load-misses                                                        ( +-  0.12% )
+                 8      context-switches                                                        ( +- 12.25% )
+
+           3.37481 +- 0.00413 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running independent_no_affinity with 2 threads and 1 hashbits at Wed  9 Apr 20:41:34 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 1' (5 runs):
+
+     4,589,875,211      cpu-cycles                                                              ( +-  0.30% )
+        12,852,427      cache-misses                                                            ( +-  1.12% )
+           131,145      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           208,286      dTLB-load-misses                                                        ( +-  0.49% )
+                 9      context-switches                                                        ( +-  5.67% )
+
+           1.90324 +- 0.00400 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_no_affinity with 2 threads and 2 hashbits at Wed  9 Apr 20:41:44 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 2' (5 runs):
+
+     4,597,604,302      cpu-cycles                                                              ( +-  0.45% )
+        11,348,056      cache-misses                                                            ( +-  0.59% )
+           131,146      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           207,090      dTLB-load-misses                                                        ( +-  0.46% )
+                 8      context-switches                                                        ( +-  5.00% )
+
+           1.90064 +- 0.00403 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_no_affinity with 2 threads and 3 hashbits at Wed  9 Apr 20:41:54 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 3' (5 runs):
+
+     5,083,539,492      cpu-cycles                                                              ( +-  0.59% )
+        19,621,389      cache-misses                                                            ( +-  1.73% )
+           131,150      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           208,878      dTLB-load-misses                                                        ( +-  0.88% )
+                10      context-switches                                                        ( +- 10.68% )
+
+           2.02083 +- 0.00895 seconds time elapsed  ( +-  0.44% )
+
+
+>>> Running independent_no_affinity with 2 threads and 4 hashbits at Wed  9 Apr 20:42:04 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 4' (5 runs):
+
+     4,634,919,233      cpu-cycles                                                              ( +-  0.35% )
+        14,267,440      cache-misses                                                            ( +-  0.94% )
+           131,161      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           203,192      dTLB-load-misses                                                        ( +-  1.22% )
+                 9      context-switches                                                        ( +-  3.51% )
+
+           1.90396 +- 0.00615 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running independent_no_affinity with 2 threads and 5 hashbits at Wed  9 Apr 20:42:13 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 5' (5 runs):
+
+     4,566,327,160      cpu-cycles                                                              ( +-  0.32% )
+        15,601,429      cache-misses                                                            ( +-  1.12% )
+           131,174      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           213,539      dTLB-load-misses                                                        ( +-  0.93% )
+                 9      context-switches                                                        ( +-  5.67% )
+
+           1.89035 +- 0.00392 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_no_affinity with 2 threads and 6 hashbits at Wed  9 Apr 20:42:23 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 6' (5 runs):
+
+     4,186,039,762      cpu-cycles                                                              ( +-  0.18% )
+         7,997,301      cache-misses                                                            ( +-  1.74% )
+           131,205      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           218,712      dTLB-load-misses                                                        ( +-  1.58% )
+                 8      context-switches                                                        ( +- 12.12% )
+
+           1.79812 +- 0.00218 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running independent_no_affinity with 2 threads and 7 hashbits at Wed  9 Apr 20:42:32 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 7' (5 runs):
+
+     4,045,411,524      cpu-cycles                                                              ( +-  0.14% )
+         6,165,128      cache-misses                                                            ( +-  0.48% )
+           131,276      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           222,499      dTLB-load-misses                                                        ( +-  3.69% )
+                 8      context-switches                                                        ( +- 11.59% )
+
+           1.76304 +- 0.00184 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_no_affinity with 2 threads and 8 hashbits at Wed  9 Apr 20:42:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 8' (5 runs):
+
+     3,999,833,810      cpu-cycles                                                              ( +-  0.08% )
+         5,848,703      cache-misses                                                            ( +-  0.63% )
+           131,399      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           225,822      dTLB-load-misses                                                        ( +-  1.19% )
+                 8      context-switches                                                        ( +-  7.29% )
+
+           1.75128 +- 0.00115 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running independent_no_affinity with 2 threads and 9 hashbits at Wed  9 Apr 20:42:50 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 9' (5 runs):
+
+     3,982,802,818      cpu-cycles                                                              ( +-  0.24% )
+         6,057,386      cache-misses                                                            ( +-  0.71% )
+           131,663      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           235,781      dTLB-load-misses                                                        ( +-  0.77% )
+                 8      context-switches                                                        ( +- 10.16% )
+
+           1.74531 +- 0.00300 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_no_affinity with 2 threads and 10 hashbits at Wed  9 Apr 20:42:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 10' (5 runs):
+
+     4,000,968,771      cpu-cycles                                                              ( +-  0.12% )
+         6,452,976      cache-misses                                                            ( +-  0.33% )
+           132,172      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           257,337      dTLB-load-misses                                                        ( +-  2.04% )
+                 9      context-switches                                                        ( +-  3.51% )
+
+           1.75163 +- 0.00267 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_no_affinity with 2 threads and 11 hashbits at Wed  9 Apr 20:43:07 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 11' (5 runs):
+
+     4,132,199,666      cpu-cycles                                                              ( +-  0.06% )
+         7,542,922      cache-misses                                                            ( +-  0.20% )
+           133,213      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           356,128      dTLB-load-misses                                                        ( +-  0.54% )
+                 9      context-switches                                                        ( +-  4.44% )
+
+          1.783607 +- 0.000796 seconds time elapsed  ( +-  0.04% )
+
+
+>>> Running independent_no_affinity with 2 threads and 12 hashbits at Wed  9 Apr 20:43:16 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 12' (5 runs):
+
+     4,295,319,364      cpu-cycles                                                              ( +-  0.07% )
+         9,574,089      cache-misses                                                            ( +-  0.21% )
+           135,293      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           377,959      dTLB-load-misses                                                        ( +-  0.83% )
+                 9      context-switches                                                        ( +- 10.77% )
+
+           1.82493 +- 0.00127 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running independent_no_affinity with 2 threads and 13 hashbits at Wed  9 Apr 20:43:26 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 13' (5 runs):
+
+     4,441,769,146      cpu-cycles                                                              ( +-  0.12% )
+        10,775,737      cache-misses                                                            ( +-  0.30% )
+           139,450      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           395,591      dTLB-load-misses                                                        ( +-  0.40% )
+                 9      context-switches                                                        ( +-  8.16% )
+
+           1.86026 +- 0.00274 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_no_affinity with 2 threads and 14 hashbits at Wed  9 Apr 20:43:35 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 14' (5 runs):
+
+     4,661,250,979      cpu-cycles                                                              ( +-  0.08% )
+        12,919,028      cache-misses                                                            ( +-  0.21% )
+           147,773      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           446,677      dTLB-load-misses                                                        ( +-  1.66% )
+                11      context-switches                                                        ( +-  7.39% )
+
+           1.91496 +- 0.00180 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_no_affinity with 2 threads and 15 hashbits at Wed  9 Apr 20:43:45 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 15' (5 runs):
+
+     5,058,656,642      cpu-cycles                                                              ( +-  1.11% )
+        17,263,091      cache-misses                                                            ( +-  2.49% )
+           164,652      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           400,574      dTLB-load-misses                                                        ( +-  3.47% )
+                10      context-switches                                                        ( +-  7.07% )
+
+            2.0240 +- 0.0151 seconds time elapsed  ( +-  0.75% )
+
+
+>>> Running independent_no_affinity with 2 threads and 16 hashbits at Wed  9 Apr 20:43:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 16' (5 runs):
+
+     5,497,568,260      cpu-cycles                                                              ( +-  0.15% )
+        20,670,767      cache-misses                                                            ( +-  0.39% )
+           197,065      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           448,133      dTLB-load-misses                                                        ( +-  2.10% )
+                 9      context-switches                                                        ( +-  8.89% )
+
+           2.14444 +- 0.00627 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_no_affinity with 2 threads and 17 hashbits at Wed  9 Apr 20:44:06 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 17' (5 runs):
+
+     7,059,621,439      cpu-cycles                                                              ( +-  0.35% )
+        24,984,621      cache-misses                                                            ( +-  0.44% )
+           328,627      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+         1,423,253      dTLB-load-misses                                                        ( +-  0.80% )
+                10      context-switches                                                        ( +-  5.83% )
+
+           2.57376 +- 0.00899 seconds time elapsed  ( +-  0.35% )
+
+
+>>> Running independent_no_affinity with 2 threads and 18 hashbits at Wed  9 Apr 20:44:19 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 2 18' (5 runs):
+
+     8,143,373,730      cpu-cycles                                                              ( +-  0.11% )
+        25,937,263      cache-misses                                                            ( +-  0.34% )
+           390,996      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+         5,702,968      dTLB-load-misses                                                        ( +-  0.31% )
+                14      context-switches                                                        ( +-  6.14% )
+
+           2.91540 +- 0.00532 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_no_affinity with 4 threads and 1 hashbits at Wed  9 Apr 20:44:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 1' (5 runs):
+
+     6,005,141,653      cpu-cycles                                                              ( +-  0.89% )
+        14,943,690      cache-misses                                                            ( +-  2.56% )
+           131,153      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           211,046      dTLB-load-misses                                                        ( +-  1.63% )
+                21      context-switches                                                        ( +-  8.33% )
+
+            1.8902 +- 0.0145 seconds time elapsed  ( +-  0.76% )
+
+
+>>> Running independent_no_affinity with 4 threads and 2 hashbits at Wed  9 Apr 20:44:43 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 2' (5 runs):
+
+     6,131,754,494      cpu-cycles                                                              ( +-  1.23% )
+        17,837,598      cache-misses                                                            ( +-  3.20% )
+           131,158      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           211,146      dTLB-load-misses                                                        ( +-  1.07% )
+                19      context-switches                                                        ( +-  5.52% )
+
+           1.92336 +- 0.00704 seconds time elapsed  ( +-  0.37% )
+
+
+>>> Running independent_no_affinity with 4 threads and 3 hashbits at Wed  9 Apr 20:44:52 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 3' (5 runs):
+
+     6,436,461,282      cpu-cycles                                                              ( +-  1.29% )
+        24,555,506      cache-misses                                                            ( +-  4.69% )
+           131,166      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           219,772      dTLB-load-misses                                                        ( +-  0.48% )
+                19      context-switches                                                        ( +-  6.14% )
+
+           1.92557 +- 0.00742 seconds time elapsed  ( +-  0.39% )
+
+
+>>> Running independent_no_affinity with 4 threads and 4 hashbits at Wed  9 Apr 20:45:02 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 4' (5 runs):
+
+     5,623,279,052      cpu-cycles                                                              ( +-  0.89% )
+        25,194,353      cache-misses                                                            ( +-  3.41% )
+           131,179      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           234,950      dTLB-load-misses                                                        ( +-  2.69% )
+                21      context-switches                                                        ( +-  3.98% )
+
+           1.83125 +- 0.00530 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_no_affinity with 4 threads and 5 hashbits at Wed  9 Apr 20:45:11 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 5' (5 runs):
+
+     4,767,448,368      cpu-cycles                                                              ( +-  1.09% )
+        16,058,182      cache-misses                                                            ( +-  5.90% )
+           131,214      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           222,202      dTLB-load-misses                                                        ( +-  0.72% )
+                21      context-switches                                                        ( +-  2.43% )
+
+           1.71918 +- 0.00538 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_no_affinity with 4 threads and 6 hashbits at Wed  9 Apr 20:45:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 6' (5 runs):
+
+     4,328,973,027      cpu-cycles                                                              ( +-  0.28% )
+        10,226,768      cache-misses                                                            ( +-  2.08% )
+           131,276      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           218,038      dTLB-load-misses                                                        ( +-  1.05% )
+                20      context-switches                                                        ( +-  5.10% )
+
+           1.66058 +- 0.00264 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_no_affinity with 4 threads and 7 hashbits at Wed  9 Apr 20:45:28 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 7' (5 runs):
+
+     4,076,029,330      cpu-cycles                                                              ( +-  0.16% )
+         6,458,193      cache-misses                                                            ( +-  0.78% )
+           131,407      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           218,107      dTLB-load-misses                                                        ( +-  0.89% )
+                19      context-switches                                                        ( +-  4.88% )
+
+           1.62181 +- 0.00437 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running independent_no_affinity with 4 threads and 8 hashbits at Wed  9 Apr 20:45:37 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 8' (5 runs):
+
+     4,022,565,921      cpu-cycles                                                              ( +-  0.13% )
+         6,257,223      cache-misses                                                            ( +-  1.08% )
+           131,674      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 54.77% )
+           232,798      dTLB-load-misses                                                        ( +-  1.30% )
+                21      context-switches                                                        ( +-  9.36% )
+
+           1.61418 +- 0.00591 seconds time elapsed  ( +-  0.37% )
+
+
+>>> Running independent_no_affinity with 4 threads and 9 hashbits at Wed  9 Apr 20:45:45 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 9' (5 runs):
+
+     4,000,941,296      cpu-cycles                                                              ( +-  0.04% )
+         6,538,445      cache-misses                                                            ( +-  0.29% )
+           132,177      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           239,412      dTLB-load-misses                                                        ( +-  1.65% )
+                20      context-switches                                                        ( +-  5.39% )
+
+          1.610698 +- 0.000539 seconds time elapsed  ( +-  0.03% )
+
+
+>>> Running independent_no_affinity with 4 threads and 10 hashbits at Wed  9 Apr 20:45:53 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 10' (5 runs):
+
+     4,017,480,951      cpu-cycles                                                              ( +-  0.09% )
+         7,426,844      cache-misses                                                            ( +-  0.32% )
+           133,222      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           266,139      dTLB-load-misses                                                        ( +-  0.29% )
+                18      context-switches                                                        ( +-  8.16% )
+
+           1.61511 +- 0.00326 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_no_affinity with 4 threads and 11 hashbits at Wed  9 Apr 20:46:01 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 11' (5 runs):
+
+     4,177,822,223      cpu-cycles                                                              ( +-  0.11% )
+         8,919,734      cache-misses                                                            ( +-  0.37% )
+           135,270      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           355,531      dTLB-load-misses                                                        ( +-  1.12% )
+                20      context-switches                                                        ( +-  5.61% )
+
+           1.63893 +- 0.00434 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running independent_no_affinity with 4 threads and 12 hashbits at Wed  9 Apr 20:46:09 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 12' (5 runs):
+
+     4,380,103,584      cpu-cycles                                                              ( +-  0.04% )
+        10,560,647      cache-misses                                                            ( +-  0.09% )
+           139,432      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           376,824      dTLB-load-misses                                                        ( +-  0.90% )
+                23      context-switches                                                        ( +-  7.28% )
+
+           1.66584 +- 0.00470 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running independent_no_affinity with 4 threads and 13 hashbits at Wed  9 Apr 20:46:18 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 13' (5 runs):
+
+     4,628,126,953      cpu-cycles                                                              ( +-  0.16% )
+        12,417,111      cache-misses                                                            ( +-  0.70% )
+           147,799      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+           386,665      dTLB-load-misses                                                        ( +-  0.95% )
+                21      context-switches                                                        ( +- 12.20% )
+
+           1.69784 +- 0.00162 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_no_affinity with 4 threads and 14 hashbits at Wed  9 Apr 20:46:26 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 14' (5 runs):
+
+     5,054,901,070      cpu-cycles                                                              ( +-  0.83% )
+        16,476,244      cache-misses                                                            ( +-  2.01% )
+           164,707      page-faults                                                             ( +-  0.02% )
+                 0      cpu-migrations                                                        
+           446,555      dTLB-load-misses                                                        ( +-  1.19% )
+                17      context-switches                                                        ( +-  8.02% )
+
+           1.75907 +- 0.00347 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_no_affinity with 4 threads and 15 hashbits at Wed  9 Apr 20:46:35 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 15' (5 runs):
+
+     5,847,978,940      cpu-cycles                                                              ( +-  0.32% )
+        20,942,270      cache-misses                                                            ( +-  0.16% )
+           197,070      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           421,967      dTLB-load-misses                                                        ( +-  0.79% )
+                21      context-switches                                                        ( +-  8.86% )
+
+           1.86924 +- 0.00409 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_no_affinity with 4 threads and 16 hashbits at Wed  9 Apr 20:46:45 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 16' (5 runs):
+
+     7,529,148,177      cpu-cycles                                                              ( +-  0.71% )
+        25,020,649      cache-misses                                                            ( +-  0.31% )
+           328,527      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           743,631      dTLB-load-misses                                                        ( +-  1.11% )
+                21      context-switches                                                        ( +-  6.80% )
+
+           2.14993 +- 0.00276 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_no_affinity with 4 threads and 17 hashbits at Wed  9 Apr 20:46:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 17' (5 runs):
+
+    11,416,447,234      cpu-cycles                                                              ( +-  3.46% )
+        32,978,987      cache-misses                                                            ( +-  3.40% )
+           636,486      page-faults                                                             ( +-  4.33% )
+                 1      cpu-migrations                                                          ( +- 37.42% )
+         2,142,240      dTLB-load-misses                                                        ( +-  3.89% )
+                22      context-switches                                                        ( +-  5.06% )
+
+             2.916 +- 0.151 seconds time elapsed  ( +-  5.19% )
+
+
+>>> Running independent_no_affinity with 4 threads and 18 hashbits at Wed  9 Apr 20:47:10 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 4 18' (5 runs):
+
+    10,924,166,279      cpu-cycles                                                              ( +-  0.08% )
+        33,912,713      cache-misses                                                            ( +-  0.73% )
+           592,975      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+         6,135,312      dTLB-load-misses                                                        ( +-  0.10% )
+                24      context-switches                                                        ( +-  5.59% )
+
+           2.69851 +- 0.00292 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_no_affinity with 8 threads and 1 hashbits at Wed  9 Apr 20:47:24 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 1' (5 runs):
+
+     6,097,152,382      cpu-cycles                                                              ( +-  0.81% )
+        12,646,892      cache-misses                                                            ( +-  3.38% )
+           131,168      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 29.15% )
+           209,936      dTLB-load-misses                                                        ( +-  1.02% )
+                53      context-switches                                                        ( +-  2.64% )
+
+           1.74056 +- 0.00403 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running independent_no_affinity with 8 threads and 2 hashbits at Wed  9 Apr 20:47:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 2' (5 runs):
+
+     6,553,449,175      cpu-cycles                                                              ( +-  0.59% )
+        14,944,312      cache-misses                                                            ( +-  2.80% )
+           131,177      page-faults                                                             ( +-  0.00% )
+                 5      cpu-migrations                                                          ( +- 20.00% )
+           212,931      dTLB-load-misses                                                        ( +-  2.17% )
+                55      context-switches                                                        ( +-  5.59% )
+
+           1.74226 +- 0.00437 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_no_affinity with 8 threads and 3 hashbits at Wed  9 Apr 20:47:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 3' (5 runs):
+
+     7,783,300,765      cpu-cycles                                                              ( +-  0.58% )
+        35,860,939      cache-misses                                                            ( +-  1.86% )
+           131,194      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 21.08% )
+           219,460      dTLB-load-misses                                                        ( +-  1.18% )
+                60      context-switches                                                        ( +-  4.13% )
+
+           1.81031 +- 0.00228 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_no_affinity with 8 threads and 4 hashbits at Wed  9 Apr 20:47:50 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 4' (5 runs):
+
+     5,945,839,819      cpu-cycles                                                              ( +-  2.03% )
+        26,989,945      cache-misses                                                            ( +-  7.48% )
+           131,227      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 18.71% )
+           228,684      dTLB-load-misses                                                        ( +-  0.72% )
+                52      context-switches                                                        ( +-  3.51% )
+
+           1.68395 +- 0.00519 seconds time elapsed  ( +-  0.31% )
+
+
+>>> Running independent_no_affinity with 8 threads and 5 hashbits at Wed  9 Apr 20:47:59 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 5' (5 runs):
+
+     5,352,747,418      cpu-cycles                                                              ( +-  0.83% )
+        22,215,297      cache-misses                                                            ( +-  4.41% )
+           131,293      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 30.00% )
+           253,994      dTLB-load-misses                                                        ( +-  4.12% )
+                52      context-switches                                                        ( +-  3.46% )
+
+           1.65118 +- 0.00125 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_no_affinity with 8 threads and 6 hashbits at Wed  9 Apr 20:48:07 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 6' (5 runs):
+
+     4,375,274,201      cpu-cycles                                                              ( +-  0.46% )
+        10,240,756      cache-misses                                                            ( +-  2.21% )
+           131,419      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 20.00% )
+           226,826      dTLB-load-misses                                                        ( +-  1.04% )
+                57      context-switches                                                        ( +-  2.52% )
+
+           1.59108 +- 0.00573 seconds time elapsed  ( +-  0.36% )
+
+
+>>> Running independent_no_affinity with 8 threads and 7 hashbits at Wed  9 Apr 20:48:15 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 7' (5 runs):
+
+     4,147,103,350      cpu-cycles                                                              ( +-  0.26% )
+         7,965,981      cache-misses                                                            ( +-  3.47% )
+           131,680      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 19.44% )
+           226,538      dTLB-load-misses                                                        ( +-  1.99% )
+                51      context-switches                                                        ( +-  4.13% )
+
+           1.57250 +- 0.00297 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_no_affinity with 8 threads and 8 hashbits at Wed  9 Apr 20:48:23 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 8' (5 runs):
+
+     4,027,223,005      cpu-cycles                                                              ( +-  0.11% )
+         6,874,185      cache-misses                                                            ( +-  0.53% )
+           132,194      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 12.25% )
+           233,781      dTLB-load-misses                                                        ( +-  1.56% )
+                51      context-switches                                                        ( +-  6.09% )
+
+           1.56949 +- 0.00335 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_no_affinity with 8 threads and 9 hashbits at Wed  9 Apr 20:48:31 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 9' (5 runs):
+
+     4,033,035,197      cpu-cycles                                                              ( +-  0.33% )
+         7,566,764      cache-misses                                                            ( +-  0.30% )
+           133,225      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 30.00% )
+           254,737      dTLB-load-misses                                                        ( +-  1.84% )
+                54      context-switches                                                        ( +-  4.20% )
+
+           1.56913 +- 0.00400 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_no_affinity with 8 threads and 10 hashbits at Wed  9 Apr 20:48:39 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 10' (5 runs):
+
+     4,061,520,333      cpu-cycles                                                              ( +-  0.19% )
+         8,592,557      cache-misses                                                            ( +-  0.43% )
+           135,285      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 12.25% )
+           274,794      dTLB-load-misses                                                        ( +-  0.59% )
+                56      context-switches                                                        ( +-  4.10% )
+
+           1.56947 +- 0.00407 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running independent_no_affinity with 8 threads and 11 hashbits at Wed  9 Apr 20:48:47 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 11' (5 runs):
+
+     4,241,373,398      cpu-cycles                                                              ( +-  0.11% )
+         9,972,997      cache-misses                                                            ( +-  0.05% )
+           139,473      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                          ( +- 37.42% )
+           331,135      dTLB-load-misses                                                        ( +-  1.08% )
+                56      context-switches                                                        ( +-  4.84% )
+
+           1.58436 +- 0.00479 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running independent_no_affinity with 8 threads and 12 hashbits at Wed  9 Apr 20:48:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 12' (5 runs):
+
+     4,499,634,744      cpu-cycles                                                              ( +-  0.27% )
+        11,346,553      cache-misses                                                            ( +-  0.09% )
+           147,856      page-faults                                                             ( +-  0.01% )
+                 3      cpu-migrations                                                          ( +- 24.49% )
+           361,525      dTLB-load-misses                                                        ( +-  1.02% )
+                58      context-switches                                                        ( +-  2.61% )
+
+           1.60182 +- 0.00370 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running independent_no_affinity with 8 threads and 13 hashbits at Wed  9 Apr 20:49:03 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 13' (5 runs):
+
+     5,110,855,441      cpu-cycles                                                              ( +-  0.74% )
+        14,538,277      cache-misses                                                            ( +-  0.67% )
+           164,632      page-faults                                                             ( +-  0.03% )
+                 2      cpu-migrations                                                          ( +- 29.15% )
+           391,272      dTLB-load-misses                                                        ( +-  0.50% )
+                58      context-switches                                                        ( +-  4.27% )
+
+           1.64857 +- 0.00411 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_no_affinity with 8 threads and 14 hashbits at Wed  9 Apr 20:49:12 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 14' (5 runs):
+
+     6,397,670,559      cpu-cycles                                                              ( +-  1.14% )
+        20,292,435      cache-misses                                                            ( +-  1.03% )
+           197,082      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 18.26% )
+           523,366      dTLB-load-misses                                                        ( +-  3.03% )
+                56      context-switches                                                        ( +-  3.07% )
+
+           1.76270 +- 0.00948 seconds time elapsed  ( +-  0.54% )
+
+
+>>> Running independent_no_affinity with 8 threads and 15 hashbits at Wed  9 Apr 20:49:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 15' (5 runs):
+
+     8,893,261,885      cpu-cycles                                                              ( +-  0.79% )
+        24,911,995      cache-misses                                                            ( +-  1.14% )
+           328,539      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +- 43.97% )
+           715,977      dTLB-load-misses                                                        ( +-  2.18% )
+                56      context-switches                                                        ( +-  1.43% )
+
+           2.00873 +- 0.00427 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_no_affinity with 8 threads and 16 hashbits at Wed  9 Apr 20:49:31 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 16' (5 runs):
+
+    12,687,204,772      cpu-cycles                                                              ( +-  0.42% )
+        32,136,139      cache-misses                                                            ( +-  1.11% )
+           591,450      page-faults                                                             ( +-  0.00% )
+                 5      cpu-migrations                                                          ( +- 16.73% )
+         1,278,949      dTLB-load-misses                                                        ( +-  1.45% )
+                65      context-switches                                                        ( +-  3.21% )
+
+           2.36922 +- 0.00536 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running independent_no_affinity with 8 threads and 17 hashbits at Wed  9 Apr 20:49:42 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 17' (5 runs):
+
+    19,183,435,753      cpu-cycles                                                              ( +-  0.18% )
+        44,726,221      cache-misses                                                            ( +-  0.84% )
+         1,117,485      page-faults                                                             ( +-  0.02% )
+                 3      cpu-migrations                                                          ( +- 25.82% )
+         3,283,443      dTLB-load-misses                                                        ( +-  2.14% )
+                65      context-switches                                                        ( +-  5.62% )
+
+           3.04575 +- 0.00738 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running independent_no_affinity with 8 threads and 18 hashbits at Wed  9 Apr 20:49:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 8 18' (5 runs):
+
+    18,064,963,476      cpu-cycles                                                              ( +-  0.14% )
+        55,115,831      cache-misses                                                            ( +-  1.01% )
+         1,120,347      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 18.71% )
+         7,469,831      dTLB-load-misses                                                        ( +-  0.43% )
+                68      context-switches                                                        ( +-  6.37% )
+
+           2.97316 +- 0.00628 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_no_affinity with 16 threads and 1 hashbits at Wed  9 Apr 20:50:13 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 1' (5 runs):
+
+     6,973,911,573      cpu-cycles                                                              ( +-  0.77% )
+        13,903,690      cache-misses                                                            ( +-  2.28% )
+           131,203      page-faults                                                             ( +-  0.00% )
+                14      cpu-migrations                                                          ( +- 12.45% )
+           235,726      dTLB-load-misses                                                        ( +-  4.17% )
+               162      context-switches                                                        ( +-  1.39% )
+
+           1.65156 +- 0.00981 seconds time elapsed  ( +-  0.59% )
+
+
+>>> Running independent_no_affinity with 16 threads and 2 hashbits at Wed  9 Apr 20:50:21 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 2' (5 runs):
+
+     7,794,168,152      cpu-cycles                                                              ( +-  0.46% )
+        19,046,037      cache-misses                                                            ( +-  3.59% )
+           131,218      page-faults                                                             ( +-  0.00% )
+                15      cpu-migrations                                                          ( +-  9.09% )
+           263,267      dTLB-load-misses                                                        ( +-  6.47% )
+               148      context-switches                                                        ( +-  5.79% )
+
+           1.66609 +- 0.00287 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_no_affinity with 16 threads and 3 hashbits at Wed  9 Apr 20:50:29 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 3' (5 runs):
+
+     8,552,169,580      cpu-cycles                                                              ( +-  1.32% )
+        32,823,283      cache-misses                                                            ( +-  3.29% )
+           131,250      page-faults                                                             ( +-  0.00% )
+                13      cpu-migrations                                                          ( +- 10.43% )
+           296,828      dTLB-load-misses                                                        ( +-  3.87% )
+               156      context-switches                                                        ( +-  6.17% )
+
+           1.67396 +- 0.00529 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running independent_no_affinity with 16 threads and 4 hashbits at Wed  9 Apr 20:50:38 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 4' (5 runs):
+
+     7,649,164,225      cpu-cycles                                                              ( +-  1.64% )
+        35,363,615      cache-misses                                                            ( +-  5.82% )
+           131,316      page-faults                                                             ( +-  0.00% )
+                15      cpu-migrations                                                          ( +- 12.82% )
+           268,542      dTLB-load-misses                                                        ( +-  3.64% )
+               161      context-switches                                                        ( +-  2.99% )
+
+           1.66091 +- 0.00390 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running independent_no_affinity with 16 threads and 5 hashbits at Wed  9 Apr 20:50:46 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 5' (5 runs):
+
+     5,018,414,534      cpu-cycles                                                              ( +-  0.96% )
+        13,981,024      cache-misses                                                            ( +-  6.31% )
+           131,445      page-faults                                                             ( +-  0.00% )
+                14      cpu-migrations                                                          ( +- 11.82% )
+           257,529      dTLB-load-misses                                                        ( +-  2.81% )
+               154      context-switches                                                        ( +-  4.56% )
+
+           1.56982 +- 0.00422 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running independent_no_affinity with 16 threads and 6 hashbits at Wed  9 Apr 20:50:54 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 6' (5 runs):
+
+     4,664,427,793      cpu-cycles                                                              ( +-  0.33% )
+        11,902,958      cache-misses                                                            ( +-  4.57% )
+           131,704      page-faults                                                             ( +-  0.00% )
+                12      cpu-migrations                                                          ( +-  6.67% )
+           259,598      dTLB-load-misses                                                        ( +-  2.09% )
+               164      context-switches                                                        ( +-  3.37% )
+
+           1.54887 +- 0.00345 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_no_affinity with 16 threads and 7 hashbits at Wed  9 Apr 20:51:02 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 7' (5 runs):
+
+     4,279,910,850      cpu-cycles                                                              ( +-  0.75% )
+         8,842,771      cache-misses                                                            ( +-  1.75% )
+           132,211      page-faults                                                             ( +-  0.00% )
+                14      cpu-migrations                                                          ( +- 10.45% )
+           264,282      dTLB-load-misses                                                        ( +-  4.33% )
+               159      context-switches                                                        ( +-  6.10% )
+
+           1.54019 +- 0.00345 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_no_affinity with 16 threads and 8 hashbits at Wed  9 Apr 20:51:10 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 8' (5 runs):
+
+     4,367,241,773      cpu-cycles                                                              ( +-  1.52% )
+         8,147,962      cache-misses                                                            ( +-  1.48% )
+           133,247      page-faults                                                             ( +-  0.01% )
+                14      cpu-migrations                                                          ( +-  4.16% )
+           345,186      dTLB-load-misses                                                        ( +-  8.37% )
+               148      context-switches                                                        ( +-  3.60% )
+
+           1.54595 +- 0.00397 seconds time elapsed  ( +-  0.26% )
+
+
+>>> Running independent_no_affinity with 16 threads and 9 hashbits at Wed  9 Apr 20:51:18 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 9' (5 runs):
+
+     4,271,478,338      cpu-cycles                                                              ( +-  0.97% )
+         9,012,525      cache-misses                                                            ( +-  0.61% )
+           135,350      page-faults                                                             ( +-  0.01% )
+                14      cpu-migrations                                                          ( +- 15.88% )
+           356,412      dTLB-load-misses                                                        ( +-  5.11% )
+               167      context-switches                                                        ( +-  3.13% )
+
+           1.54629 +- 0.00466 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running independent_no_affinity with 16 threads and 10 hashbits at Wed  9 Apr 20:51:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 10' (5 runs):
+
+     4,459,161,773      cpu-cycles                                                              ( +-  1.61% )
+         9,953,872      cache-misses                                                            ( +-  0.18% )
+           139,514      page-faults                                                             ( +-  0.01% )
+                15      cpu-migrations                                                          ( +- 12.22% )
+           369,882      dTLB-load-misses                                                        ( +-  4.76% )
+               151      context-switches                                                        ( +-  2.16% )
+
+           1.55337 +- 0.00671 seconds time elapsed  ( +-  0.43% )
+
+
+>>> Running independent_no_affinity with 16 threads and 11 hashbits at Wed  9 Apr 20:51:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 11' (5 runs):
+
+     4,873,106,273      cpu-cycles                                                              ( +-  1.39% )
+        11,669,942      cache-misses                                                            ( +-  1.04% )
+           147,833      page-faults                                                             ( +-  0.02% )
+                16      cpu-migrations                                                          ( +- 13.55% )
+           444,034      dTLB-load-misses                                                        ( +-  7.95% )
+               149      context-switches                                                        ( +-  2.82% )
+
+           1.57584 +- 0.00242 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_no_affinity with 16 threads and 12 hashbits at Wed  9 Apr 20:51:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 12' (5 runs):
+
+     5,815,560,187      cpu-cycles                                                              ( +-  2.20% )
+        14,168,821      cache-misses                                                            ( +-  1.18% )
+           164,753      page-faults                                                             ( +-  0.02% )
+                14      cpu-migrations                                                          ( +- 15.08% )
+           503,608      dTLB-load-misses                                                        ( +-  4.77% )
+               145      context-switches                                                        ( +-  6.14% )
+
+           1.61824 +- 0.00618 seconds time elapsed  ( +-  0.38% )
+
+
+>>> Running independent_no_affinity with 16 threads and 13 hashbits at Wed  9 Apr 20:51:49 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 13' (5 runs):
+
+     7,834,481,107      cpu-cycles                                                              ( +-  9.54% )
+        18,971,692      cache-misses                                                            ( +-  2.77% )
+           197,108      page-faults                                                             ( +-  0.00% )
+                19      cpu-migrations                                                          ( +- 14.79% )
+           653,221      dTLB-load-misses                                                        ( +- 14.07% )
+               149      context-switches                                                        ( +-  2.85% )
+
+            1.7139 +- 0.0255 seconds time elapsed  ( +-  1.49% )
+
+
+>>> Running independent_no_affinity with 16 threads and 14 hashbits at Wed  9 Apr 20:51:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 14' (5 runs):
+
+    10,189,295,786      cpu-cycles                                                              ( +-  1.83% )
+        25,347,261      cache-misses                                                            ( +-  0.91% )
+           328,564      page-faults                                                             ( +-  0.00% )
+                20      cpu-migrations                                                          ( +-  9.17% )
+           945,626      dTLB-load-misses                                                        ( +-  2.71% )
+               167      context-switches                                                        ( +-  1.78% )
+
+            1.8884 +- 0.0167 seconds time elapsed  ( +-  0.89% )
+
+
+>>> Running independent_no_affinity with 16 threads and 15 hashbits at Wed  9 Apr 20:52:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 15' (5 runs):
+
+    16,015,866,580      cpu-cycles                                                              ( +-  4.42% )
+        32,532,789      cache-misses                                                            ( +-  1.10% )
+           591,476      page-faults                                                             ( +-  0.00% )
+                19      cpu-migrations                                                          ( +-  7.70% )
+         1,498,761      dTLB-load-misses                                                        ( +-  3.04% )
+               170      context-switches                                                        ( +-  4.79% )
+
+            2.2640 +- 0.0291 seconds time elapsed  ( +-  1.28% )
+
+
+>>> Running independent_no_affinity with 16 threads and 16 hashbits at Wed  9 Apr 20:52:19 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 16' (5 runs):
+
+    24,678,928,883      cpu-cycles                                                              ( +-  1.84% )
+        45,985,557      cache-misses                                                            ( +-  2.77% )
+         1,117,301      page-faults                                                             ( +-  0.00% )
+                17      cpu-migrations                                                          ( +- 11.25% )
+         2,769,501      dTLB-load-misses                                                        ( +-  6.99% )
+               167      context-switches                                                        ( +-  4.73% )
+
+            2.8339 +- 0.0341 seconds time elapsed  ( +-  1.20% )
+
+
+>>> Running independent_no_affinity with 16 threads and 17 hashbits at Wed  9 Apr 20:52:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 17' (5 runs):
+
+    38,549,256,939      cpu-cycles                                                              ( +-  2.36% )
+        77,324,357      cache-misses                                                            ( +-  3.57% )
+         2,180,164      page-faults                                                             ( +-  0.23% )
+                17      cpu-migrations                                                          ( +-  7.80% )
+         5,981,743      dTLB-load-misses                                                        ( +-  1.93% )
+               173      context-switches                                                        ( +-  2.69% )
+
+            3.8611 +- 0.0161 seconds time elapsed  ( +-  0.42% )
+
+
+>>> Running independent_no_affinity with 16 threads and 18 hashbits at Wed  9 Apr 20:52:53 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 16 18' (5 runs):
+
+    34,933,374,954      cpu-cycles                                                              ( +-  1.08% )
+        86,815,524      cache-misses                                                            ( +-  0.63% )
+         2,176,404      page-faults                                                             ( +-  0.03% )
+                19      cpu-migrations                                                          ( +- 10.39% )
+        11,178,370      dTLB-load-misses                                                        ( +-  3.60% )
+               177      context-switches                                                        ( +-  6.00% )
+
+            3.7658 +- 0.0205 seconds time elapsed  ( +-  0.54% )
+
+
+>>> Running independent_no_affinity with 32 threads and 1 hashbits at Wed  9 Apr 20:53:11 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 1' (5 runs):
+
+    11,275,430,838      cpu-cycles                                                              ( +-  1.38% )
+        20,682,435      cache-misses                                                            ( +-  3.40% )
+           131,268      page-faults                                                             ( +-  0.00% )
+                64      cpu-migrations                                                          ( +-  2.50% )
+           344,280      dTLB-load-misses                                                        ( +-  4.03% )
+               472      context-switches                                                        ( +-  4.18% )
+
+           1.62227 +- 0.00359 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_no_affinity with 32 threads and 2 hashbits at Wed  9 Apr 20:53:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 2' (5 runs):
+
+    11,538,080,404      cpu-cycles                                                              ( +-  1.62% )
+        28,056,051      cache-misses                                                            ( +-  2.97% )
+           131,302      page-faults                                                             ( +-  0.00% )
+                66      cpu-migrations                                                          ( +-  4.22% )
+           342,246      dTLB-load-misses                                                        ( +-  2.42% )
+               490      context-switches                                                        ( +-  3.46% )
+
+           1.62975 +- 0.00393 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running independent_no_affinity with 32 threads and 3 hashbits at Wed  9 Apr 20:53:28 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 3' (5 runs):
+
+    11,490,118,734      cpu-cycles                                                              ( +-  2.50% )
+        35,478,329      cache-misses                                                            ( +-  5.90% )
+           131,361      page-faults                                                             ( +-  0.00% )
+                58      cpu-migrations                                                          ( +-  5.68% )
+           327,216      dTLB-load-misses                                                        ( +-  3.27% )
+               436      context-switches                                                        ( +-  5.27% )
+
+           1.63799 +- 0.00251 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_no_affinity with 32 threads and 4 hashbits at Wed  9 Apr 20:53:36 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 4' (5 runs):
+
+     6,728,175,627      cpu-cycles                                                              ( +-  0.60% )
+        19,511,510      cache-misses                                                            ( +-  1.61% )
+           131,497      page-faults                                                             ( +-  0.00% )
+                63      cpu-migrations                                                          ( +-  4.64% )
+           425,279      dTLB-load-misses                                                        ( +-  4.03% )
+               414      context-switches                                                        ( +-  2.26% )
+
+           1.57159 +- 0.00453 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_no_affinity with 32 threads and 5 hashbits at Wed  9 Apr 20:53:44 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 5' (5 runs):
+
+     5,665,675,128      cpu-cycles                                                              ( +-  1.03% )
+        15,016,032      cache-misses                                                            ( +-  4.82% )
+           131,745      page-faults                                                             ( +-  0.00% )
+                62      cpu-migrations                                                          ( +-  7.80% )
+           482,269      dTLB-load-misses                                                        ( +-  4.79% )
+               412      context-switches                                                        ( +-  4.18% )
+
+           1.55178 +- 0.00623 seconds time elapsed  ( +-  0.40% )
+
+
+>>> Running independent_no_affinity with 32 threads and 6 hashbits at Wed  9 Apr 20:53:52 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 6' (5 runs):
+
+     4,994,026,276      cpu-cycles                                                              ( +-  0.58% )
+        10,649,464      cache-misses                                                            ( +-  3.03% )
+           132,269      page-faults                                                             ( +-  0.01% )
+                64      cpu-migrations                                                          ( +-  5.72% )
+           399,976      dTLB-load-misses                                                        ( +-  2.95% )
+               419      context-switches                                                        ( +-  5.94% )
+
+           1.54779 +- 0.00317 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_no_affinity with 32 threads and 7 hashbits at Wed  9 Apr 20:54:00 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 7' (5 runs):
+
+     4,784,361,952      cpu-cycles                                                              ( +-  0.25% )
+         8,503,908      cache-misses                                                            ( +-  1.03% )
+           133,307      page-faults                                                             ( +-  0.01% )
+                59      cpu-migrations                                                          ( +-  2.76% )
+           428,043      dTLB-load-misses                                                        ( +-  3.58% )
+               413      context-switches                                                        ( +-  7.51% )
+
+           1.53943 +- 0.00386 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_no_affinity with 32 threads and 8 hashbits at Wed  9 Apr 20:54:07 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 8' (5 runs):
+
+     4,888,087,081      cpu-cycles                                                              ( +-  0.73% )
+         9,627,601      cache-misses                                                            ( +-  0.79% )
+           135,389      page-faults                                                             ( +-  0.01% )
+                61      cpu-migrations                                                          ( +-  2.46% )
+           448,989      dTLB-load-misses                                                        ( +-  2.51% )
+               431      context-switches                                                        ( +-  5.08% )
+
+           1.55964 +- 0.00174 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_no_affinity with 32 threads and 9 hashbits at Wed  9 Apr 20:54:15 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 9' (5 runs):
+
+     5,021,312,028      cpu-cycles                                                              ( +-  0.54% )
+        10,513,872      cache-misses                                                            ( +-  0.43% )
+           139,537      page-faults                                                             ( +-  0.01% )
+                58      cpu-migrations                                                          ( +-  3.47% )
+           453,237      dTLB-load-misses                                                        ( +-  4.00% )
+               407      context-switches                                                        ( +-  3.21% )
+
+           1.56072 +- 0.00118 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_no_affinity with 32 threads and 10 hashbits at Wed  9 Apr 20:54:23 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 10' (5 runs):
+
+     5,494,610,048      cpu-cycles                                                              ( +-  1.03% )
+        12,162,032      cache-misses                                                            ( +-  0.34% )
+           147,916      page-faults                                                             ( +-  0.01% )
+                60      cpu-migrations                                                          ( +-  3.52% )
+           609,976      dTLB-load-misses                                                        ( +-  9.31% )
+               424      context-switches                                                        ( +-  3.90% )
+
+           1.57495 +- 0.00270 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_no_affinity with 32 threads and 11 hashbits at Wed  9 Apr 20:54:31 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 11' (5 runs):
+
+     7,217,708,811      cpu-cycles                                                              ( +-  4.01% )
+        15,227,584      cache-misses                                                            ( +-  1.03% )
+           164,703      page-faults                                                             ( +-  0.03% )
+                65      cpu-migrations                                                          ( +-  2.30% )
+           664,848      dTLB-load-misses                                                        ( +-  7.91% )
+               436      context-switches                                                        ( +-  5.34% )
+
+           1.60692 +- 0.00764 seconds time elapsed  ( +-  0.48% )
+
+
+>>> Running independent_no_affinity with 32 threads and 12 hashbits at Wed  9 Apr 20:54:39 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 12' (5 runs):
+
+     9,812,702,397      cpu-cycles                                                              ( +-  2.33% )
+        19,635,814      cache-misses                                                            ( +-  0.96% )
+           197,157      page-faults                                                             ( +-  0.00% )
+                63      cpu-migrations                                                          ( +-  5.20% )
+           874,319      dTLB-load-misses                                                        ( +-  6.61% )
+               460      context-switches                                                        ( +-  5.83% )
+
+           1.67996 +- 0.00641 seconds time elapsed  ( +-  0.38% )
+
+
+>>> Running independent_no_affinity with 32 threads and 13 hashbits at Wed  9 Apr 20:54:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 13' (5 runs):
+
+    16,549,918,901      cpu-cycles                                                              ( +-  3.81% )
+        27,482,209      cache-misses                                                            ( +-  2.18% )
+           328,613      page-faults                                                             ( +-  0.00% )
+                66      cpu-migrations                                                          ( +-  5.32% )
+         1,483,817      dTLB-load-misses                                                        ( +-  6.37% )
+               483      context-switches                                                        ( +-  4.79% )
+
+            1.8718 +- 0.0134 seconds time elapsed  ( +-  0.72% )
+
+
+>>> Running independent_no_affinity with 32 threads and 14 hashbits at Wed  9 Apr 20:54:57 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 14' (5 runs):
+
+    29,621,651,854      cpu-cycles                                                              ( +-  2.15% )
+        39,219,973      cache-misses                                                            ( +-  1.31% )
+           591,525      page-faults                                                             ( +-  0.00% )
+                63      cpu-migrations                                                          ( +-  5.71% )
+         2,908,118      dTLB-load-misses                                                        ( +- 12.58% )
+               540      context-switches                                                        ( +-  6.49% )
+
+            2.2330 +- 0.0140 seconds time elapsed  ( +-  0.63% )
+
+
+>>> Running independent_no_affinity with 32 threads and 15 hashbits at Wed  9 Apr 20:55:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 15' (5 runs):
+
+    45,475,379,476      cpu-cycles                                                              ( +-  0.73% )
+        54,953,829      cache-misses                                                            ( +-  1.71% )
+         1,117,349      page-faults                                                             ( +-  0.00% )
+                84      cpu-migrations                                                          ( +- 10.07% )
+         8,992,478      dTLB-load-misses                                                        ( +-  9.00% )
+               597      context-switches                                                        ( +-  3.08% )
+
+            2.7835 +- 0.0101 seconds time elapsed  ( +-  0.36% )
+
+
+>>> Running independent_no_affinity with 32 threads and 16 hashbits at Wed  9 Apr 20:55:22 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 16' (5 runs):
+
+    69,930,027,125      cpu-cycles                                                              ( +-  2.87% )
+        90,577,294      cache-misses                                                            ( +-  2.02% )
+         2,168,388      page-faults                                                             ( +-  0.00% )
+                88      cpu-migrations                                                          ( +-  2.99% )
+        12,917,659      dTLB-load-misses                                                        ( +-  3.78% )
+               720      context-switches                                                        ( +-  6.23% )
+
+            3.7516 +- 0.0261 seconds time elapsed  ( +-  0.70% )
+
+
+>>> Running independent_no_affinity with 32 threads and 17 hashbits at Wed  9 Apr 20:55:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 17' (5 runs):
+
+   110,144,018,300      cpu-cycles                                                              ( +-  1.56% )
+       145,693,710      cache-misses                                                            ( +-  1.32% )
+         4,195,686      page-faults                                                             ( +-  0.00% )
+                81      cpu-migrations                                                          ( +-  5.72% )
+        23,241,714      dTLB-load-misses                                                        ( +-  3.88% )
+               926      context-switches                                                        ( +-  3.19% )
+
+            5.5606 +- 0.0307 seconds time elapsed  ( +-  0.55% )
+
+
+>>> Running independent_no_affinity with 32 threads and 18 hashbits at Wed  9 Apr 20:56:09 CEST 2025
+----
+
+ Performance counter stats for './build/independent_no_affinity 32 18' (5 runs):
+
+    99,548,778,801      cpu-cycles                                                              ( +-  3.07% )
+       148,805,047      cache-misses                                                            ( +-  2.46% )
+         4,207,701      page-faults                                                             ( +-  0.00% )
+                72      cpu-migrations                                                          ( +- 10.72% )
+        39,336,445      dTLB-load-misses                                                        ( +-  5.43% )
+               865      context-switches                                                        ( +-  3.72% )
+
+            5.4338 +- 0.0536 seconds time elapsed  ( +-  0.99% )
+
+

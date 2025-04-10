@@ -1,0 +1,1621 @@
+===== independent_cpu_aff experiments (run at Wed  9 Apr 20:56:36 CEST 2025) =====
+>>> Running independent_cpu_aff with 1 threads and 1 hashbits at Wed  9 Apr 20:56:36 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 1' (5 runs):
+
+     3,833,159,200      cpu-cycles                                                              ( +-  0.08% )
+         5,857,061      cache-misses                                                            ( +-  0.98% )
+           131,140      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           190,691      dTLB-load-misses                                                        ( +-  2.57% )
+                 8      context-switches                                                        ( +-  7.91% )
+
+           1.93383 +- 0.00274 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 2 hashbits at Wed  9 Apr 20:56:46 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 2' (5 runs):
+
+     3,838,172,693      cpu-cycles                                                              ( +-  0.05% )
+         5,871,473      cache-misses                                                            ( +-  0.24% )
+           131,142      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           178,090      dTLB-load-misses                                                        ( +-  3.11% )
+                 9      context-switches                                                        ( +-  5.44% )
+
+          1.943314 +- 0.000997 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 3 hashbits at Wed  9 Apr 20:56:56 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 3' (5 runs):
+
+     3,842,721,601      cpu-cycles                                                              ( +-  0.06% )
+         5,948,221      cache-misses                                                            ( +-  0.20% )
+           131,143      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           183,183      dTLB-load-misses                                                        ( +-  2.66% )
+                 7      context-switches                                                        ( +-  5.71% )
+
+           1.94042 +- 0.00300 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 4 hashbits at Wed  9 Apr 20:57:06 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 4' (5 runs):
+
+     3,857,215,872      cpu-cycles                                                              ( +-  0.15% )
+         5,899,306      cache-misses                                                            ( +-  0.28% )
+           131,147      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           197,557      dTLB-load-misses                                                        ( +-  1.74% )
+                 6      context-switches                                                        ( +-  8.50% )
+
+           1.94682 +- 0.00346 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 5 hashbits at Wed  9 Apr 20:57:15 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 5' (5 runs):
+
+     3,860,989,678      cpu-cycles                                                              ( +-  0.15% )
+         5,810,240      cache-misses                                                            ( +-  0.71% )
+           131,156      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           218,643      dTLB-load-misses                                                        ( +-  8.98% )
+                 7      context-switches                                                        ( +-  4.52% )
+
+           1.95249 +- 0.00428 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 6 hashbits at Wed  9 Apr 20:57:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 6' (5 runs):
+
+     3,912,320,114      cpu-cycles                                                              ( +-  0.53% )
+         5,372,308      cache-misses                                                            ( +-  0.16% )
+           131,171      page-faults                                                             ( +-  0.00% )
+                 0      cpu-migrations                                                        
+           204,059      dTLB-load-misses                                                        ( +-  1.54% )
+                 7      context-switches                                                        ( +-  7.28% )
+
+           1.97612 +- 0.00912 seconds time elapsed  ( +-  0.46% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 7 hashbits at Wed  9 Apr 20:57:35 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 7' (5 runs):
+
+     3,899,311,596      cpu-cycles                                                              ( +-  0.03% )
+         5,427,238      cache-misses                                                            ( +-  0.11% )
+           131,203      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           217,510      dTLB-load-misses                                                        ( +-  0.61% )
+                 8      context-switches                                                        ( +-  6.12% )
+
+          1.974454 +- 0.000772 seconds time elapsed  ( +-  0.04% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 8 hashbits at Wed  9 Apr 20:57:45 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 8' (5 runs):
+
+     3,925,316,667      cpu-cycles                                                              ( +-  0.21% )
+         5,516,713      cache-misses                                                            ( +-  0.56% )
+           131,270      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 24.49% )
+           235,187      dTLB-load-misses                                                        ( +-  0.77% )
+                 8      context-switches                                                        ( +-  9.19% )
+
+           1.98473 +- 0.00480 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 9 hashbits at Wed  9 Apr 20:57:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 9' (5 runs):
+
+     3,912,283,496      cpu-cycles                                                              ( +-  0.06% )
+         5,729,846      cache-misses                                                            ( +-  0.15% )
+           131,400      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           238,232      dTLB-load-misses                                                        ( +-  0.78% )
+                 7      context-switches                                                        ( +-  9.48% )
+
+           1.97950 +- 0.00334 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 10 hashbits at Wed  9 Apr 20:58:05 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 10' (5 runs):
+
+     3,984,249,431      cpu-cycles                                                              ( +-  0.03% )
+         6,187,782      cache-misses                                                            ( +-  0.14% )
+           131,664      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                        
+           287,951      dTLB-load-misses                                                        ( +-  0.85% )
+                 6      context-switches                                                        ( +-  6.24% )
+
+          2.016973 +- 0.000647 seconds time elapsed  ( +-  0.03% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 11 hashbits at Wed  9 Apr 20:58:15 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 11' (5 runs):
+
+     4,083,050,512      cpu-cycles                                                              ( +-  0.11% )
+         7,334,647      cache-misses                                                            ( +-  0.19% )
+           132,172      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           356,238      dTLB-load-misses                                                        ( +-  1.22% )
+                 7      context-switches                                                        ( +-  7.28% )
+
+           2.05793 +- 0.00387 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 12 hashbits at Wed  9 Apr 20:58:26 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 12' (5 runs):
+
+     4,252,317,408      cpu-cycles                                                              ( +-  0.31% )
+         9,167,442      cache-misses                                                            ( +-  0.17% )
+           133,205      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           401,738      dTLB-load-misses                                                        ( +-  1.32% )
+                 8      context-switches                                                        ( +-  8.84% )
+
+           2.14734 +- 0.00829 seconds time elapsed  ( +-  0.39% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 13 hashbits at Wed  9 Apr 20:58:37 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 13' (5 runs):
+
+     4,349,260,152      cpu-cycles                                                              ( +-  0.04% )
+        10,232,513      cache-misses                                                            ( +-  0.19% )
+           135,286      page-faults                                                             ( +-  0.01% )
+                 0      cpu-migrations                                                        
+           417,327      dTLB-load-misses                                                        ( +-  1.02% )
+                 8      context-switches                                                        ( +- 15.10% )
+
+           2.19878 +- 0.00107 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 14 hashbits at Wed  9 Apr 20:58:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 14' (5 runs):
+
+     4,499,379,823      cpu-cycles                                                              ( +-  0.04% )
+        11,670,390      cache-misses                                                            ( +-  0.23% )
+           139,465      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                        
+           450,438      dTLB-load-misses                                                        ( +-  0.86% )
+                 8      context-switches                                                        ( +-  9.19% )
+
+           2.27134 +- 0.00146 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 15 hashbits at Wed  9 Apr 20:58:59 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 15' (5 runs):
+
+     4,820,634,422      cpu-cycles                                                              ( +-  0.11% )
+        14,939,475      cache-misses                                                            ( +-  0.14% )
+           147,808      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                        
+           418,823      dTLB-load-misses                                                        ( +-  0.70% )
+                 9      context-switches                                                        ( +-  2.22% )
+
+           2.43307 +- 0.00228 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 16 hashbits at Wed  9 Apr 20:59:11 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 16' (5 runs):
+
+     5,262,434,946      cpu-cycles                                                              ( +-  0.18% )
+        18,983,973      cache-misses                                                            ( +-  0.13% )
+           195,791      page-faults                                                             ( +-  0.01% )
+                 1      cpu-migrations                                                        
+           478,615      dTLB-load-misses                                                        ( +-  1.65% )
+                10      context-switches                                                        ( +-  4.90% )
+
+           2.65564 +- 0.00617 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 17 hashbits at Wed  9 Apr 20:59:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 17' (5 runs):
+
+     5,980,731,987      cpu-cycles                                                              ( +-  0.34% )
+        21,781,220      cache-misses                                                            ( +-  0.18% )
+           260,554      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+         1,243,139      dTLB-load-misses                                                        ( +-  0.80% )
+                 8      context-switches                                                        ( +- 13.92% )
+
+            3.0142 +- 0.0105 seconds time elapsed  ( +-  0.35% )
+
+
+>>> Running independent_cpu_aff with 1 threads and 18 hashbits at Wed  9 Apr 20:59:40 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 1 18' (5 runs):
+
+     6,735,246,495      cpu-cycles                                                              ( +-  0.21% )
+        22,811,853      cache-misses                                                            ( +-  0.10% )
+           260,939      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+         5,228,087      dTLB-load-misses                                                        ( +-  0.18% )
+                12      context-switches                                                        ( +-  5.00% )
+
+           3.39429 +- 0.00792 seconds time elapsed  ( +-  0.23% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 1 hashbits at Wed  9 Apr 20:59:57 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 1' (5 runs):
+
+     4,633,166,605      cpu-cycles                                                              ( +-  0.12% )
+        13,367,611      cache-misses                                                            ( +-  1.40% )
+           131,145      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 12.25% )
+           208,585      dTLB-load-misses                                                        ( +-  0.42% )
+                12      context-switches                                                        ( +-  7.64% )
+
+           1.91425 +- 0.00245 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 2 hashbits at Wed  9 Apr 21:00:07 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 2' (5 runs):
+
+     4,691,212,791      cpu-cycles                                                              ( +-  0.20% )
+        11,810,198      cache-misses                                                            ( +-  1.03% )
+           131,147      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+           206,230      dTLB-load-misses                                                        ( +-  0.85% )
+                13      context-switches                                                        ( +-  3.08% )
+
+           1.92037 +- 0.00284 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 3 hashbits at Wed  9 Apr 21:00:16 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 3' (5 runs):
+
+     5,042,377,102      cpu-cycles                                                              ( +-  0.25% )
+        18,991,519      cache-misses                                                            ( +-  0.53% )
+           131,150      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+           213,292      dTLB-load-misses                                                        ( +-  1.06% )
+                11      context-switches                                                        ( +-  6.03% )
+
+           2.01425 +- 0.00606 seconds time elapsed  ( +-  0.30% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 4 hashbits at Wed  9 Apr 21:00:27 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 4' (5 runs):
+
+     4,625,836,979      cpu-cycles                                                              ( +-  0.09% )
+        14,466,229      cache-misses                                                            ( +-  1.13% )
+           131,159      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+           208,109      dTLB-load-misses                                                        ( +-  1.36% )
+                13      context-switches                                                        ( +-  2.88% )
+
+          1.902745 +- 0.000957 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 5 hashbits at Wed  9 Apr 21:00:36 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 5' (5 runs):
+
+     4,589,993,207      cpu-cycles                                                              ( +-  0.46% )
+        15,978,434      cache-misses                                                            ( +-  1.06% )
+           131,178      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+           216,136      dTLB-load-misses                                                        ( +-  1.55% )
+                12      context-switches                                                        ( +-  4.86% )
+
+           1.89987 +- 0.00477 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 6 hashbits at Wed  9 Apr 21:00:46 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 6' (5 runs):
+
+     4,217,773,981      cpu-cycles                                                              ( +-  0.23% )
+         8,688,459      cache-misses                                                            ( +-  1.39% )
+           131,209      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+           214,953      dTLB-load-misses                                                        ( +-  1.53% )
+                10      context-switches                                                        ( +-  9.80% )
+
+           1.80328 +- 0.00197 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 7 hashbits at Wed  9 Apr 21:00:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 7' (5 runs):
+
+     4,095,659,602      cpu-cycles                                                              ( +-  0.11% )
+         6,555,486      cache-misses                                                            ( +-  0.09% )
+           131,272      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+           298,366      dTLB-load-misses                                                        ( +- 21.20% )
+                11      context-switches                                                        ( +-  5.30% )
+
+           1.77388 +- 0.00201 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 8 hashbits at Wed  9 Apr 21:01:04 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 8' (5 runs):
+
+     4,012,168,181      cpu-cycles                                                              ( +-  0.08% )
+         5,860,440      cache-misses                                                            ( +-  0.62% )
+           131,399      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+           228,502      dTLB-load-misses                                                        ( +-  1.22% )
+                11      context-switches                                                        ( +- 10.52% )
+
+          1.755478 +- 0.000895 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 9 hashbits at Wed  9 Apr 21:01:13 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 9' (5 runs):
+
+     3,999,084,452      cpu-cycles                                                              ( +-  0.10% )
+         6,021,665      cache-misses                                                            ( +-  0.35% )
+           131,660      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+           241,602      dTLB-load-misses                                                        ( +-  0.35% )
+                13      context-switches                                                        ( +- 11.67% )
+
+           1.75132 +- 0.00219 seconds time elapsed  ( +-  0.12% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 10 hashbits at Wed  9 Apr 21:01:21 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 10' (5 runs):
+
+     4,005,528,536      cpu-cycles                                                              ( +-  0.12% )
+         6,450,640      cache-misses                                                            ( +-  0.13% )
+           132,178      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+           262,103      dTLB-load-misses                                                        ( +-  0.82% )
+                11      context-switches                                                        ( +-  6.17% )
+
+           1.75062 +- 0.00257 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 11 hashbits at Wed  9 Apr 21:01:30 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 11' (5 runs):
+
+     4,135,522,649      cpu-cycles                                                              ( +-  0.11% )
+         7,524,903      cache-misses                                                            ( +-  0.36% )
+           133,211      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+           353,486      dTLB-load-misses                                                        ( +-  0.91% )
+                11      context-switches                                                        ( +-  8.62% )
+
+           1.78504 +- 0.00188 seconds time elapsed  ( +-  0.11% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 12 hashbits at Wed  9 Apr 21:01:39 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 12' (5 runs):
+
+     4,315,299,835      cpu-cycles                                                              ( +-  0.08% )
+         9,647,546      cache-misses                                                            ( +-  0.18% )
+           135,286      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+           384,829      dTLB-load-misses                                                        ( +-  0.63% )
+                13      context-switches                                                        ( +-  7.69% )
+
+           1.83000 +- 0.00168 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 13 hashbits at Wed  9 Apr 21:01:49 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 13' (5 runs):
+
+     4,447,626,668      cpu-cycles                                                              ( +-  0.09% )
+        10,720,715      cache-misses                                                            ( +-  0.44% )
+           139,437      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+           392,153      dTLB-load-misses                                                        ( +-  0.91% )
+                13      context-switches                                                        ( +-  3.92% )
+
+           1.86791 +- 0.00111 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 14 hashbits at Wed  9 Apr 21:01:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 14' (5 runs):
+
+     4,678,024,857      cpu-cycles                                                              ( +-  0.07% )
+        12,865,831      cache-misses                                                            ( +-  0.33% )
+           147,801      page-faults                                                             ( +-  0.01% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+           439,669      dTLB-load-misses                                                        ( +-  0.86% )
+                13      context-switches                                                        ( +-  7.46% )
+
+           1.92822 +- 0.00180 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 15 hashbits at Wed  9 Apr 21:02:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 15' (5 runs):
+
+     5,045,262,728      cpu-cycles                                                              ( +-  0.05% )
+        16,849,598      cache-misses                                                            ( +-  0.21% )
+           164,598      page-faults                                                             ( +-  0.02% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           418,791      dTLB-load-misses                                                        ( +-  3.65% )
+                11      context-switches                                                        ( +-  6.03% )
+
+          2.022145 +- 0.000954 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 16 hashbits at Wed  9 Apr 21:02:18 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 16' (5 runs):
+
+     5,557,620,374      cpu-cycles                                                              ( +-  0.23% )
+        20,767,613      cache-misses                                                            ( +-  0.52% )
+           197,064      page-faults                                                             ( +-  0.00% )
+                 1      cpu-migrations                                                          ( +- 20.00% )
+           451,170      dTLB-load-misses                                                        ( +-  0.75% )
+                14      context-switches                                                        ( +-  6.23% )
+
+           2.15959 +- 0.00574 seconds time elapsed  ( +-  0.27% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 17 hashbits at Wed  9 Apr 21:02:29 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 17' (5 runs):
+
+     7,131,106,901      cpu-cycles                                                              ( +-  0.37% )
+        24,501,163      cache-misses                                                            ( +-  0.12% )
+           328,684      page-faults                                                             ( +-  0.02% )
+                 2      cpu-migrations                                                          ( +- 10.00% )
+         1,429,995      dTLB-load-misses                                                        ( +-  0.64% )
+                15      context-switches                                                        ( +-  8.06% )
+
+            2.6096 +- 0.0101 seconds time elapsed  ( +-  0.39% )
+
+
+>>> Running independent_cpu_aff with 2 threads and 18 hashbits at Wed  9 Apr 21:02:42 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 2 18' (5 runs):
+
+     8,166,062,241      cpu-cycles                                                              ( +-  0.03% )
+        26,013,960      cache-misses                                                            ( +-  0.36% )
+           390,997      page-faults                                                             ( +-  0.00% )
+                 2      cpu-migrations                                                        
+         5,674,846      dTLB-load-misses                                                        ( +-  0.44% )
+                15      context-switches                                                        ( +-  3.65% )
+
+           2.89492 +- 0.00265 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 1 hashbits at Wed  9 Apr 21:02:57 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 1' (5 runs):
+
+     6,041,219,003      cpu-cycles                                                              ( +-  0.24% )
+        15,464,200      cache-misses                                                            ( +-  1.09% )
+           131,153      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +-  9.35% )
+           213,205      dTLB-load-misses                                                        ( +-  0.83% )
+                25      context-switches                                                        ( +-  2.71% )
+
+           1.90167 +- 0.00113 seconds time elapsed  ( +-  0.06% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 2 hashbits at Wed  9 Apr 21:03:06 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 2' (5 runs):
+
+     5,924,437,364      cpu-cycles                                                              ( +-  0.80% )
+        14,943,204      cache-misses                                                            ( +-  1.50% )
+           131,156      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           216,047      dTLB-load-misses                                                        ( +-  0.75% )
+                22      context-switches                                                        ( +-  4.22% )
+
+           1.90362 +- 0.00550 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 3 hashbits at Wed  9 Apr 21:03:16 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 3' (5 runs):
+
+     6,562,130,484      cpu-cycles                                                              ( +-  0.29% )
+        27,851,426      cache-misses                                                            ( +-  1.26% )
+           131,165      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           213,790      dTLB-load-misses                                                        ( +-  0.84% )
+                25      context-switches                                                        ( +-  4.27% )
+
+           1.94048 +- 0.00331 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 4 hashbits at Wed  9 Apr 21:03:26 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 4' (5 runs):
+
+     5,728,490,865      cpu-cycles                                                              ( +-  0.21% )
+        27,189,971      cache-misses                                                            ( +-  0.81% )
+           131,181      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +-  6.12% )
+           220,659      dTLB-load-misses                                                        ( +-  1.23% )
+                23      context-switches                                                        ( +-  5.43% )
+
+           1.84448 +- 0.00300 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 5 hashbits at Wed  9 Apr 21:03:35 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 5' (5 runs):
+
+     4,859,741,075      cpu-cycles                                                              ( +-  0.36% )
+        17,377,665      cache-misses                                                            ( +-  2.43% )
+           131,212      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +-  6.67% )
+           211,876      dTLB-load-misses                                                        ( +-  1.56% )
+                23      context-switches                                                        ( +-  5.99% )
+
+           1.72989 +- 0.00181 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 6 hashbits at Wed  9 Apr 21:03:44 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 6' (5 runs):
+
+     4,427,155,975      cpu-cycles                                                              ( +-  0.19% )
+        11,786,840      cache-misses                                                            ( +-  0.50% )
+           131,280      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                        
+           211,361      dTLB-load-misses                                                        ( +-  2.46% )
+                24      context-switches                                                        ( +-  6.26% )
+
+          1.669341 +- 0.000848 seconds time elapsed  ( +-  0.05% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 7 hashbits at Wed  9 Apr 21:03:52 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 7' (5 runs):
+
+     4,077,804,322      cpu-cycles                                                              ( +-  0.09% )
+         6,368,338      cache-misses                                                            ( +-  0.51% )
+           131,404      page-faults                                                             ( +-  0.00% )
+                 5      cpu-migrations                                                          ( +-  6.32% )
+           212,976      dTLB-load-misses                                                        ( +-  1.63% )
+                22      context-switches                                                        ( +-  4.85% )
+
+           1.62531 +- 0.00462 seconds time elapsed  ( +-  0.28% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 8 hashbits at Wed  9 Apr 21:04:00 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 8' (5 runs):
+
+     4,033,822,813      cpu-cycles                                                              ( +-  0.10% )
+         6,291,188      cache-misses                                                            ( +-  0.27% )
+           131,659      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           235,384      dTLB-load-misses                                                        ( +-  1.37% )
+                24      context-switches                                                        ( +-  4.86% )
+
+           1.61505 +- 0.00695 seconds time elapsed  ( +-  0.43% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 9 hashbits at Wed  9 Apr 21:04:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 9' (5 runs):
+
+     4,024,451,048      cpu-cycles                                                              ( +-  0.16% )
+         6,663,960      cache-misses                                                            ( +-  0.32% )
+           132,182      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           241,110      dTLB-load-misses                                                        ( +-  1.93% )
+                23      context-switches                                                        ( +-  3.19% )
+
+           1.61799 +- 0.00290 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 10 hashbits at Wed  9 Apr 21:04:17 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 10' (5 runs):
+
+     4,029,907,490      cpu-cycles                                                              ( +-  0.06% )
+         7,495,969      cache-misses                                                            ( +-  0.27% )
+           133,224      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +-  5.00% )
+           262,680      dTLB-load-misses                                                        ( +-  1.55% )
+                23      context-switches                                                        ( +-  7.61% )
+
+           1.61425 +- 0.00271 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 11 hashbits at Wed  9 Apr 21:04:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 11' (5 runs):
+
+     4,181,181,125      cpu-cycles                                                              ( +-  0.07% )
+         8,881,140      cache-misses                                                            ( +-  0.34% )
+           135,295      page-faults                                                             ( +-  0.01% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           335,153      dTLB-load-misses                                                        ( +-  1.64% )
+                24      context-switches                                                        ( +-  9.65% )
+
+           1.64000 +- 0.00349 seconds time elapsed  ( +-  0.21% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 12 hashbits at Wed  9 Apr 21:04:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 12' (5 runs):
+
+     4,372,817,770      cpu-cycles                                                              ( +-  0.15% )
+        10,449,052      cache-misses                                                            ( +-  0.49% )
+           139,491      page-faults                                                             ( +-  0.01% )
+                 4      cpu-migrations                                                          ( +-  9.35% )
+           368,041      dTLB-load-misses                                                        ( +-  0.56% )
+                25      context-switches                                                        ( +-  2.71% )
+
+           1.66436 +- 0.00423 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 13 hashbits at Wed  9 Apr 21:04:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 13' (5 runs):
+
+     4,633,379,181      cpu-cycles                                                              ( +-  0.35% )
+        12,366,468      cache-misses                                                            ( +-  0.98% )
+           147,767      page-faults                                                             ( +-  0.01% )
+                 4      cpu-migrations                                                          ( +-  6.12% )
+           393,358      dTLB-load-misses                                                        ( +-  1.12% )
+                23      context-switches                                                        ( +-  5.90% )
+
+           1.70391 +- 0.00161 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 14 hashbits at Wed  9 Apr 21:04:50 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 14' (5 runs):
+
+     5,072,758,175      cpu-cycles                                                              ( +-  0.41% )
+        16,713,411      cache-misses                                                            ( +-  0.74% )
+           164,631      page-faults                                                             ( +-  0.03% )
+                 3      cpu-migrations                                                          ( +-  6.67% )
+           455,490      dTLB-load-misses                                                        ( +-  0.61% )
+                23      context-switches                                                        ( +-  4.56% )
+
+           1.77307 +- 0.00443 seconds time elapsed  ( +-  0.25% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 15 hashbits at Wed  9 Apr 21:04:59 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 15' (5 runs):
+
+     5,815,844,075      cpu-cycles                                                              ( +-  0.79% )
+        20,876,152      cache-misses                                                            ( +-  0.64% )
+           197,071      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 12.75% )
+           421,653      dTLB-load-misses                                                        ( +-  0.87% )
+                26      context-switches                                                        ( +-  2.55% )
+
+           1.87435 +- 0.00599 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 16 hashbits at Wed  9 Apr 21:05:08 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 16' (5 runs):
+
+     7,597,989,222      cpu-cycles                                                              ( +-  0.13% )
+        25,134,691      cache-misses                                                            ( +-  0.75% )
+           328,527      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +- 10.00% )
+           745,449      dTLB-load-misses                                                        ( +-  1.03% )
+                28      context-switches                                                        ( +-  7.44% )
+
+           2.15264 +- 0.00398 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 17 hashbits at Wed  9 Apr 21:05:19 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 17' (5 runs):
+
+    10,772,686,398      cpu-cycles                                                              ( +-  0.14% )
+        31,230,221      cache-misses                                                            ( +-  0.78% )
+           591,440      page-faults                                                             ( +-  0.00% )
+                 3      cpu-migrations                                                          ( +-  6.67% )
+         2,059,144      dTLB-load-misses                                                        ( +-  0.63% )
+                27      context-switches                                                        ( +-  3.10% )
+
+           2.66475 +- 0.00484 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 4 threads and 18 hashbits at Wed  9 Apr 21:05:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 4 18' (5 runs):
+
+    10,990,593,392      cpu-cycles                                                              ( +-  0.04% )
+        34,059,155      cache-misses                                                            ( +-  1.15% )
+           592,975      page-faults                                                             ( +-  0.00% )
+                 4      cpu-migrations                                                          ( +-  6.12% )
+         6,159,008      dTLB-load-misses                                                        ( +-  0.23% )
+                26      context-switches                                                        ( +-  5.88% )
+
+           2.70441 +- 0.00350 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 1 hashbits at Wed  9 Apr 21:05:46 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 1' (5 runs):
+
+     6,120,987,423      cpu-cycles                                                              ( +-  0.69% )
+        13,200,926      cache-misses                                                            ( +-  0.87% )
+           131,169      page-faults                                                             ( +-  0.00% )
+                 9      cpu-migrations                                                          ( +-  2.22% )
+           214,213      dTLB-load-misses                                                        ( +-  0.48% )
+                64      context-switches                                                        ( +-  2.13% )
+
+           1.74850 +- 0.00319 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 2 hashbits at Wed  9 Apr 21:05:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 2' (5 runs):
+
+     6,649,859,981      cpu-cycles                                                              ( +-  0.37% )
+        15,987,876      cache-misses                                                            ( +-  1.74% )
+           131,177      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  2.45% )
+           219,083      dTLB-load-misses                                                        ( +-  1.23% )
+                65      context-switches                                                        ( +-  1.41% )
+
+           1.74960 +- 0.00237 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 3 hashbits at Wed  9 Apr 21:06:04 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 3' (5 runs):
+
+     7,564,916,489      cpu-cycles                                                              ( +-  0.21% )
+        32,421,791      cache-misses                                                            ( +-  1.07% )
+           131,195      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  4.00% )
+           210,796      dTLB-load-misses                                                        ( +-  1.80% )
+                67      context-switches                                                        ( +-  4.37% )
+
+           1.79240 +- 0.00331 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 4 hashbits at Wed  9 Apr 21:06:13 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 4' (5 runs):
+
+     6,074,619,035      cpu-cycles                                                              ( +-  0.32% )
+        28,906,477      cache-misses                                                            ( +-  0.39% )
+           131,229      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  5.10% )
+           218,633      dTLB-load-misses                                                        ( +-  0.60% )
+                68      context-switches                                                        ( +-  5.65% )
+
+           1.69166 +- 0.00324 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 5 hashbits at Wed  9 Apr 21:06:22 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 5' (5 runs):
+
+     5,754,624,415      cpu-cycles                                                              ( +-  0.37% )
+        31,260,404      cache-misses                                                            ( +-  0.79% )
+           131,290      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  3.74% )
+           226,569      dTLB-load-misses                                                        ( +-  1.36% )
+                63      context-switches                                                        ( +-  4.06% )
+
+           1.68050 +- 0.00276 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 6 hashbits at Wed  9 Apr 21:06:30 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 6' (5 runs):
+
+     4,442,920,020      cpu-cycles                                                              ( +-  0.30% )
+        11,531,351      cache-misses                                                            ( +-  0.81% )
+           131,416      page-faults                                                             ( +-  0.00% )
+                11      cpu-migrations                                                          ( +-  5.45% )
+           225,488      dTLB-load-misses                                                        ( +-  2.38% )
+                62      context-switches                                                        ( +-  1.50% )
+
+           1.59099 +- 0.00251 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 7 hashbits at Wed  9 Apr 21:06:38 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 7' (5 runs):
+
+     4,167,608,948      cpu-cycles                                                              ( +-  0.39% )
+         7,971,155      cache-misses                                                            ( +-  0.77% )
+           131,674      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  3.74% )
+           224,379      dTLB-load-misses                                                        ( +-  2.04% )
+                66      context-switches                                                        ( +-  4.80% )
+
+           1.57511 +- 0.00296 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 8 hashbits at Wed  9 Apr 21:06:46 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 8' (5 runs):
+
+     4,042,225,779      cpu-cycles                                                              ( +-  0.06% )
+         6,909,290      cache-misses                                                            ( +-  0.11% )
+           132,191      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  3.74% )
+           245,664      dTLB-load-misses                                                        ( +-  1.22% )
+                65      context-switches                                                        ( +-  3.53% )
+
+           1.56690 +- 0.00284 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 9 hashbits at Wed  9 Apr 21:06:54 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 9' (5 runs):
+
+     4,034,944,099      cpu-cycles                                                              ( +-  0.08% )
+         7,657,198      cache-misses                                                            ( +-  0.21% )
+           133,232      page-faults                                                             ( +-  0.01% )
+                10      cpu-migrations                                                        
+           243,586      dTLB-load-misses                                                        ( +-  1.03% )
+                64      context-switches                                                        ( +-  3.44% )
+
+           1.56161 +- 0.00373 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 10 hashbits at Wed  9 Apr 21:07:02 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 10' (5 runs):
+
+     4,060,395,271      cpu-cycles                                                              ( +-  0.20% )
+         8,624,933      cache-misses                                                            ( +-  0.57% )
+           135,317      page-faults                                                             ( +-  0.01% )
+                11      cpu-migrations                                                          ( +-  6.43% )
+           264,790      dTLB-load-misses                                                        ( +-  1.26% )
+                64      context-switches                                                        ( +-  2.82% )
+
+           1.57651 +- 0.00107 seconds time elapsed  ( +-  0.07% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 11 hashbits at Wed  9 Apr 21:07:10 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 11' (5 runs):
+
+     4,244,106,687      cpu-cycles                                                              ( +-  0.24% )
+        10,031,871      cache-misses                                                            ( +-  0.46% )
+           139,468      page-faults                                                             ( +-  0.02% )
+                 9      cpu-migrations                                                          ( +-  4.16% )
+           337,029      dTLB-load-misses                                                        ( +-  0.69% )
+                63      context-switches                                                        ( +-  3.80% )
+
+           1.57898 +- 0.00643 seconds time elapsed  ( +-  0.41% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 12 hashbits at Wed  9 Apr 21:07:18 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 12' (5 runs):
+
+     4,554,543,244      cpu-cycles                                                              ( +-  0.40% )
+        11,545,353      cache-misses                                                            ( +-  0.57% )
+           147,828      page-faults                                                             ( +-  0.01% )
+                10      cpu-migrations                                                          ( +-  3.74% )
+           372,462      dTLB-load-misses                                                        ( +-  0.96% )
+                66      context-switches                                                        ( +-  3.97% )
+
+           1.60839 +- 0.00380 seconds time elapsed  ( +-  0.24% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 13 hashbits at Wed  9 Apr 21:07:26 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 13' (5 runs):
+
+     5,030,186,104      cpu-cycles                                                              ( +-  0.64% )
+        14,487,611      cache-misses                                                            ( +-  0.54% )
+           164,638      page-faults                                                             ( +-  0.01% )
+                10      cpu-migrations                                                          ( +-  4.00% )
+           398,202      dTLB-load-misses                                                        ( +-  0.58% )
+                66      context-switches                                                        ( +-  4.42% )
+
+           1.64224 +- 0.00313 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 14 hashbits at Wed  9 Apr 21:07:34 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 14' (5 runs):
+
+     6,280,908,139      cpu-cycles                                                              ( +-  0.77% )
+        20,374,979      cache-misses                                                            ( +-  0.66% )
+           197,083      page-faults                                                             ( +-  0.00% )
+                11      cpu-migrations                                                          ( +-  3.40% )
+           495,919      dTLB-load-misses                                                        ( +-  1.46% )
+                67      context-switches                                                        ( +-  4.36% )
+
+           1.75034 +- 0.00344 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 15 hashbits at Wed  9 Apr 21:07:43 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 15' (5 runs):
+
+     8,759,010,739      cpu-cycles                                                              ( +-  1.41% )
+        25,441,430      cache-misses                                                            ( +-  0.43% )
+           328,538      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  2.00% )
+           714,829      dTLB-load-misses                                                        ( +-  0.97% )
+                72      context-switches                                                        ( +-  3.44% )
+
+           1.96434 +- 0.00571 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 16 hashbits at Wed  9 Apr 21:07:53 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 16' (5 runs):
+
+    12,868,105,583      cpu-cycles                                                              ( +-  0.41% )
+        31,984,227      cache-misses                                                            ( +-  1.27% )
+           591,451      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  3.74% )
+         1,287,861      dTLB-load-misses                                                        ( +-  1.07% )
+                69      context-switches                                                        ( +-  3.73% )
+
+           2.36286 +- 0.00342 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 17 hashbits at Wed  9 Apr 21:08:05 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 17' (5 runs):
+
+    19,335,431,570      cpu-cycles                                                              ( +-  0.22% )
+        45,997,468      cache-misses                                                            ( +-  0.65% )
+         1,117,275      page-faults                                                             ( +-  0.00% )
+                 9      cpu-migrations                                                          ( +-  5.44% )
+         3,203,646      dTLB-load-misses                                                        ( +-  0.39% )
+                78      context-switches                                                        ( +-  5.52% )
+
+           3.03818 +- 0.00279 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_cpu_aff with 8 threads and 18 hashbits at Wed  9 Apr 21:08:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 8 18' (5 runs):
+
+    18,097,509,073      cpu-cycles                                                              ( +-  0.17% )
+        54,464,740      cache-misses                                                            ( +-  1.85% )
+         1,120,346      page-faults                                                             ( +-  0.00% )
+                10      cpu-migrations                                                          ( +-  6.63% )
+         7,503,245      dTLB-load-misses                                                        ( +-  0.25% )
+                77      context-switches                                                        ( +-  4.09% )
+
+           2.98412 +- 0.00104 seconds time elapsed  ( +-  0.03% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 1 hashbits at Wed  9 Apr 21:08:35 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 1' (5 runs):
+
+     6,836,258,786      cpu-cycles                                                              ( +-  0.56% )
+        13,072,517      cache-misses                                                            ( +-  1.04% )
+           131,196      page-faults                                                             ( +-  0.00% )
+                30      cpu-migrations                                                          ( +-  5.06% )
+           219,149      dTLB-load-misses                                                        ( +-  0.90% )
+               165      context-switches                                                        ( +-  5.04% )
+
+           1.64624 +- 0.00562 seconds time elapsed  ( +-  0.34% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 2 hashbits at Wed  9 Apr 21:08:43 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 2' (5 runs):
+
+     7,984,064,673      cpu-cycles                                                              ( +-  0.52% )
+        21,385,709      cache-misses                                                            ( +-  1.37% )
+           131,211      page-faults                                                             ( +-  0.00% )
+                30      cpu-migrations                                                          ( +-  2.26% )
+           226,692      dTLB-load-misses                                                        ( +-  0.28% )
+               171      context-switches                                                        ( +-  5.93% )
+
+           1.67216 +- 0.00662 seconds time elapsed  ( +-  0.40% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 3 hashbits at Wed  9 Apr 21:08:52 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 3' (5 runs):
+
+     8,575,103,701      cpu-cycles                                                              ( +-  0.21% )
+        36,178,135      cache-misses                                                            ( +-  0.38% )
+           131,244      page-faults                                                             ( +-  0.00% )
+                28      cpu-migrations                                                          ( +-  5.80% )
+           237,452      dTLB-load-misses                                                        ( +-  1.88% )
+               160      context-switches                                                        ( +-  3.94% )
+
+           1.68423 +- 0.00532 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 4 hashbits at Wed  9 Apr 21:09:00 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 4' (5 runs):
+
+     8,396,274,025      cpu-cycles                                                              ( +-  0.52% )
+        47,716,031      cache-misses                                                            ( +-  0.60% )
+           131,311      page-faults                                                             ( +-  0.00% )
+                31      cpu-migrations                                                          ( +-  5.40% )
+           238,932      dTLB-load-misses                                                        ( +-  1.93% )
+               165      context-switches                                                        ( +-  4.31% )
+
+           1.68803 +- 0.00269 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 5 hashbits at Wed  9 Apr 21:09:09 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 5' (5 runs):
+
+     5,283,218,447      cpu-cycles                                                              ( +-  0.36% )
+        20,794,954      cache-misses                                                            ( +-  0.80% )
+           131,437      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  4.68% )
+           228,372      dTLB-load-misses                                                        ( +-  0.99% )
+               182      context-switches                                                        ( +-  3.82% )
+
+           1.57825 +- 0.00288 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 6 hashbits at Wed  9 Apr 21:09:17 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 6' (5 runs):
+
+     4,673,718,791      cpu-cycles                                                              ( +-  0.38% )
+        14,482,707      cache-misses                                                            ( +-  0.56% )
+           131,699      page-faults                                                             ( +-  0.01% )
+                29      cpu-migrations                                                          ( +-  7.15% )
+           225,720      dTLB-load-misses                                                        ( +-  0.41% )
+               168      context-switches                                                        ( +-  3.48% )
+
+           1.55707 +- 0.00155 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 7 hashbits at Wed  9 Apr 21:09:25 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 7' (5 runs):
+
+     4,193,980,988      cpu-cycles                                                              ( +-  0.30% )
+         9,076,995      cache-misses                                                            ( +-  0.80% )
+           132,209      page-faults                                                             ( +-  0.00% )
+                32      cpu-migrations                                                          ( +-  0.99% )
+           237,171      dTLB-load-misses                                                        ( +-  0.63% )
+               167      context-switches                                                        ( +-  3.69% )
+
+           1.54730 +- 0.00130 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 8 hashbits at Wed  9 Apr 21:09:32 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 8' (5 runs):
+
+     4,116,369,388      cpu-cycles                                                              ( +-  0.20% )
+         8,254,129      cache-misses                                                            ( +-  0.28% )
+           133,259      page-faults                                                             ( +-  0.01% )
+                29      cpu-migrations                                                          ( +-  7.76% )
+           243,320      dTLB-load-misses                                                        ( +-  0.76% )
+               170      context-switches                                                        ( +-  4.38% )
+
+           1.54983 +- 0.00150 seconds time elapsed  ( +-  0.10% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 9 hashbits at Wed  9 Apr 21:09:40 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 9' (5 runs):
+
+     4,108,069,077      cpu-cycles                                                              ( +-  0.29% )
+         8,969,633      cache-misses                                                            ( +-  0.37% )
+           135,301      page-faults                                                             ( +-  0.00% )
+                30      cpu-migrations                                                          ( +-  7.27% )
+           246,333      dTLB-load-misses                                                        ( +-  2.64% )
+               174      context-switches                                                        ( +-  2.84% )
+
+           1.54757 +- 0.00301 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 10 hashbits at Wed  9 Apr 21:09:48 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 10' (5 runs):
+
+     4,185,858,443      cpu-cycles                                                              ( +-  0.17% )
+         9,877,357      cache-misses                                                            ( +-  0.17% )
+           139,515      page-faults                                                             ( +-  0.01% )
+                28      cpu-migrations                                                          ( +-  5.60% )
+           273,303      dTLB-load-misses                                                        ( +-  1.63% )
+               154      context-switches                                                        ( +-  2.26% )
+
+           1.55104 +- 0.00284 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 11 hashbits at Wed  9 Apr 21:09:56 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 11' (5 runs):
+
+     4,507,228,396      cpu-cycles                                                              ( +-  0.56% )
+        11,327,151      cache-misses                                                            ( +-  0.24% )
+           147,869      page-faults                                                             ( +-  0.01% )
+                32      cpu-migrations                                                          ( +-  3.22% )
+           385,578      dTLB-load-misses                                                        ( +-  3.91% )
+               169      context-switches                                                        ( +-  1.34% )
+
+           1.57346 +- 0.00348 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 12 hashbits at Wed  9 Apr 21:10:04 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 12' (5 runs):
+
+     5,312,053,729      cpu-cycles                                                              ( +-  1.32% )
+        13,688,925      cache-misses                                                            ( +-  0.42% )
+           164,706      page-faults                                                             ( +-  0.01% )
+                32      cpu-migrations                                                          ( +-  2.80% )
+           378,409      dTLB-load-misses                                                        ( +-  0.52% )
+               183      context-switches                                                        ( +-  4.45% )
+
+           1.60063 +- 0.00309 seconds time elapsed  ( +-  0.19% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 13 hashbits at Wed  9 Apr 21:10:12 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 13' (5 runs):
+
+     6,985,384,802      cpu-cycles                                                              ( +-  2.41% )
+        19,118,765      cache-misses                                                            ( +-  0.90% )
+           197,100      page-faults                                                             ( +-  0.00% )
+                30      cpu-migrations                                                          ( +-  6.02% )
+           445,072      dTLB-load-misses                                                        ( +-  1.62% )
+               177      context-switches                                                        ( +-  2.62% )
+
+           1.66840 +- 0.00529 seconds time elapsed  ( +-  0.32% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 14 hashbits at Wed  9 Apr 21:10:20 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 14' (5 runs):
+
+    10,651,484,677      cpu-cycles                                                              ( +-  1.63% )
+        26,508,750      cache-misses                                                            ( +-  0.46% )
+           328,557      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  6.23% )
+           795,514      dTLB-load-misses                                                        ( +-  1.12% )
+               186      context-switches                                                        ( +-  7.55% )
+
+           1.85480 +- 0.00364 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 15 hashbits at Wed  9 Apr 21:10:30 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 15' (5 runs):
+
+    15,842,336,125      cpu-cycles                                                              ( +-  1.20% )
+        33,981,656      cache-misses                                                            ( +-  0.46% )
+           591,469      page-faults                                                             ( +-  0.00% )
+                30      cpu-migrations                                                          ( +-  6.50% )
+         1,235,281      dTLB-load-misses                                                        ( +-  1.57% )
+               187      context-switches                                                        ( +-  4.80% )
+
+            2.1992 +- 0.0167 seconds time elapsed  ( +-  0.76% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 16 hashbits at Wed  9 Apr 21:10:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 16' (5 runs):
+
+    25,999,720,795      cpu-cycles                                                              ( +-  0.63% )
+        48,554,476      cache-misses                                                            ( +-  2.04% )
+         1,117,293      page-faults                                                             ( +-  0.00% )
+                29      cpu-migrations                                                          ( +-  4.02% )
+         2,297,574      dTLB-load-misses                                                        ( +-  0.60% )
+               168      context-switches                                                        ( +-  2.92% )
+
+           2.80220 +- 0.00430 seconds time elapsed  ( +-  0.15% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 17 hashbits at Wed  9 Apr 21:10:55 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 17' (5 runs):
+
+    40,090,269,681      cpu-cycles                                                              ( +-  1.14% )
+        83,258,365      cache-misses                                                            ( +-  1.05% )
+         2,199,658      page-faults                                                             ( +-  0.03% )
+                27      cpu-migrations                                                          ( +-  5.42% )
+         5,978,933      dTLB-load-misses                                                        ( +-  1.75% )
+               201      context-switches                                                        ( +-  2.58% )
+
+            3.8524 +- 0.0173 seconds time elapsed  ( +-  0.45% )
+
+
+>>> Running independent_cpu_aff with 16 threads and 18 hashbits at Wed  9 Apr 21:11:14 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 16 18' (5 runs):
+
+    35,829,273,041      cpu-cycles                                                              ( +-  1.16% )
+        91,716,394      cache-misses                                                            ( +-  1.41% )
+         2,177,873      page-faults                                                             ( +-  0.16% )
+                31      cpu-migrations                                                          ( +-  4.78% )
+        10,223,192      dTLB-load-misses                                                        ( +-  3.18% )
+               205      context-switches                                                        ( +-  4.57% )
+
+            3.7046 +- 0.0124 seconds time elapsed  ( +-  0.33% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 1 hashbits at Wed  9 Apr 21:11:33 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 1' (5 runs):
+
+    12,047,521,479      cpu-cycles                                                              ( +-  0.64% )
+        23,327,446      cache-misses                                                            ( +-  0.66% )
+           131,253      page-faults                                                             ( +-  0.00% )
+                79      cpu-migrations                                                          ( +-  1.94% )
+           357,072      dTLB-load-misses                                                        ( +-  3.95% )
+               516      context-switches                                                        ( +-  5.18% )
+
+           1.64553 +- 0.00294 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 2 hashbits at Wed  9 Apr 21:11:41 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 2' (5 runs):
+
+    12,537,026,258      cpu-cycles                                                              ( +-  0.43% )
+        31,996,947      cache-misses                                                            ( +-  0.17% )
+           131,285      page-faults                                                             ( +-  0.00% )
+                84      cpu-migrations                                                          ( +-  3.81% )
+           359,169      dTLB-load-misses                                                        ( +-  1.87% )
+               510      context-switches                                                        ( +-  7.05% )
+
+           1.65974 +- 0.00281 seconds time elapsed  ( +-  0.17% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 3 hashbits at Wed  9 Apr 21:11:49 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 3' (5 runs):
+
+    13,075,350,952      cpu-cycles                                                              ( +-  0.59% )
+        46,401,857      cache-misses                                                            ( +-  0.44% )
+           131,347      page-faults                                                             ( +-  0.00% )
+                83      cpu-migrations                                                          ( +-  4.40% )
+           365,334      dTLB-load-misses                                                        ( +-  2.82% )
+               475      context-switches                                                        ( +-  5.99% )
+
+           1.66912 +- 0.00268 seconds time elapsed  ( +-  0.16% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 4 hashbits at Wed  9 Apr 21:11:58 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 4' (5 runs):
+
+     7,385,857,095      cpu-cycles                                                              ( +-  0.60% )
+        25,450,512      cache-misses                                                            ( +-  0.90% )
+           131,477      page-faults                                                             ( +-  0.00% )
+                83      cpu-migrations                                                          ( +-  3.89% )
+           345,143      dTLB-load-misses                                                        ( +-  2.67% )
+               468      context-switches                                                        ( +-  5.30% )
+
+           1.58583 +- 0.00121 seconds time elapsed  ( +-  0.08% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 5 hashbits at Wed  9 Apr 21:12:06 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 5' (5 runs):
+
+     5,847,909,939      cpu-cycles                                                              ( +-  0.25% )
+        17,968,770      cache-misses                                                            ( +-  0.42% )
+           131,735      page-faults                                                             ( +-  0.00% )
+                77      cpu-migrations                                                          ( +-  3.60% )
+           394,419      dTLB-load-misses                                                        ( +-  3.38% )
+               426      context-switches                                                        ( +-  5.77% )
+
+           1.54270 +- 0.00205 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 6 hashbits at Wed  9 Apr 21:12:14 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 6' (5 runs):
+
+     4,902,205,173      cpu-cycles                                                              ( +-  0.28% )
+        10,405,103      cache-misses                                                            ( +-  0.69% )
+           132,253      page-faults                                                             ( +-  0.00% )
+                79      cpu-migrations                                                          ( +-  3.89% )
+           361,261      dTLB-load-misses                                                        ( +-  4.03% )
+               442      context-switches                                                        ( +-  7.11% )
+
+           1.53813 +- 0.00306 seconds time elapsed  ( +-  0.20% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 7 hashbits at Wed  9 Apr 21:12:21 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 7' (5 runs):
+
+     4,754,311,734      cpu-cycles                                                              ( +-  0.29% )
+         8,630,677      cache-misses                                                            ( +-  0.38% )
+           133,286      page-faults                                                             ( +-  0.01% )
+                81      cpu-migrations                                                          ( +-  6.92% )
+           458,327      dTLB-load-misses                                                        ( +-  3.17% )
+               414      context-switches                                                        ( +-  2.33% )
+
+           1.53564 +- 0.00221 seconds time elapsed  ( +-  0.14% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 8 hashbits at Wed  9 Apr 21:12:29 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 8' (5 runs):
+
+     4,906,615,411      cpu-cycles                                                              ( +-  0.58% )
+        10,052,548      cache-misses                                                            ( +-  0.21% )
+           135,372      page-faults                                                             ( +-  0.01% )
+                77      cpu-migrations                                                          ( +-  3.80% )
+           517,608      dTLB-load-misses                                                        ( +-  3.60% )
+               439      context-switches                                                        ( +-  3.60% )
+
+           1.55511 +- 0.00206 seconds time elapsed  ( +-  0.13% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 9 hashbits at Wed  9 Apr 21:12:37 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 9' (5 runs):
+
+     5,039,195,562      cpu-cycles                                                              ( +-  0.79% )
+        10,812,048      cache-misses                                                            ( +-  0.72% )
+           139,480      page-faults                                                             ( +-  0.02% )
+                82      cpu-migrations                                                          ( +-  4.07% )
+           540,493      dTLB-load-misses                                                        ( +-  6.95% )
+               416      context-switches                                                        ( +-  2.85% )
+
+           1.55526 +- 0.00286 seconds time elapsed  ( +-  0.18% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 10 hashbits at Wed  9 Apr 21:12:45 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 10' (5 runs):
+
+     5,523,911,541      cpu-cycles                                                              ( +-  1.47% )
+        12,410,559      cache-misses                                                            ( +-  0.52% )
+           147,908      page-faults                                                             ( +-  0.02% )
+                84      cpu-migrations                                                          ( +-  0.61% )
+           560,043      dTLB-load-misses                                                        ( +-  4.18% )
+               481      context-switches                                                        ( +-  5.52% )
+
+           1.57165 +- 0.00346 seconds time elapsed  ( +-  0.22% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 11 hashbits at Wed  9 Apr 21:12:53 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 11' (5 runs):
+
+     6,974,021,947      cpu-cycles                                                              ( +-  1.34% )
+        15,626,071      cache-misses                                                            ( +-  0.94% )
+           164,721      page-faults                                                             ( +-  0.02% )
+                82      cpu-migrations                                                          ( +-  4.70% )
+           699,320      dTLB-load-misses                                                        ( +-  6.54% )
+               434      context-switches                                                        ( +-  7.15% )
+
+           1.59603 +- 0.00457 seconds time elapsed  ( +-  0.29% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 12 hashbits at Wed  9 Apr 21:13:01 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 12' (5 runs):
+
+     9,892,863,685      cpu-cycles                                                              ( +-  3.60% )
+        20,149,835      cache-misses                                                            ( +-  1.29% )
+           197,142      page-faults                                                             ( +-  0.00% )
+                80      cpu-migrations                                                          ( +-  5.77% )
+           848,632      dTLB-load-misses                                                        ( +-  5.82% )
+               484      context-switches                                                        ( +-  4.77% )
+
+            1.6755 +- 0.0109 seconds time elapsed  ( +-  0.65% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 13 hashbits at Wed  9 Apr 21:13:09 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 13' (5 runs):
+
+    17,063,514,208      cpu-cycles                                                              ( +-  4.34% )
+        28,440,583      cache-misses                                                            ( +-  1.98% )
+           328,598      page-faults                                                             ( +-  0.00% )
+                78      cpu-migrations                                                          ( +-  3.17% )
+         1,446,603      dTLB-load-misses                                                        ( +-  5.04% )
+               490      context-switches                                                        ( +-  5.27% )
+
+            1.8693 +- 0.0137 seconds time elapsed  ( +-  0.73% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 14 hashbits at Wed  9 Apr 21:13:19 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 14' (5 runs):
+
+    30,316,813,066      cpu-cycles                                                              ( +-  2.34% )
+        39,859,436      cache-misses                                                            ( +-  1.50% )
+           591,509      page-faults                                                             ( +-  0.00% )
+                83      cpu-migrations                                                          ( +-  3.64% )
+         3,359,735      dTLB-load-misses                                                        ( +-  8.79% )
+               604      context-switches                                                        ( +-  2.59% )
+
+            2.2265 +- 0.0116 seconds time elapsed  ( +-  0.52% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 15 hashbits at Wed  9 Apr 21:13:30 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 15' (5 runs):
+
+    47,728,744,922      cpu-cycles                                                              ( +-  2.58% )
+        56,595,183      cache-misses                                                            ( +-  1.80% )
+         1,117,335      page-faults                                                             ( +-  0.00% )
+                79      cpu-migrations                                                          ( +-  2.06% )
+         5,247,266      dTLB-load-misses                                                        ( +-  5.08% )
+               711      context-switches                                                        ( +-  3.07% )
+
+            2.7933 +- 0.0170 seconds time elapsed  ( +-  0.61% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 16 hashbits at Wed  9 Apr 21:13:44 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 16' (5 runs):
+
+    72,682,155,551      cpu-cycles                                                              ( +-  0.53% )
+        86,441,345      cache-misses                                                            ( +-  2.37% )
+         2,168,388      page-faults                                                             ( +-  0.00% )
+                80      cpu-migrations                                                          ( +-  4.73% )
+        13,843,038      dTLB-load-misses                                                        ( +- 14.56% )
+               752      context-switches                                                        ( +-  4.36% )
+
+           3.78303 +- 0.00342 seconds time elapsed  ( +-  0.09% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 17 hashbits at Wed  9 Apr 21:14:03 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 17' (5 runs):
+
+   112,152,545,923      cpu-cycles                                                              ( +-  1.45% )
+       151,075,155      cache-misses                                                            ( +-  1.06% )
+         4,195,534      page-faults                                                             ( +-  0.00% )
+                83      cpu-migrations                                                          ( +-  4.35% )
+        31,494,181      dTLB-load-misses                                                        ( +- 11.90% )
+               979      context-switches                                                        ( +-  4.66% )
+
+            5.5946 +- 0.0285 seconds time elapsed  ( +-  0.51% )
+
+
+>>> Running independent_cpu_aff with 32 threads and 18 hashbits at Wed  9 Apr 21:14:31 CEST 2025
+----
+
+ Performance counter stats for './build/independent_cpu_aff 32 18' (5 runs):
+
+   103,829,816,775      cpu-cycles                                                              ( +-  2.24% )
+       148,463,624      cache-misses                                                            ( +-  0.87% )
+         4,208,210      page-faults                                                             ( +-  0.00% )
+                81      cpu-migrations                                                          ( +-  3.63% )
+        37,362,725      dTLB-load-misses                                                        ( +-  5.78% )
+               941      context-switches                                                        ( +-  4.99% )
+
+            5.5108 +- 0.0415 seconds time elapsed  ( +-  0.75% )
+
+
