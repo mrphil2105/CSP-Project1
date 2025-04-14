@@ -22,12 +22,12 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
-    // Calculate per-thread parameters.
+    // Determine partitioning parameters.
     int partitions_per_thread = 1 << hash_bits;
     int total_partitions = thread_count * partitions_per_thread;
     int effective_capacity = (TUPLE_COUNT / partitions_per_thread) * PARTITION_MULTIPLIER;
 
-    // Allocate global buffers.
+    // Allocate a contiguous block for all partitions across threads.
     tuple_t *indep_big_block = malloc(thread_count * TUPLE_COUNT * PARTITION_MULTIPLIER * sizeof(tuple_t));
     if (!indep_big_block) {
         free(tuples);
@@ -40,6 +40,8 @@ int main(int argc, char *argv[]) {
         free(indep_big_block);
         return -1;
     }
+
+    // Initialize each thread's partition buffer pointers.
     for (int thr = 0; thr < thread_count; thr++) {
         for (int part = 0; part < partitions_per_thread; part++) {
             int idx = thr * partitions_per_thread + part;
@@ -50,13 +52,13 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // Run experiment.
+    // Run the partitioning experiment and measure throughput.
     double throughput = 0.0;
     if (run_independent_timed(tuples, TUPLE_COUNT, thread_count, hash_bits,
                               global_indep_buffers, global_indep_indexes, effective_capacity, &throughput) != 0) {
         fprintf(stderr, "Error in independent run with %d threads and %d hashbits\n", thread_count, hash_bits);
     } else {
-        // Print a CSV result to STDOUT.
+        // Print CSV results.
         printf("Threads,HashBits,Throughput\n");
         printf("%d,%d,%.2f\n", thread_count, hash_bits, throughput);
     }
