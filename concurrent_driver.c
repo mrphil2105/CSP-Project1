@@ -3,7 +3,7 @@
 #include "concurrent.h"
 #include "project.h"
 #include "utils.h"
-#include "tuples.h"  // For generate_tuples
+#include "tuples.h"
 
 #define TUPLE_COUNT (1 << 24)  // ~16 million tuples
 
@@ -55,7 +55,6 @@ int main(int argc, char *argv[]) {
         printf("%d,%d,%.2f\n", thread_count, hash_bits, throughput);
     }
 
-    // Cleanup.
     free(tuples);
     free(conc_big_block);
     free(global_conc_buffers);

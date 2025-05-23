@@ -4,13 +4,6 @@
 #include <string.h>
 #include <math.h>
 
-// Get current time in seconds.
-double get_time_in_seconds() {
-    struct timespec ts;
-    clock_gettime(CLOCK_MONOTONIC, &ts);
-    return ts.tv_sec + ts.tv_nsec / 1e9;
-}
-
 // A simple MurmurHash3 32-bit implementation for an 8-byte key.
 uint32_t murmurhash3_32(const void *key, int len, uint32_t seed) {
     const uint8_t *data = (const uint8_t *)key;
